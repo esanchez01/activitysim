@@ -1,0 +1,1518 @@
+mp_tasks - MainProcess - Setting num_processes = 0 for step mp_households
+mp_tasks - MainProcess - run_multiprocess fail_fast: True
+mp_tasks - MainProcess - allocate_shared_skim_buffer
+mp_tasks - MainProcess - allocate_shared_shadow_pricing_buffers
+mp_tasks - MainProcess - #run_model running sub_process mp_setup_skims
+mp_tasks - mp_setup_skims - mp_setup_skims
+mp_tasks - MainProcess - run_sub_simulations step mp_initialize models resume_after None
+mp_tasks - MainProcess - start process mp_initialize
+mp_tasks - mp_initialize - mp_run_simulation mp_initialize locutor=True 
+mp_tasks - MainProcess - mp_initialize initialize_landuse : 0.953 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_initialize initialize_households : 79.206 seconds (1.3 minutes)
+mp_tasks - MainProcess - process mp_initialize completed
+mp_tasks - MainProcess - Process mp_initialize completed with exitcode 0
+mp_tasks - MainProcess - run_sub_simulations step mp_accessibility models resume_after None
+mp_tasks - MainProcess - start process mp_accessibility
+mp_tasks - mp_accessibility - mp_run_simulation mp_accessibility locutor=True 
+mp_tasks - mp_accessibility - resume_after _
+mp_tasks - MainProcess - mp_accessibility compute_accessibility : 60.726 seconds (1.0 minutes)
+mp_tasks - MainProcess - process mp_accessibility completed
+mp_tasks - MainProcess - Process mp_accessibility completed with exitcode 0
+mp_tasks - MainProcess - #run_model running sub_process mp_households_apportion
+mp_tasks - mp_households_apportion - loaded table accessibility (4984, 10)
+mp_tasks - mp_households_apportion - loaded table land_use (4984, 28)
+mp_tasks - mp_households_apportion - loaded table person_windows (3265488, 21)
+mp_tasks - mp_households_apportion - loaded table households (1197126, 24)
+mp_tasks - mp_households_apportion - loaded table persons (3265488, 30)
+mp_tasks - mp_households_apportion - loaded table school_destination_size (4984, 3)
+mp_tasks - mp_households_apportion - loaded table workplace_destination_size (4984, 4)
+mp_tasks - mp_households_apportion - ### table_name: households slice_rules: {'slice_by': 'primary'}
+mp_tasks - mp_households_apportion - ### table_name: persons slice_rules: {'slice_by': 'column', 'column': 'household_id', 'source': 'households'}
+mp_tasks - mp_households_apportion - ### table_name: person_windows slice_rules: {'slice_by': 'index', 'source': 'persons'}
+mp_tasks - mp_households_apportion - ### slicer_ref_cols: OrderedDict([('households', 'household_id'), ('persons', 'person_id'), ('person_windows', 'person_id')])
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_0-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_1-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_2-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_3-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_4-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_5-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_6-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_7-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_8-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_9-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_10-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_11-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_12-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_13-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_14-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_15-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_16-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_17-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_18-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_19-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_20-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_21-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_22-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_23-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_24-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_25-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_26-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_27-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_28-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_29-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_30-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_31-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_32-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_33-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_34-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_35-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_36-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_37-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_38-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_39-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_40-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_41-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_42-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_43-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_44-pipeline.h5
+mp_tasks - MainProcess - run_sub_simulations step mp_households models resume_after None
+mp_tasks - MainProcess - start process mp_households_0
+mp_tasks - MainProcess - start process mp_households_1
+mp_tasks - mp_households_0 - mp_run_simulation mp_households locutor=True 
+mp_tasks - mp_households_0 - resume_after _
+mp_tasks - MainProcess - start process mp_households_2
+mp_tasks - mp_households_1 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_1 - resume_after _
+mp_tasks - MainProcess - start process mp_households_3
+mp_tasks - mp_households_2 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_2 - resume_after _
+mp_tasks - MainProcess - start process mp_households_4
+mp_tasks - mp_households_3 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_3 - resume_after _
+mp_tasks - MainProcess - start process mp_households_5
+mp_tasks - mp_households_4 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_4 - resume_after _
+mp_tasks - MainProcess - start process mp_households_6
+mp_tasks - mp_households_5 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_5 - resume_after _
+mp_tasks - MainProcess - start process mp_households_7
+mp_tasks - mp_households_6 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_6 - resume_after _
+mp_tasks - MainProcess - start process mp_households_8
+mp_tasks - mp_households_7 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_7 - resume_after _
+mp_tasks - MainProcess - start process mp_households_9
+mp_tasks - mp_households_8 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_8 - resume_after _
+mp_tasks - MainProcess - start process mp_households_10
+mp_tasks - mp_households_9 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_9 - resume_after _
+mp_tasks - MainProcess - start process mp_households_11
+mp_tasks - mp_households_10 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_10 - resume_after _
+mp_tasks - MainProcess - start process mp_households_12
+mp_tasks - mp_households_11 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_11 - resume_after _
+mp_tasks - MainProcess - start process mp_households_13
+mp_tasks - mp_households_12 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_12 - resume_after _
+mp_tasks - MainProcess - start process mp_households_14
+mp_tasks - mp_households_13 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_13 - resume_after _
+mp_tasks - MainProcess - start process mp_households_15
+mp_tasks - mp_households_14 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_14 - resume_after _
+mp_tasks - MainProcess - start process mp_households_16
+mp_tasks - mp_households_15 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_15 - resume_after _
+mp_tasks - MainProcess - start process mp_households_17
+mp_tasks - mp_households_16 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_16 - resume_after _
+mp_tasks - MainProcess - start process mp_households_18
+mp_tasks - mp_households_17 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_17 - resume_after _
+mp_tasks - MainProcess - start process mp_households_19
+mp_tasks - mp_households_18 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_18 - resume_after _
+mp_tasks - mp_households_19 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_19 - resume_after _
+mp_tasks - MainProcess - start process mp_households_20
+mp_tasks - mp_households_20 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_20 - resume_after _
+mp_tasks - MainProcess - start process mp_households_21
+mp_tasks - mp_households_21 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_21 - resume_after _
+mp_tasks - MainProcess - start process mp_households_22
+mp_tasks - mp_households_22 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_22 - resume_after _
+mp_tasks - MainProcess - start process mp_households_23
+mp_tasks - mp_households_23 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_23 - resume_after _
+mp_tasks - MainProcess - start process mp_households_24
+mp_tasks - mp_households_24 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_24 - resume_after _
+mp_tasks - MainProcess - start process mp_households_25
+mp_tasks - MainProcess - start process mp_households_26
+mp_tasks - mp_households_25 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_25 - resume_after _
+mp_tasks - MainProcess - start process mp_households_27
+mp_tasks - mp_households_26 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_26 - resume_after _
+mp_tasks - mp_households_27 - mp_run_simulation mp_households locutor=False 
+mp_tasks - MainProcess - start process mp_households_28
+mp_tasks - mp_households_27 - resume_after _
+mp_tasks - MainProcess - start process mp_households_29
+mp_tasks - mp_households_28 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_28 - resume_after _
+mp_tasks - mp_households_29 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_29 - resume_after _
+mp_tasks - MainProcess - start process mp_households_30
+mp_tasks - mp_households_30 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_30 - resume_after _
+mp_tasks - MainProcess - start process mp_households_31
+mp_tasks - mp_households_31 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_31 - resume_after _
+mp_tasks - MainProcess - start process mp_households_32
+mp_tasks - mp_households_32 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_32 - resume_after _
+mp_tasks - MainProcess - start process mp_households_33
+mp_tasks - mp_households_33 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_33 - resume_after _
+mp_tasks - MainProcess - start process mp_households_34
+mp_tasks - mp_households_34 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_34 - resume_after _
+mp_tasks - MainProcess - start process mp_households_35
+mp_tasks - mp_households_35 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_35 - resume_after _
+mp_tasks - MainProcess - start process mp_households_36
+mp_tasks - MainProcess - start process mp_households_37
+mp_tasks - mp_households_36 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_36 - resume_after _
+mp_tasks - MainProcess - start process mp_households_38
+mp_tasks - mp_households_37 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_37 - resume_after _
+mp_tasks - MainProcess - start process mp_households_39
+mp_tasks - mp_households_38 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_38 - resume_after _
+mp_tasks - mp_households_39 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_39 - resume_after _
+mp_tasks - MainProcess - start process mp_households_40
+mp_tasks - mp_households_40 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_40 - resume_after _
+mp_tasks - MainProcess - start process mp_households_41
+mp_tasks - mp_households_41 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_41 - resume_after _
+mp_tasks - MainProcess - start process mp_households_42
+mp_tasks - mp_households_42 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_42 - resume_after _
+mp_tasks - MainProcess - start process mp_households_43
+mp_tasks - MainProcess - start process mp_households_44
+mp_tasks - mp_households_43 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_43 - resume_after _
+mp_tasks - mp_households_44 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_44 - resume_after _
+mp_tasks - MainProcess - mp_households_20 school_location : 300.516 seconds (5.0 minutes)
+mp_tasks - MainProcess - mp_households_21 school_location : 297.763 seconds (5.0 minutes)
+mp_tasks - MainProcess - mp_households_22 school_location : 293.005 seconds (4.9 minutes)
+mp_tasks - MainProcess - mp_households_23 school_location : 288.834 seconds (4.8 minutes)
+mp_tasks - MainProcess - mp_households_24 school_location : 285.881 seconds (4.8 minutes)
+mp_tasks - MainProcess - mp_households_25 school_location : 282.453 seconds (4.7 minutes)
+mp_tasks - MainProcess - mp_households_26 school_location : 278.181 seconds (4.6 minutes)
+mp_tasks - MainProcess - mp_households_27 school_location : 274.62 seconds (4.6 minutes)
+mp_tasks - MainProcess - mp_households_28 school_location : 270.948 seconds (4.5 minutes)
+mp_tasks - MainProcess - mp_households_29 school_location : 266.938 seconds (4.4 minutes)
+mp_tasks - MainProcess - mp_households_30 school_location : 266.354 seconds (4.4 minutes)
+mp_tasks - MainProcess - mp_households_31 school_location : 256.093 seconds (4.3 minutes)
+mp_tasks - MainProcess - mp_households_32 school_location : 250.988 seconds (4.2 minutes)
+mp_tasks - MainProcess - mp_households_33 school_location : 244.179 seconds (4.1 minutes)
+mp_tasks - MainProcess - mp_households_34 school_location : 239.196 seconds (4.0 minutes)
+mp_tasks - MainProcess - mp_households_35 school_location : 233.748 seconds (3.9 minutes)
+mp_tasks - MainProcess - mp_households_36 school_location : 226.61 seconds (3.8 minutes)
+mp_tasks - MainProcess - mp_households_37 school_location : 221.687 seconds (3.7 minutes)
+mp_tasks - MainProcess - mp_households_38 school_location : 217.25 seconds (3.6 minutes)
+mp_tasks - MainProcess - mp_households_39 school_location : 212.725 seconds (3.5 minutes)
+mp_tasks - MainProcess - mp_households_40 school_location : 206.975 seconds (3.4 minutes)
+mp_tasks - MainProcess - mp_households_41 school_location : 200.791 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_42 school_location : 190.444 seconds (3.2 minutes)
+mp_tasks - MainProcess - mp_households_43 school_location : 183.234 seconds (3.1 minutes)
+mp_tasks - MainProcess - mp_households_44 school_location : 178.08 seconds (3.0 minutes)
+mp_tasks - MainProcess - mp_households_0 school_location : 357.632 seconds (6.0 minutes)
+mp_tasks - MainProcess - mp_households_1 school_location : 353.558 seconds (5.9 minutes)
+mp_tasks - MainProcess - mp_households_2 school_location : 351.085 seconds (5.9 minutes)
+mp_tasks - MainProcess - mp_households_3 school_location : 348.353 seconds (5.8 minutes)
+mp_tasks - MainProcess - mp_households_4 school_location : 345.953 seconds (5.8 minutes)
+mp_tasks - MainProcess - mp_households_5 school_location : 344.563 seconds (5.7 minutes)
+mp_tasks - MainProcess - mp_households_6 school_location : 341.577 seconds (5.7 minutes)
+mp_tasks - MainProcess - mp_households_7 school_location : 338.611 seconds (5.6 minutes)
+mp_tasks - MainProcess - mp_households_8 school_location : 335.8 seconds (5.6 minutes)
+mp_tasks - MainProcess - mp_households_9 school_location : 334.597 seconds (5.6 minutes)
+mp_tasks - MainProcess - mp_households_10 school_location : 329.966 seconds (5.5 minutes)
+mp_tasks - MainProcess - mp_households_11 school_location : 328.16 seconds (5.5 minutes)
+mp_tasks - MainProcess - mp_households_12 school_location : 325.002 seconds (5.4 minutes)
+mp_tasks - MainProcess - mp_households_13 school_location : 322.76 seconds (5.4 minutes)
+mp_tasks - MainProcess - mp_households_14 school_location : 317.847 seconds (5.3 minutes)
+mp_tasks - MainProcess - mp_households_15 school_location : 317.648 seconds (5.3 minutes)
+mp_tasks - MainProcess - mp_households_16 school_location : 314.328 seconds (5.2 minutes)
+mp_tasks - MainProcess - mp_households_17 school_location : 310.995 seconds (5.2 minutes)
+mp_tasks - MainProcess - mp_households_18 school_location : 307.853 seconds (5.1 minutes)
+mp_tasks - MainProcess - mp_households_19 school_location : 305.555 seconds (5.1 minutes)
+mp_tasks - MainProcess - mp_households_6 workplace_location : 918.178 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_7 workplace_location : 918.807 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_8 workplace_location : 917.765 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_8 auto_ownership_simulate : 7.341 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_9 workplace_location : 917.645 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_9 auto_ownership_simulate : 7.346 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_9 free_parking : 9.294 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_10 workplace_location : 917.759 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_10 auto_ownership_simulate : 7.531 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_10 free_parking : 8.104 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_11 workplace_location : 918.244 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_11 auto_ownership_simulate : 8.108 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_11 free_parking : 9.448 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_12 workplace_location : 918.761 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_12 auto_ownership_simulate : 7.034 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_12 free_parking : 9.294 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_12 cdap_simulate : 25.178 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_12 mandatory_tour_frequency : 10.236 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_13 workplace_location : 919.39 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_13 auto_ownership_simulate : 7.62 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_13 free_parking : 8.934 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_13 cdap_simulate : 26.447 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_13 mandatory_tour_frequency : 10.195 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_14 workplace_location : 919.369 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_14 auto_ownership_simulate : 7.065 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_14 free_parking : 8.355 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_14 cdap_simulate : 24.651 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_14 mandatory_tour_frequency : 9.992 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_15 workplace_location : 918.619 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_15 auto_ownership_simulate : 7.747 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_15 free_parking : 8.823 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_15 cdap_simulate : 26.635 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_15 mandatory_tour_frequency : 10.152 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_16 workplace_location : 917.802 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_16 auto_ownership_simulate : 7.143 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_16 free_parking : 7.794 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_16 cdap_simulate : 25.415 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_16 mandatory_tour_frequency : 10.039 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_17 workplace_location : 918.417 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_17 auto_ownership_simulate : 7.674 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_17 free_parking : 9.54 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_17 cdap_simulate : 25.336 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_17 mandatory_tour_frequency : 9.863 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_18 workplace_location : 918.976 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_18 auto_ownership_simulate : 7.534 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_18 free_parking : 8.95 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_18 cdap_simulate : 25.988 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_18 mandatory_tour_frequency : 10.394 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_19 workplace_location : 917.959 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_19 auto_ownership_simulate : 7.799 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_19 free_parking : 9.462 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_19 cdap_simulate : 26.212 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_19 mandatory_tour_frequency : 9.612 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_20 workplace_location : 919.046 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_20 auto_ownership_simulate : 7.61 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_20 free_parking : 9.122 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_20 cdap_simulate : 25.707 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_20 mandatory_tour_frequency : 10.738 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_21 workplace_location : 919.024 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_21 auto_ownership_simulate : 7.422 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_21 free_parking : 8.964 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_21 cdap_simulate : 27.007 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_21 mandatory_tour_frequency : 10.342 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_22 workplace_location : 918.821 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_22 auto_ownership_simulate : 6.893 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_22 free_parking : 8.542 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_22 cdap_simulate : 24.432 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_22 mandatory_tour_frequency : 9.903 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_23 workplace_location : 919.59 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_23 auto_ownership_simulate : 7.31 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_23 free_parking : 9.306 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_23 cdap_simulate : 27.878 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_23 mandatory_tour_frequency : 10.274 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_24 workplace_location : 917.774 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_24 auto_ownership_simulate : 7.485 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_24 free_parking : 8.606 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_24 cdap_simulate : 24.525 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_24 mandatory_tour_frequency : 9.961 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_25 workplace_location : 918.285 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_25 auto_ownership_simulate : 7.982 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_25 free_parking : 9.323 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_25 cdap_simulate : 27.314 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_25 mandatory_tour_frequency : 10.351 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_26 workplace_location : 917.586 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_26 auto_ownership_simulate : 7.656 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_26 free_parking : 9.388 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_26 cdap_simulate : 26.474 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_26 mandatory_tour_frequency : 9.983 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_27 workplace_location : 918.76 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_27 auto_ownership_simulate : 7.607 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_27 free_parking : 9.138 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_27 cdap_simulate : 27.439 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_27 mandatory_tour_frequency : 9.848 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_28 workplace_location : 918.38 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_28 auto_ownership_simulate : 8.112 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_28 free_parking : 9.351 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_28 cdap_simulate : 25.949 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_28 mandatory_tour_frequency : 10.102 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_29 workplace_location : 917.818 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_29 auto_ownership_simulate : 7.846 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_29 free_parking : 9.462 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_29 cdap_simulate : 27.595 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_29 mandatory_tour_frequency : 10.286 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_30 workplace_location : 912.626 seconds (15.2 minutes)
+mp_tasks - MainProcess - mp_households_30 auto_ownership_simulate : 8.077 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_30 free_parking : 9.653 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_30 cdap_simulate : 28.204 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_30 mandatory_tour_frequency : 10.337 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_31 workplace_location : 918.115 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_31 auto_ownership_simulate : 7.565 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_31 free_parking : 9.978 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_31 cdap_simulate : 27.78 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_31 mandatory_tour_frequency : 10.368 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_32 workplace_location : 918.26 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_32 auto_ownership_simulate : 7.456 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_32 free_parking : 8.763 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_32 cdap_simulate : 24.698 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_32 mandatory_tour_frequency : 9.868 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_33 workplace_location : 918.882 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_33 auto_ownership_simulate : 8.14 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_33 free_parking : 9.481 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_33 cdap_simulate : 24.492 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_33 mandatory_tour_frequency : 10.207 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_34 workplace_location : 919.446 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_34 auto_ownership_simulate : 8.155 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_34 free_parking : 9.386 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_34 cdap_simulate : 25.918 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_34 mandatory_tour_frequency : 10.355 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_35 workplace_location : 918.554 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_35 auto_ownership_simulate : 7.206 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_35 free_parking : 9.556 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_35 cdap_simulate : 27.754 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_35 mandatory_tour_frequency : 9.955 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_36 workplace_location : 917.679 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_36 auto_ownership_simulate : 7.188 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_36 free_parking : 8.417 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_36 cdap_simulate : 24.683 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_36 mandatory_tour_frequency : 10.027 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_37 workplace_location : 920.605 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_37 auto_ownership_simulate : 8.031 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_37 free_parking : 8.747 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_37 cdap_simulate : 26.782 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_37 mandatory_tour_frequency : 9.881 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_38 workplace_location : 918.012 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_38 auto_ownership_simulate : 16.888 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_38 free_parking : 7.012 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_38 cdap_simulate : 28.324 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_38 mandatory_tour_frequency : 11.648 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_39 workplace_location : 919.088 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_39 auto_ownership_simulate : 9.434 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_39 free_parking : 13.172 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_39 cdap_simulate : 27.239 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_39 mandatory_tour_frequency : 11.336 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_40 workplace_location : 918.71 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_40 auto_ownership_simulate : 6.924 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_40 free_parking : 8.432 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_40 cdap_simulate : 31.75 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_40 mandatory_tour_frequency : 10.209 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_41 workplace_location : 918.554 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_41 auto_ownership_simulate : 7.95 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_41 free_parking : 9.2 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_41 cdap_simulate : 30.835 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_41 mandatory_tour_frequency : 11.118 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_42 workplace_location : 918.961 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_42 auto_ownership_simulate : 7.263 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_42 free_parking : 9.76 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_42 cdap_simulate : 36.367 seconds (0.6 minutes)
+mp_tasks - MainProcess - mp_households_42 mandatory_tour_frequency : 11.431 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_43 workplace_location : 919.542 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_43 auto_ownership_simulate : 6.893 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_43 free_parking : 9.606 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_43 cdap_simulate : 34.335 seconds (0.6 minutes)
+mp_tasks - MainProcess - mp_households_43 mandatory_tour_frequency : 11.325 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_44 workplace_location : 918.417 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_44 auto_ownership_simulate : 7.206 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_44 free_parking : 8.966 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_44 cdap_simulate : 25.012 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_44 mandatory_tour_frequency : 17.399 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_0 workplace_location : 917.197 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_0 auto_ownership_simulate : 7.735 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_0 free_parking : 9.276 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_0 cdap_simulate : 27.358 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_0 mandatory_tour_frequency : 9.945 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_1 workplace_location : 918.24 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_1 auto_ownership_simulate : 7.221 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_1 free_parking : 9.818 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_1 cdap_simulate : 24.761 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_1 mandatory_tour_frequency : 10.379 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_2 workplace_location : 918.949 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_2 auto_ownership_simulate : 7.717 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_2 free_parking : 9.325 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_2 cdap_simulate : 27.952 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_2 mandatory_tour_frequency : 10.399 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_3 workplace_location : 918.554 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_3 auto_ownership_simulate : 6.956 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_3 free_parking : 8.638 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_3 cdap_simulate : 25.772 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_3 mandatory_tour_frequency : 10.345 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_4 workplace_location : 918.667 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_4 auto_ownership_simulate : 7.503 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_4 free_parking : 9.4 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_4 cdap_simulate : 25.601 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_4 mandatory_tour_frequency : 10.484 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_5 workplace_location : 918.459 seconds (15.3 minutes)
+mp_tasks - MainProcess - mp_households_5 auto_ownership_simulate : 7.765 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_5 free_parking : 9.229 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_5 cdap_simulate : 25.399 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_5 mandatory_tour_frequency : 9.549 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_6 auto_ownership_simulate : 7.424 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_6 free_parking : 8.356 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_6 cdap_simulate : 24.025 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_6 mandatory_tour_frequency : 10.289 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_7 auto_ownership_simulate : 7.869 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_7 free_parking : 8.927 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_7 cdap_simulate : 26.819 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_7 mandatory_tour_frequency : 10.543 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_8 free_parking : 8.621 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_8 cdap_simulate : 24.636 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_8 mandatory_tour_frequency : 10.058 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_9 cdap_simulate : 25.071 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_9 mandatory_tour_frequency : 10.342 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_10 cdap_simulate : 25.215 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_10 mandatory_tour_frequency : 9.989 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_11 cdap_simulate : 24.901 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_11 mandatory_tour_frequency : 10.129 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_28 mandatory_tour_scheduling : 1350.497 seconds (22.5 minutes)
+mp_tasks - MainProcess - mp_households_1 mandatory_tour_scheduling : 1366.572 seconds (22.8 minutes)
+mp_tasks - MainProcess - mp_households_28 joint_tour_frequency : 20.3 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_6 mandatory_tour_scheduling : 1375.667 seconds (22.9 minutes)
+mp_tasks - MainProcess - mp_households_16 mandatory_tour_scheduling : 1386.034 seconds (23.1 minutes)
+mp_tasks - MainProcess - mp_households_20 mandatory_tour_scheduling : 1383.371 seconds (23.1 minutes)
+mp_tasks - MainProcess - mp_households_40 mandatory_tour_scheduling : 1381.481 seconds (23.0 minutes)
+mp_tasks - MainProcess - mp_households_1 joint_tour_frequency : 22.068 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_2 mandatory_tour_scheduling : 1389.173 seconds (23.2 minutes)
+mp_tasks - MainProcess - mp_households_6 joint_tour_frequency : 20.737 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_8 mandatory_tour_scheduling : 1389.481 seconds (23.2 minutes)
+mp_tasks - MainProcess - mp_households_12 mandatory_tour_scheduling : 1386.258 seconds (23.1 minutes)
+mp_tasks - MainProcess - mp_households_12 joint_tour_frequency : 21.054 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_14 mandatory_tour_scheduling : 1386.144 seconds (23.1 minutes)
+mp_tasks - MainProcess - mp_households_14 joint_tour_frequency : 21.647 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_16 joint_tour_frequency : 22.631 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_17 mandatory_tour_scheduling : 1411.659 seconds (23.5 minutes)
+mp_tasks - MainProcess - mp_households_18 mandatory_tour_scheduling : 1416.791 seconds (23.6 minutes)
+mp_tasks - MainProcess - mp_households_20 joint_tour_frequency : 21.818 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_20 joint_tour_composition : 19.692 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_22 mandatory_tour_scheduling : 1400.081 seconds (23.3 minutes)
+mp_tasks - MainProcess - mp_households_22 joint_tour_frequency : 21.27 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_23 mandatory_tour_scheduling : 1430.787 seconds (23.8 minutes)
+mp_tasks - MainProcess - mp_households_24 mandatory_tour_scheduling : 1399.146 seconds (23.3 minutes)
+mp_tasks - MainProcess - mp_households_24 joint_tour_frequency : 20.48 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_24 joint_tour_composition : 19.973 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_25 mandatory_tour_scheduling : 1437.687 seconds (24.0 minutes)
+mp_tasks - MainProcess - mp_households_26 mandatory_tour_scheduling : 1394.841 seconds (23.2 minutes)
+mp_tasks - MainProcess - mp_households_26 joint_tour_frequency : 22.819 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_26 joint_tour_composition : 20.153 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_27 mandatory_tour_scheduling : 1452.395 seconds (24.2 minutes)
+mp_tasks - MainProcess - mp_households_28 joint_tour_composition : 19.769 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_28 joint_tour_participation : 36.007 seconds (0.6 minutes)
+mp_tasks - MainProcess - mp_households_29 mandatory_tour_scheduling : 1448.567 seconds (24.1 minutes)
+mp_tasks - MainProcess - mp_households_30 mandatory_tour_scheduling : 1417.057 seconds (23.6 minutes)
+mp_tasks - MainProcess - mp_households_30 joint_tour_frequency : 21.356 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_30 joint_tour_composition : 19.874 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_31 mandatory_tour_scheduling : 1452.692 seconds (24.2 minutes)
+mp_tasks - MainProcess - mp_households_31 joint_tour_frequency : 21.783 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_32 mandatory_tour_scheduling : 1408.895 seconds (23.5 minutes)
+mp_tasks - MainProcess - mp_households_32 joint_tour_frequency : 21.69 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_32 joint_tour_composition : 20.109 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_32 joint_tour_participation : 28.787 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_33 mandatory_tour_scheduling : 1432.272 seconds (23.9 minutes)
+mp_tasks - MainProcess - mp_households_33 joint_tour_frequency : 21.772 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_33 joint_tour_composition : 20.757 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_34 mandatory_tour_scheduling : 1401.552 seconds (23.4 minutes)
+mp_tasks - MainProcess - mp_households_34 joint_tour_frequency : 21.289 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_34 joint_tour_composition : 19.354 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_34 joint_tour_participation : 33.771 seconds (0.6 minutes)
+mp_tasks - MainProcess - mp_households_35 mandatory_tour_scheduling : 1438.095 seconds (24.0 minutes)
+mp_tasks - MainProcess - mp_households_35 joint_tour_frequency : 22.249 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_35 joint_tour_composition : 20.244 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_35 joint_tour_participation : 29.825 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_36 mandatory_tour_scheduling : 1396.914 seconds (23.3 minutes)
+mp_tasks - MainProcess - mp_households_36 joint_tour_frequency : 21.82 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_36 joint_tour_composition : 21.143 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_36 joint_tour_participation : 28.5 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_37 mandatory_tour_scheduling : 1461.835 seconds (24.4 minutes)
+mp_tasks - MainProcess - mp_households_37 joint_tour_frequency : 21.122 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_37 joint_tour_composition : 20.472 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_37 joint_tour_participation : 30.309 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_38 mandatory_tour_scheduling : 1405.771 seconds (23.4 minutes)
+mp_tasks - MainProcess - mp_households_38 joint_tour_frequency : 20.768 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_38 joint_tour_composition : 19.579 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_38 joint_tour_participation : 29.032 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_39 mandatory_tour_scheduling : 1435.183 seconds (23.9 minutes)
+mp_tasks - MainProcess - mp_households_39 joint_tour_frequency : 21.082 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_39 joint_tour_composition : 20.358 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_39 joint_tour_participation : 28.199 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_40 joint_tour_frequency : 30.208 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_40 joint_tour_composition : 18.431 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_40 joint_tour_participation : 28.658 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_41 mandatory_tour_scheduling : 1426.67 seconds (23.8 minutes)
+mp_tasks - MainProcess - mp_households_41 joint_tour_frequency : 21.293 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_41 joint_tour_composition : 20.382 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_41 joint_tour_participation : 29.37 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_42 mandatory_tour_scheduling : 1449.126 seconds (24.2 minutes)
+mp_tasks - MainProcess - mp_households_42 joint_tour_frequency : 22.474 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_42 joint_tour_composition : 21.051 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_42 joint_tour_participation : 30.718 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_43 mandatory_tour_scheduling : 1400.619 seconds (23.3 minutes)
+mp_tasks - MainProcess - mp_households_43 joint_tour_frequency : 30.115 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_43 joint_tour_composition : 19.864 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_43 joint_tour_participation : 29.809 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_44 mandatory_tour_scheduling : 1448.826 seconds (24.1 minutes)
+mp_tasks - MainProcess - mp_households_44 joint_tour_frequency : 22.212 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_44 joint_tour_composition : 20.738 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_44 joint_tour_participation : 29.956 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_0 mandatory_tour_scheduling : 1451.83 seconds (24.2 minutes)
+mp_tasks - MainProcess - mp_households_0 joint_tour_frequency : 21.383 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_0 joint_tour_composition : 21.114 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_0 joint_tour_participation : 30.453 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_1 joint_tour_composition : 19.966 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_1 joint_tour_participation : 35.52 seconds (0.6 minutes)
+mp_tasks - MainProcess - mp_households_2 joint_tour_frequency : 21.735 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_2 joint_tour_composition : 18.291 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_2 joint_tour_participation : 35.111 seconds (0.6 minutes)
+mp_tasks - MainProcess - mp_households_3 mandatory_tour_scheduling : 1439.822 seconds (24.0 minutes)
+mp_tasks - MainProcess - mp_households_3 joint_tour_frequency : 21.505 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_3 joint_tour_composition : 19.598 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_3 joint_tour_participation : 30.479 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_4 mandatory_tour_scheduling : 1439.104 seconds (24.0 minutes)
+mp_tasks - MainProcess - mp_households_4 joint_tour_frequency : 20.93 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_4 joint_tour_composition : 19.77 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_4 joint_tour_participation : 37.844 seconds (0.6 minutes)
+mp_tasks - MainProcess - mp_households_5 mandatory_tour_scheduling : 1454.526 seconds (24.2 minutes)
+mp_tasks - MainProcess - mp_households_5 joint_tour_frequency : 22.572 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_5 joint_tour_composition : 21.223 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_5 joint_tour_participation : 30.595 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_6 joint_tour_composition : 20.335 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_6 joint_tour_participation : 34.813 seconds (0.6 minutes)
+mp_tasks - MainProcess - mp_households_7 mandatory_tour_scheduling : 1448.522 seconds (24.1 minutes)
+mp_tasks - MainProcess - mp_households_7 joint_tour_frequency : 20.745 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_7 joint_tour_composition : 21.831 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_7 joint_tour_participation : 30.374 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_8 joint_tour_frequency : 22.031 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_8 joint_tour_composition : 18.573 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_8 joint_tour_participation : 30.419 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_9 mandatory_tour_scheduling : 1443.347 seconds (24.1 minutes)
+mp_tasks - MainProcess - mp_households_9 joint_tour_frequency : 21.531 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_9 joint_tour_composition : 20.336 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_9 joint_tour_participation : 30.281 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_10 mandatory_tour_scheduling : 1427.813 seconds (23.8 minutes)
+mp_tasks - MainProcess - mp_households_10 joint_tour_frequency : 21.795 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_10 joint_tour_composition : 18.898 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_10 joint_tour_participation : 28.172 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_11 mandatory_tour_scheduling : 1452.238 seconds (24.2 minutes)
+mp_tasks - MainProcess - mp_households_11 joint_tour_frequency : 21.88 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_11 joint_tour_composition : 22.327 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_11 joint_tour_participation : 37.752 seconds (0.6 minutes)
+mp_tasks - MainProcess - mp_households_12 joint_tour_composition : 20.053 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_12 joint_tour_participation : 27.132 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_13 mandatory_tour_scheduling : 1438.219 seconds (24.0 minutes)
+mp_tasks - MainProcess - mp_households_13 joint_tour_frequency : 20.693 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_13 joint_tour_composition : 20.582 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_13 joint_tour_participation : 40.486 seconds (0.7 minutes)
+mp_tasks - MainProcess - mp_households_14 joint_tour_composition : 19.345 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_14 joint_tour_participation : 28.512 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_15 mandatory_tour_scheduling : 1437.002 seconds (24.0 minutes)
+mp_tasks - MainProcess - mp_households_15 joint_tour_frequency : 22.222 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_15 joint_tour_composition : 20.752 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_15 joint_tour_participation : 36.987 seconds (0.6 minutes)
+mp_tasks - MainProcess - mp_households_16 joint_tour_composition : 20.927 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_16 joint_tour_participation : 36.279 seconds (0.6 minutes)
+mp_tasks - MainProcess - mp_households_17 joint_tour_frequency : 22.409 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_17 joint_tour_composition : 19.698 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_17 joint_tour_participation : 30.331 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_18 joint_tour_frequency : 22.137 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_18 joint_tour_composition : 18.869 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_18 joint_tour_participation : 28.899 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_19 mandatory_tour_scheduling : 1434.334 seconds (23.9 minutes)
+mp_tasks - MainProcess - mp_households_19 joint_tour_frequency : 20.947 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_19 joint_tour_composition : 20.597 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_19 joint_tour_participation : 31.032 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_20 joint_tour_participation : 46.609 seconds (0.8 minutes)
+mp_tasks - MainProcess - mp_households_21 mandatory_tour_scheduling : 1437.512 seconds (24.0 minutes)
+mp_tasks - MainProcess - mp_households_21 joint_tour_frequency : 22.356 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_21 joint_tour_composition : 20.97 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_21 joint_tour_participation : 32.006 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_22 joint_tour_composition : 20.086 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_22 joint_tour_participation : 35.213 seconds (0.6 minutes)
+mp_tasks - MainProcess - mp_households_23 joint_tour_frequency : 21.341 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_23 joint_tour_composition : 20.428 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_23 joint_tour_participation : 29.934 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_24 joint_tour_participation : 29.216 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_24 joint_tour_destination : 413.537 seconds (6.9 minutes)
+mp_tasks - MainProcess - mp_households_25 joint_tour_frequency : 20.961 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_25 joint_tour_composition : 21.173 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_25 joint_tour_participation : 31.477 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_26 joint_tour_participation : 33.54 seconds (0.6 minutes)
+mp_tasks - MainProcess - mp_households_26 joint_tour_destination : 410.262 seconds (6.8 minutes)
+mp_tasks - MainProcess - mp_households_27 joint_tour_frequency : 23.164 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_27 joint_tour_composition : 20.455 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_27 joint_tour_participation : 30.065 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_28 joint_tour_destination : 409.851 seconds (6.8 minutes)
+mp_tasks - MainProcess - mp_households_29 joint_tour_frequency : 21.084 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_29 joint_tour_composition : 20.729 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_29 joint_tour_participation : 29.3 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_30 joint_tour_participation : 34.616 seconds (0.6 minutes)
+mp_tasks - MainProcess - mp_households_30 joint_tour_destination : 422.464 seconds (7.0 minutes)
+mp_tasks - MainProcess - mp_households_31 joint_tour_composition : 21.473 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_31 joint_tour_participation : 31.343 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_32 joint_tour_destination : 422.234 seconds (7.0 minutes)
+mp_tasks - MainProcess - mp_households_33 joint_tour_participation : 29.952 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_33 joint_tour_destination : 431.802 seconds (7.2 minutes)
+mp_tasks - MainProcess - mp_households_34 joint_tour_destination : 421.408 seconds (7.0 minutes)
+mp_tasks - MainProcess - mp_households_35 joint_tour_destination : 437.49 seconds (7.3 minutes)
+mp_tasks - MainProcess - mp_households_36 joint_tour_destination : 414.642 seconds (6.9 minutes)
+mp_tasks - MainProcess - mp_households_38 joint_tour_destination : 413.321 seconds (6.9 minutes)
+mp_tasks - MainProcess - mp_households_39 joint_tour_destination : 436.853 seconds (7.3 minutes)
+mp_tasks - MainProcess - mp_households_40 joint_tour_destination : 407.237 seconds (6.8 minutes)
+mp_tasks - MainProcess - mp_households_41 joint_tour_destination : 433.051 seconds (7.2 minutes)
+mp_tasks - MainProcess - mp_households_42 joint_tour_destination : 437.09 seconds (7.3 minutes)
+mp_tasks - MainProcess - mp_households_43 joint_tour_destination : 417.017 seconds (7.0 minutes)
+mp_tasks - MainProcess - mp_households_44 joint_tour_destination : 433.743 seconds (7.2 minutes)
+mp_tasks - MainProcess - mp_households_0 joint_tour_destination : 432.883 seconds (7.2 minutes)
+mp_tasks - MainProcess - mp_households_1 joint_tour_destination : 411.96 seconds (6.9 minutes)
+mp_tasks - MainProcess - mp_households_2 joint_tour_destination : 411.51 seconds (6.9 minutes)
+mp_tasks - MainProcess - mp_households_3 joint_tour_destination : 432.697 seconds (7.2 minutes)
+mp_tasks - MainProcess - mp_households_4 joint_tour_destination : 417.406 seconds (7.0 minutes)
+mp_tasks - MainProcess - mp_households_5 joint_tour_destination : 444.871 seconds (7.4 minutes)
+mp_tasks - MainProcess - mp_households_6 joint_tour_destination : 402.873 seconds (6.7 minutes)
+mp_tasks - MainProcess - mp_households_7 joint_tour_destination : 427.041 seconds (7.1 minutes)
+mp_tasks - MainProcess - mp_households_8 joint_tour_destination : 411.855 seconds (6.9 minutes)
+mp_tasks - MainProcess - mp_households_9 joint_tour_destination : 432.774 seconds (7.2 minutes)
+mp_tasks - MainProcess - mp_households_10 joint_tour_destination : 422.393 seconds (7.0 minutes)
+mp_tasks - MainProcess - mp_households_11 joint_tour_destination : 437.547 seconds (7.3 minutes)
+mp_tasks - MainProcess - mp_households_12 joint_tour_destination : 414.289 seconds (6.9 minutes)
+mp_tasks - MainProcess - mp_households_13 joint_tour_destination : 441.278 seconds (7.4 minutes)
+mp_tasks - MainProcess - mp_households_14 joint_tour_destination : 423.194 seconds (7.1 minutes)
+mp_tasks - MainProcess - mp_households_15 joint_tour_destination : 430.368 seconds (7.2 minutes)
+mp_tasks - MainProcess - mp_households_16 joint_tour_destination : 421.644 seconds (7.0 minutes)
+mp_tasks - MainProcess - mp_households_17 joint_tour_destination : 431.635 seconds (7.2 minutes)
+mp_tasks - MainProcess - mp_households_18 joint_tour_destination : 424.763 seconds (7.1 minutes)
+mp_tasks - MainProcess - mp_households_19 joint_tour_destination : 438.717 seconds (7.3 minutes)
+mp_tasks - MainProcess - mp_households_20 joint_tour_destination : 426.572 seconds (7.1 minutes)
+mp_tasks - MainProcess - mp_households_21 joint_tour_destination : 423.522 seconds (7.1 minutes)
+mp_tasks - MainProcess - mp_households_22 joint_tour_destination : 423.161 seconds (7.1 minutes)
+mp_tasks - MainProcess - mp_households_23 joint_tour_destination : 442.841 seconds (7.4 minutes)
+mp_tasks - MainProcess - mp_households_25 joint_tour_destination : 431.255 seconds (7.2 minutes)
+mp_tasks - MainProcess - mp_households_27 joint_tour_destination : 432.631 seconds (7.2 minutes)
+mp_tasks - MainProcess - mp_households_28 joint_tour_scheduling : 178.934 seconds (3.0 minutes)
+mp_tasks - MainProcess - mp_households_29 joint_tour_destination : 429.766 seconds (7.2 minutes)
+mp_tasks - MainProcess - mp_households_31 joint_tour_destination : 443.564 seconds (7.4 minutes)
+mp_tasks - MainProcess - mp_households_37 joint_tour_destination : 444.478 seconds (7.4 minutes)
+mp_tasks - MainProcess - mp_households_40 joint_tour_scheduling : 194.757 seconds (3.2 minutes)
+mp_tasks - MainProcess - mp_households_1 joint_tour_scheduling : 177.464 seconds (3.0 minutes)
+mp_tasks - MainProcess - mp_households_2 joint_tour_scheduling : 181.265 seconds (3.0 minutes)
+mp_tasks - MainProcess - mp_households_6 joint_tour_scheduling : 184.212 seconds (3.1 minutes)
+mp_tasks - MainProcess - mp_households_8 joint_tour_scheduling : 179.908 seconds (3.0 minutes)
+mp_tasks - MainProcess - mp_households_12 joint_tour_scheduling : 187.669 seconds (3.1 minutes)
+mp_tasks - MainProcess - mp_households_14 joint_tour_scheduling : 189.697 seconds (3.2 minutes)
+mp_tasks - MainProcess - mp_households_16 joint_tour_scheduling : 195.851 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_20 joint_tour_scheduling : 195.98 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_22 joint_tour_scheduling : 181.26 seconds (3.0 minutes)
+mp_tasks - MainProcess - mp_households_24 joint_tour_scheduling : 187.821 seconds (3.1 minutes)
+mp_tasks - MainProcess - mp_households_26 joint_tour_scheduling : 198.242 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_32 joint_tour_scheduling : 189.354 seconds (3.2 minutes)
+mp_tasks - MainProcess - mp_households_34 joint_tour_scheduling : 196.925 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_36 joint_tour_scheduling : 189.414 seconds (3.2 minutes)
+mp_tasks - MainProcess - mp_households_38 joint_tour_scheduling : 186.033 seconds (3.1 minutes)
+mp_tasks - MainProcess - mp_households_43 joint_tour_scheduling : 197.555 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_10 joint_tour_scheduling : 194.407 seconds (3.2 minutes)
+mp_tasks - MainProcess - mp_households_17 joint_tour_scheduling : 214.455 seconds (3.6 minutes)
+mp_tasks - MainProcess - mp_households_18 joint_tour_scheduling : 186.226 seconds (3.1 minutes)
+mp_tasks - MainProcess - mp_households_30 joint_tour_scheduling : 205.142 seconds (3.4 minutes)
+mp_tasks - MainProcess - mp_households_4 joint_tour_scheduling : 209.542 seconds (3.5 minutes)
+mp_tasks - MainProcess - mp_households_21 joint_tour_scheduling : 216.026 seconds (3.6 minutes)
+mp_tasks - MainProcess - mp_households_33 joint_tour_scheduling : 218.709 seconds (3.6 minutes)
+mp_tasks - MainProcess - mp_households_41 joint_tour_scheduling : 218.856 seconds (3.6 minutes)
+mp_tasks - MainProcess - mp_households_15 joint_tour_scheduling : 211.653 seconds (3.5 minutes)
+mp_tasks - MainProcess - mp_households_23 joint_tour_scheduling : 217.582 seconds (3.6 minutes)
+mp_tasks - MainProcess - mp_households_25 joint_tour_scheduling : 220.487 seconds (3.7 minutes)
+mp_tasks - MainProcess - mp_households_29 joint_tour_scheduling : 219.302 seconds (3.7 minutes)
+mp_tasks - MainProcess - mp_households_35 joint_tour_scheduling : 221.767 seconds (3.7 minutes)
+mp_tasks - MainProcess - mp_households_39 joint_tour_scheduling : 219.094 seconds (3.7 minutes)
+mp_tasks - MainProcess - mp_households_44 joint_tour_scheduling : 223.927 seconds (3.7 minutes)
+mp_tasks - MainProcess - mp_households_0 joint_tour_scheduling : 220.948 seconds (3.7 minutes)
+mp_tasks - MainProcess - mp_households_3 joint_tour_scheduling : 225.13 seconds (3.8 minutes)
+mp_tasks - MainProcess - mp_households_5 joint_tour_scheduling : 219.384 seconds (3.7 minutes)
+mp_tasks - MainProcess - mp_households_7 joint_tour_scheduling : 223.947 seconds (3.7 minutes)
+mp_tasks - MainProcess - mp_households_9 joint_tour_scheduling : 220.356 seconds (3.7 minutes)
+mp_tasks - MainProcess - mp_households_11 joint_tour_scheduling : 227.251 seconds (3.8 minutes)
+mp_tasks - MainProcess - mp_households_13 joint_tour_scheduling : 225.852 seconds (3.8 minutes)
+mp_tasks - MainProcess - mp_households_19 joint_tour_scheduling : 223.832 seconds (3.7 minutes)
+mp_tasks - MainProcess - mp_households_27 joint_tour_scheduling : 222.661 seconds (3.7 minutes)
+mp_tasks - MainProcess - mp_households_31 joint_tour_scheduling : 216.523 seconds (3.6 minutes)
+mp_tasks - MainProcess - mp_households_37 joint_tour_scheduling : 223.711 seconds (3.7 minutes)
+mp_tasks - MainProcess - mp_households_42 joint_tour_scheduling : 221.174 seconds (3.7 minutes)
+mp_tasks - MainProcess - mp_households_28 non_mandatory_tour_frequency : 367.406 seconds (6.1 minutes)
+mp_tasks - MainProcess - mp_households_1 non_mandatory_tour_frequency : 375.082 seconds (6.3 minutes)
+mp_tasks - MainProcess - mp_households_6 non_mandatory_tour_frequency : 371.11 seconds (6.2 minutes)
+mp_tasks - MainProcess - mp_households_8 non_mandatory_tour_frequency : 381.234 seconds (6.4 minutes)
+mp_tasks - MainProcess - mp_households_12 non_mandatory_tour_frequency : 381.473 seconds (6.4 minutes)
+mp_tasks - MainProcess - mp_households_24 non_mandatory_tour_frequency : 376.363 seconds (6.3 minutes)
+mp_tasks - MainProcess - mp_households_40 non_mandatory_tour_frequency : 377.931 seconds (6.3 minutes)
+mp_tasks - MainProcess - mp_households_2 non_mandatory_tour_frequency : 381.425 seconds (6.4 minutes)
+mp_tasks - MainProcess - mp_households_14 non_mandatory_tour_frequency : 383.472 seconds (6.4 minutes)
+mp_tasks - MainProcess - mp_households_16 non_mandatory_tour_frequency : 387.298 seconds (6.5 minutes)
+mp_tasks - MainProcess - mp_households_20 non_mandatory_tour_frequency : 380.08 seconds (6.3 minutes)
+mp_tasks - MainProcess - mp_households_22 non_mandatory_tour_frequency : 392.276 seconds (6.5 minutes)
+mp_tasks - MainProcess - mp_households_26 non_mandatory_tour_frequency : 387.928 seconds (6.5 minutes)
+mp_tasks - MainProcess - mp_households_32 non_mandatory_tour_frequency : 383.199 seconds (6.4 minutes)
+mp_tasks - MainProcess - mp_households_34 non_mandatory_tour_frequency : 383.585 seconds (6.4 minutes)
+mp_tasks - MainProcess - mp_households_36 non_mandatory_tour_frequency : 385.625 seconds (6.4 minutes)
+mp_tasks - MainProcess - mp_households_38 non_mandatory_tour_frequency : 379.784 seconds (6.3 minutes)
+mp_tasks - MainProcess - mp_households_41 non_mandatory_tour_frequency : 359.822 seconds (6.0 minutes)
+mp_tasks - MainProcess - mp_households_43 non_mandatory_tour_frequency : 380.261 seconds (6.3 minutes)
+mp_tasks - MainProcess - mp_households_3 non_mandatory_tour_frequency : 369.249 seconds (6.2 minutes)
+mp_tasks - MainProcess - mp_households_4 non_mandatory_tour_frequency : 392.622 seconds (6.5 minutes)
+mp_tasks - MainProcess - mp_households_9 non_mandatory_tour_frequency : 377.247 seconds (6.3 minutes)
+mp_tasks - MainProcess - mp_households_10 non_mandatory_tour_frequency : 390.173 seconds (6.5 minutes)
+mp_tasks - MainProcess - mp_households_15 non_mandatory_tour_frequency : 374.013 seconds (6.2 minutes)
+mp_tasks - MainProcess - mp_households_17 non_mandatory_tour_frequency : 372.55 seconds (6.2 minutes)
+mp_tasks - MainProcess - mp_households_18 non_mandatory_tour_frequency : 384.431 seconds (6.4 minutes)
+mp_tasks - MainProcess - mp_households_19 non_mandatory_tour_frequency : 378.144 seconds (6.3 minutes)
+mp_tasks - MainProcess - mp_households_21 non_mandatory_tour_frequency : 376.443 seconds (6.3 minutes)
+mp_tasks - MainProcess - mp_households_23 non_mandatory_tour_frequency : 359.687 seconds (6.0 minutes)
+mp_tasks - MainProcess - mp_households_25 non_mandatory_tour_frequency : 372.496 seconds (6.2 minutes)
+mp_tasks - MainProcess - mp_households_27 non_mandatory_tour_frequency : 382.598 seconds (6.4 minutes)
+mp_tasks - MainProcess - mp_households_29 non_mandatory_tour_frequency : 372.038 seconds (6.2 minutes)
+mp_tasks - MainProcess - mp_households_30 non_mandatory_tour_frequency : 388.896 seconds (6.5 minutes)
+mp_tasks - MainProcess - mp_households_31 non_mandatory_tour_frequency : 377.95 seconds (6.3 minutes)
+mp_tasks - MainProcess - mp_households_33 non_mandatory_tour_frequency : 369.448 seconds (6.2 minutes)
+mp_tasks - MainProcess - mp_households_35 non_mandatory_tour_frequency : 377.894 seconds (6.3 minutes)
+mp_tasks - MainProcess - mp_households_37 non_mandatory_tour_frequency : 367.545 seconds (6.1 minutes)
+mp_tasks - MainProcess - mp_households_39 non_mandatory_tour_frequency : 378.303 seconds (6.3 minutes)
+mp_tasks - MainProcess - mp_households_42 non_mandatory_tour_frequency : 376.707 seconds (6.3 minutes)
+mp_tasks - MainProcess - mp_households_44 non_mandatory_tour_frequency : 383.677 seconds (6.4 minutes)
+mp_tasks - MainProcess - mp_households_0 non_mandatory_tour_frequency : 376.837 seconds (6.3 minutes)
+mp_tasks - MainProcess - mp_households_5 non_mandatory_tour_frequency : 379.77 seconds (6.3 minutes)
+mp_tasks - MainProcess - mp_households_7 non_mandatory_tour_frequency : 373.058 seconds (6.2 minutes)
+mp_tasks - MainProcess - mp_households_11 non_mandatory_tour_frequency : 370.955 seconds (6.2 minutes)
+mp_tasks - MainProcess - mp_households_13 non_mandatory_tour_frequency : 379.836 seconds (6.3 minutes)
+mp_tasks - MainProcess - mp_households_28 non_mandatory_tour_destination : 1237.053 seconds (20.6 minutes)
+mp_tasks - MainProcess - mp_households_1 non_mandatory_tour_destination : 1235.606 seconds (20.6 minutes)
+mp_tasks - MainProcess - mp_households_6 non_mandatory_tour_destination : 1240.478 seconds (20.7 minutes)
+mp_tasks - MainProcess - mp_households_17 non_mandatory_tour_destination : 1142.734 seconds (19.0 minutes)
+mp_tasks - MainProcess - mp_households_41 non_mandatory_tour_destination : 1151.465 seconds (19.2 minutes)
+mp_tasks - MainProcess - mp_households_23 non_mandatory_tour_destination : 1161.707 seconds (19.4 minutes)
+mp_tasks - MainProcess - mp_households_33 non_mandatory_tour_destination : 1167.685 seconds (19.5 minutes)
+mp_tasks - MainProcess - mp_households_40 non_mandatory_tour_destination : 1254.509 seconds (20.9 minutes)
+mp_tasks - MainProcess - mp_households_2 non_mandatory_tour_destination : 1250.626 seconds (20.8 minutes)
+mp_tasks - MainProcess - mp_households_15 non_mandatory_tour_destination : 1169.712 seconds (19.5 minutes)
+mp_tasks - MainProcess - mp_households_21 non_mandatory_tour_destination : 1167.232 seconds (19.5 minutes)
+mp_tasks - MainProcess - mp_households_24 non_mandatory_tour_destination : 1261.003 seconds (21.0 minutes)
+mp_tasks - MainProcess - mp_households_25 non_mandatory_tour_destination : 1189.851 seconds (19.8 minutes)
+mp_tasks - MainProcess - mp_households_27 non_mandatory_tour_destination : 1172.24 seconds (19.5 minutes)
+mp_tasks - MainProcess - mp_households_29 non_mandatory_tour_destination : 1195.839 seconds (19.9 minutes)
+mp_tasks - MainProcess - mp_households_31 non_mandatory_tour_destination : 1176.67 seconds (19.6 minutes)
+mp_tasks - MainProcess - mp_households_35 non_mandatory_tour_destination : 1193.532 seconds (19.9 minutes)
+mp_tasks - MainProcess - mp_households_36 non_mandatory_tour_destination : 1283.969 seconds (21.4 minutes)
+mp_tasks - MainProcess - mp_households_37 non_mandatory_tour_destination : 1186.063 seconds (19.8 minutes)
+mp_tasks - MainProcess - mp_households_38 non_mandatory_tour_destination : 1259.968 seconds (21.0 minutes)
+mp_tasks - MainProcess - mp_households_39 non_mandatory_tour_destination : 1187.305 seconds (19.8 minutes)
+mp_tasks - MainProcess - mp_households_42 non_mandatory_tour_destination : 1186.052 seconds (19.8 minutes)
+mp_tasks - MainProcess - mp_households_43 non_mandatory_tour_destination : 1275.462 seconds (21.3 minutes)
+mp_tasks - MainProcess - mp_households_44 non_mandatory_tour_destination : 1184.549 seconds (19.7 minutes)
+mp_tasks - MainProcess - mp_households_0 non_mandatory_tour_destination : 1189.961 seconds (19.8 minutes)
+mp_tasks - MainProcess - mp_households_3 non_mandatory_tour_destination : 1196.198 seconds (19.9 minutes)
+mp_tasks - MainProcess - mp_households_4 non_mandatory_tour_destination : 1253.788 seconds (20.9 minutes)
+mp_tasks - MainProcess - mp_households_5 non_mandatory_tour_destination : 1186.26 seconds (19.8 minutes)
+mp_tasks - MainProcess - mp_households_7 non_mandatory_tour_destination : 1183.226 seconds (19.7 minutes)
+mp_tasks - MainProcess - mp_households_8 non_mandatory_tour_destination : 1282.098 seconds (21.4 minutes)
+mp_tasks - MainProcess - mp_households_9 non_mandatory_tour_destination : 1169.366 seconds (19.5 minutes)
+mp_tasks - MainProcess - mp_households_10 non_mandatory_tour_destination : 1288.522 seconds (21.5 minutes)
+mp_tasks - MainProcess - mp_households_11 non_mandatory_tour_destination : 1199.136 seconds (20.0 minutes)
+mp_tasks - MainProcess - mp_households_12 non_mandatory_tour_destination : 1275.746 seconds (21.3 minutes)
+mp_tasks - MainProcess - mp_households_13 non_mandatory_tour_destination : 1197.291 seconds (20.0 minutes)
+mp_tasks - MainProcess - mp_households_14 non_mandatory_tour_destination : 1284.111 seconds (21.4 minutes)
+mp_tasks - MainProcess - mp_households_16 non_mandatory_tour_destination : 1290.404 seconds (21.5 minutes)
+mp_tasks - MainProcess - mp_households_18 non_mandatory_tour_destination : 1274.094 seconds (21.2 minutes)
+mp_tasks - MainProcess - mp_households_19 non_mandatory_tour_destination : 1186.514 seconds (19.8 minutes)
+mp_tasks - MainProcess - mp_households_20 non_mandatory_tour_destination : 1275.404 seconds (21.3 minutes)
+mp_tasks - MainProcess - mp_households_22 non_mandatory_tour_destination : 1284.493 seconds (21.4 minutes)
+mp_tasks - MainProcess - mp_households_26 non_mandatory_tour_destination : 1284.667 seconds (21.4 minutes)
+mp_tasks - MainProcess - mp_households_30 non_mandatory_tour_destination : 1262.252 seconds (21.0 minutes)
+mp_tasks - MainProcess - mp_households_32 non_mandatory_tour_destination : 1292.2 seconds (21.5 minutes)
+mp_tasks - MainProcess - mp_households_34 non_mandatory_tour_destination : 1283.709 seconds (21.4 minutes)
+mp_tasks - MainProcess - mp_households_1 non_mandatory_tour_scheduling : 706.819 seconds (11.8 minutes)
+mp_tasks - MainProcess - mp_households_6 non_mandatory_tour_scheduling : 702.129 seconds (11.7 minutes)
+mp_tasks - MainProcess - mp_households_28 non_mandatory_tour_scheduling : 731.233 seconds (12.2 minutes)
+mp_tasks - MainProcess - mp_households_41 non_mandatory_tour_scheduling : 744.557 seconds (12.4 minutes)
+mp_tasks - MainProcess - mp_households_8 non_mandatory_tour_scheduling : 703.997 seconds (11.7 minutes)
+mp_tasks - MainProcess - mp_households_12 non_mandatory_tour_scheduling : 708.01 seconds (11.8 minutes)
+mp_tasks - MainProcess - mp_households_38 non_mandatory_tour_scheduling : 708.993 seconds (11.8 minutes)
+mp_tasks - MainProcess - mp_households_33 non_mandatory_tour_scheduling : 743.311 seconds (12.4 minutes)
+mp_tasks - MainProcess - mp_households_36 non_mandatory_tour_scheduling : 696.247 seconds (11.6 minutes)
+mp_tasks - MainProcess - mp_households_14 non_mandatory_tour_scheduling : 705.262 seconds (11.8 minutes)
+mp_tasks - MainProcess - mp_households_20 non_mandatory_tour_scheduling : 705.421 seconds (11.8 minutes)
+mp_tasks - MainProcess - mp_households_25 non_mandatory_tour_scheduling : 728.116 seconds (12.1 minutes)
+mp_tasks - MainProcess - mp_households_9 non_mandatory_tour_scheduling : 743.515 seconds (12.4 minutes)
+mp_tasks - MainProcess - mp_households_26 non_mandatory_tour_scheduling : 710.615 seconds (11.8 minutes)
+mp_tasks - MainProcess - mp_households_43 non_mandatory_tour_scheduling : 702.285 seconds (11.7 minutes)
+mp_tasks - MainProcess - mp_households_2 non_mandatory_tour_scheduling : 778.623 seconds (13.0 minutes)
+mp_tasks - MainProcess - mp_households_16 non_mandatory_tour_scheduling : 718.068 seconds (12.0 minutes)
+mp_tasks - MainProcess - mp_households_18 non_mandatory_tour_scheduling : 715.046 seconds (11.9 minutes)
+mp_tasks - MainProcess - mp_households_22 non_mandatory_tour_scheduling : 724.576 seconds (12.1 minutes)
+mp_tasks - MainProcess - mp_households_29 non_mandatory_tour_scheduling : 747.505 seconds (12.5 minutes)
+mp_tasks - MainProcess - mp_households_30 non_mandatory_tour_scheduling : 696.039 seconds (11.6 minutes)
+mp_tasks - MainProcess - mp_households_35 non_mandatory_tour_scheduling : 738.6 seconds (12.3 minutes)
+mp_tasks - MainProcess - mp_households_39 non_mandatory_tour_scheduling : 743.406 seconds (12.4 minutes)
+mp_tasks - MainProcess - mp_households_40 non_mandatory_tour_scheduling : 788.652 seconds (13.1 minutes)
+mp_tasks - MainProcess - mp_households_42 non_mandatory_tour_scheduling : 732.621 seconds (12.2 minutes)
+mp_tasks - MainProcess - mp_households_44 non_mandatory_tour_scheduling : 745.698 seconds (12.4 minutes)
+mp_tasks - MainProcess - mp_households_0 non_mandatory_tour_scheduling : 748.433 seconds (12.5 minutes)
+mp_tasks - MainProcess - mp_households_10 non_mandatory_tour_scheduling : 709.331 seconds (11.8 minutes)
+mp_tasks - MainProcess - mp_households_11 non_mandatory_tour_scheduling : 745.79 seconds (12.4 minutes)
+mp_tasks - MainProcess - mp_households_13 non_mandatory_tour_scheduling : 744.303 seconds (12.4 minutes)
+mp_tasks - MainProcess - mp_households_17 non_mandatory_tour_scheduling : 850.821 seconds (14.2 minutes)
+mp_tasks - MainProcess - mp_households_23 non_mandatory_tour_scheduling : 840.12 seconds (14.0 minutes)
+mp_tasks - MainProcess - mp_households_24 non_mandatory_tour_scheduling : 810.277 seconds (13.5 minutes)
+mp_tasks - MainProcess - mp_households_34 non_mandatory_tour_scheduling : 766.881 seconds (12.8 minutes)
+mp_tasks - MainProcess - mp_households_15 non_mandatory_tour_scheduling : 829.208 seconds (13.8 minutes)
+mp_tasks - MainProcess - mp_households_21 non_mandatory_tour_scheduling : 839.347 seconds (14.0 minutes)
+mp_tasks - MainProcess - mp_households_28 tour_mode_choice_simulate : 190.507 seconds (3.2 minutes)
+mp_tasks - MainProcess - mp_households_1 tour_mode_choice_simulate : 195.899 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_6 tour_mode_choice_simulate : 197.595 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_4 non_mandatory_tour_scheduling : 762.351 seconds (12.7 minutes)
+mp_tasks - MainProcess - mp_households_7 non_mandatory_tour_scheduling : 835.292 seconds (13.9 minutes)
+mp_tasks - MainProcess - mp_households_32 non_mandatory_tour_scheduling : 803.024 seconds (13.4 minutes)
+mp_tasks - MainProcess - mp_households_1 atwork_subtour_frequency : 20.231 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_6 atwork_subtour_frequency : 20.232 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_19 non_mandatory_tour_scheduling : 837.472 seconds (14.0 minutes)
+mp_tasks - MainProcess - mp_households_28 atwork_subtour_frequency : 28.02 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_3 non_mandatory_tour_scheduling : 845.841 seconds (14.1 minutes)
+mp_tasks - MainProcess - mp_households_5 non_mandatory_tour_scheduling : 827.426 seconds (13.8 minutes)
+mp_tasks - MainProcess - mp_households_27 non_mandatory_tour_scheduling : 846.487 seconds (14.1 minutes)
+mp_tasks - MainProcess - mp_households_31 non_mandatory_tour_scheduling : 849.075 seconds (14.2 minutes)
+mp_tasks - MainProcess - mp_households_37 non_mandatory_tour_scheduling : 842.259 seconds (14.0 minutes)
+mp_tasks - MainProcess - mp_households_41 tour_mode_choice_simulate : 193.214 seconds (3.2 minutes)
+mp_tasks - MainProcess - mp_households_8 tour_mode_choice_simulate : 194.771 seconds (3.2 minutes)
+mp_tasks - MainProcess - mp_households_12 tour_mode_choice_simulate : 198.744 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_41 atwork_subtour_frequency : 22.087 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_36 tour_mode_choice_simulate : 196.156 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_8 atwork_subtour_frequency : 21.281 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_14 tour_mode_choice_simulate : 199.26 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_33 tour_mode_choice_simulate : 199.766 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_38 tour_mode_choice_simulate : 204.724 seconds (3.4 minutes)
+mp_tasks - MainProcess - mp_households_12 atwork_subtour_frequency : 21.547 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_33 atwork_subtour_frequency : 19.094 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_36 atwork_subtour_frequency : 22.003 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_38 atwork_subtour_frequency : 21.045 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_43 tour_mode_choice_simulate : 191.011 seconds (3.2 minutes)
+mp_tasks - MainProcess - mp_households_2 tour_mode_choice_simulate : 195.638 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_9 tour_mode_choice_simulate : 198.144 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_14 atwork_subtour_frequency : 22.212 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_16 tour_mode_choice_simulate : 195.919 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_18 tour_mode_choice_simulate : 207.814 seconds (3.5 minutes)
+mp_tasks - MainProcess - mp_households_20 tour_mode_choice_simulate : 202.198 seconds (3.4 minutes)
+mp_tasks - MainProcess - mp_households_20 atwork_subtour_frequency : 22.066 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_22 tour_mode_choice_simulate : 199.611 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_22 atwork_subtour_frequency : 24.923 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_25 tour_mode_choice_simulate : 207.747 seconds (3.5 minutes)
+mp_tasks - MainProcess - mp_households_25 atwork_subtour_frequency : 23.643 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_26 tour_mode_choice_simulate : 208.284 seconds (3.5 minutes)
+mp_tasks - MainProcess - mp_households_26 atwork_subtour_frequency : 23.889 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_29 tour_mode_choice_simulate : 203.48 seconds (3.4 minutes)
+mp_tasks - MainProcess - mp_households_29 atwork_subtour_frequency : 24.505 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_30 tour_mode_choice_simulate : 202.741 seconds (3.4 minutes)
+mp_tasks - MainProcess - mp_households_30 atwork_subtour_frequency : 24.63 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_34 tour_mode_choice_simulate : 217.221 seconds (3.6 minutes)
+mp_tasks - MainProcess - mp_households_34 atwork_subtour_frequency : 26.065 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_35 tour_mode_choice_simulate : 200.932 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_35 atwork_subtour_frequency : 24.176 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_39 tour_mode_choice_simulate : 202.382 seconds (3.4 minutes)
+mp_tasks - MainProcess - mp_households_39 atwork_subtour_frequency : 24.442 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_40 tour_mode_choice_simulate : 197.183 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_40 atwork_subtour_frequency : 24.673 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_41 atwork_subtour_destination : 175.899 seconds (2.9 minutes)
+mp_tasks - MainProcess - mp_households_42 tour_mode_choice_simulate : 207.674 seconds (3.5 minutes)
+mp_tasks - MainProcess - mp_households_42 atwork_subtour_frequency : 24.748 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_43 atwork_subtour_frequency : 31.386 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_44 tour_mode_choice_simulate : 204.359 seconds (3.4 minutes)
+mp_tasks - MainProcess - mp_households_44 atwork_subtour_frequency : 24.252 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_0 tour_mode_choice_simulate : 195.954 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_0 atwork_subtour_frequency : 23.759 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_1 atwork_subtour_destination : 179.69 seconds (3.0 minutes)
+mp_tasks - MainProcess - mp_households_2 atwork_subtour_frequency : 24.272 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_3 tour_mode_choice_simulate : 221.307 seconds (3.7 minutes)
+mp_tasks - MainProcess - mp_households_3 atwork_subtour_frequency : 24.486 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_4 tour_mode_choice_simulate : 227.321 seconds (3.8 minutes)
+mp_tasks - MainProcess - mp_households_4 atwork_subtour_frequency : 24.874 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_5 tour_mode_choice_simulate : 225.603 seconds (3.8 minutes)
+mp_tasks - MainProcess - mp_households_5 atwork_subtour_frequency : 25.218 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_6 atwork_subtour_destination : 170.19 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_6 atwork_subtour_scheduling : 160.969 seconds (2.7 minutes)
+mp_tasks - MainProcess - mp_households_6 atwork_subtour_mode_choice : 28.632 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_7 tour_mode_choice_simulate : 211.094 seconds (3.5 minutes)
+mp_tasks - MainProcess - mp_households_7 atwork_subtour_frequency : 31.88 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_8 atwork_subtour_destination : 195.944 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_9 atwork_subtour_frequency : 22.69 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_9 atwork_subtour_destination : 189.033 seconds (3.2 minutes)
+mp_tasks - MainProcess - mp_households_10 tour_mode_choice_simulate : 199.346 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_10 atwork_subtour_frequency : 25.559 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_10 atwork_subtour_destination : 213.29 seconds (3.6 minutes)
+mp_tasks - MainProcess - mp_households_11 tour_mode_choice_simulate : 199.656 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_11 atwork_subtour_frequency : 25.825 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_11 atwork_subtour_destination : 206.624 seconds (3.4 minutes)
+mp_tasks - MainProcess - mp_households_12 atwork_subtour_destination : 183.58 seconds (3.1 minutes)
+mp_tasks - MainProcess - mp_households_12 atwork_subtour_scheduling : 148.538 seconds (2.5 minutes)
+mp_tasks - MainProcess - mp_households_13 tour_mode_choice_simulate : 202.915 seconds (3.4 minutes)
+mp_tasks - MainProcess - mp_households_13 atwork_subtour_frequency : 25.45 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_13 atwork_subtour_destination : 205.186 seconds (3.4 minutes)
+mp_tasks - MainProcess - mp_households_14 atwork_subtour_destination : 197.947 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_14 atwork_subtour_scheduling : 139.045 seconds (2.3 minutes)
+mp_tasks - MainProcess - mp_households_15 tour_mode_choice_simulate : 206.759 seconds (3.4 minutes)
+mp_tasks - MainProcess - mp_households_15 atwork_subtour_frequency : 24.806 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_15 atwork_subtour_destination : 208.634 seconds (3.5 minutes)
+mp_tasks - MainProcess - mp_households_16 atwork_subtour_frequency : 24.017 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_16 atwork_subtour_destination : 203.498 seconds (3.4 minutes)
+mp_tasks - MainProcess - mp_households_17 tour_mode_choice_simulate : 199.6 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_17 atwork_subtour_frequency : 24.047 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_17 atwork_subtour_destination : 199.88 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_18 atwork_subtour_frequency : 25.652 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_18 atwork_subtour_destination : 211.282 seconds (3.5 minutes)
+mp_tasks - MainProcess - mp_households_19 tour_mode_choice_simulate : 213.118 seconds (3.6 minutes)
+mp_tasks - MainProcess - mp_households_19 atwork_subtour_frequency : 25.153 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_19 atwork_subtour_destination : 198.1 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_20 atwork_subtour_destination : 199.258 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_20 atwork_subtour_scheduling : 151.137 seconds (2.5 minutes)
+mp_tasks - MainProcess - mp_households_21 tour_mode_choice_simulate : 206.738 seconds (3.4 minutes)
+mp_tasks - MainProcess - mp_households_21 atwork_subtour_frequency : 25.0 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_21 atwork_subtour_destination : 208.514 seconds (3.5 minutes)
+mp_tasks - MainProcess - mp_households_22 atwork_subtour_destination : 198.342 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_22 atwork_subtour_scheduling : 144.221 seconds (2.4 minutes)
+mp_tasks - MainProcess - mp_households_23 tour_mode_choice_simulate : 198.697 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_23 atwork_subtour_frequency : 26.55 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_23 atwork_subtour_destination : 208.74 seconds (3.5 minutes)
+mp_tasks - MainProcess - mp_households_24 tour_mode_choice_simulate : 215.949 seconds (3.6 minutes)
+mp_tasks - MainProcess - mp_households_24 atwork_subtour_frequency : 27.235 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_24 atwork_subtour_destination : 208.223 seconds (3.5 minutes)
+mp_tasks - MainProcess - mp_households_25 atwork_subtour_destination : 176.418 seconds (2.9 minutes)
+mp_tasks - MainProcess - mp_households_25 atwork_subtour_scheduling : 154.083 seconds (2.6 minutes)
+mp_tasks - MainProcess - mp_households_25 atwork_subtour_mode_choice : 29.39 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_26 atwork_subtour_destination : 199.125 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_26 atwork_subtour_scheduling : 146.492 seconds (2.4 minutes)
+mp_tasks - MainProcess - mp_households_26 atwork_subtour_mode_choice : 27.76 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_27 tour_mode_choice_simulate : 214.014 seconds (3.6 minutes)
+mp_tasks - MainProcess - mp_households_27 atwork_subtour_frequency : 24.866 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_27 atwork_subtour_destination : 199.584 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_28 atwork_subtour_destination : 173.249 seconds (2.9 minutes)
+mp_tasks - MainProcess - mp_households_28 atwork_subtour_scheduling : 146.442 seconds (2.4 minutes)
+mp_tasks - MainProcess - mp_households_28 atwork_subtour_mode_choice : 28.558 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_28 stop_frequency : 172.955 seconds (2.9 minutes)
+mp_tasks - MainProcess - mp_households_28 trip_purpose : 19.628 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_29 atwork_subtour_destination : 193.757 seconds (3.2 minutes)
+mp_tasks - MainProcess - mp_households_29 atwork_subtour_scheduling : 147.209 seconds (2.5 minutes)
+mp_tasks - MainProcess - mp_households_29 atwork_subtour_mode_choice : 29.845 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_30 atwork_subtour_destination : 197.563 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_30 atwork_subtour_scheduling : 149.772 seconds (2.5 minutes)
+mp_tasks - MainProcess - mp_households_30 atwork_subtour_mode_choice : 29.087 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_31 tour_mode_choice_simulate : 217.675 seconds (3.6 minutes)
+mp_tasks - MainProcess - mp_households_31 atwork_subtour_frequency : 25.156 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_31 atwork_subtour_destination : 193.203 seconds (3.2 minutes)
+mp_tasks - MainProcess - mp_households_32 tour_mode_choice_simulate : 225.502 seconds (3.8 minutes)
+mp_tasks - MainProcess - mp_households_32 atwork_subtour_frequency : 23.182 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_32 atwork_subtour_destination : 193.035 seconds (3.2 minutes)
+mp_tasks - MainProcess - mp_households_32 atwork_subtour_scheduling : 135.566 seconds (2.3 minutes)
+mp_tasks - MainProcess - mp_households_33 atwork_subtour_destination : 174.444 seconds (2.9 minutes)
+mp_tasks - MainProcess - mp_households_33 atwork_subtour_scheduling : 143.518 seconds (2.4 minutes)
+mp_tasks - MainProcess - mp_households_33 atwork_subtour_mode_choice : 36.331 seconds (0.6 minutes)
+mp_tasks - MainProcess - mp_households_34 atwork_subtour_destination : 189.347 seconds (3.2 minutes)
+mp_tasks - MainProcess - mp_households_34 atwork_subtour_scheduling : 147.358 seconds (2.5 minutes)
+mp_tasks - MainProcess - mp_households_34 atwork_subtour_mode_choice : 26.856 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_35 atwork_subtour_destination : 188.029 seconds (3.1 minutes)
+mp_tasks - MainProcess - mp_households_35 atwork_subtour_scheduling : 146.552 seconds (2.4 minutes)
+mp_tasks - MainProcess - mp_households_35 atwork_subtour_mode_choice : 29.463 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_36 atwork_subtour_destination : 190.582 seconds (3.2 minutes)
+mp_tasks - MainProcess - mp_households_36 atwork_subtour_scheduling : 142.178 seconds (2.4 minutes)
+mp_tasks - MainProcess - mp_households_36 atwork_subtour_mode_choice : 28.133 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_36 stop_frequency : 164.145 seconds (2.7 minutes)
+mp_tasks - MainProcess - mp_households_36 trip_purpose : 20.847 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_37 tour_mode_choice_simulate : 226.478 seconds (3.8 minutes)
+mp_tasks - MainProcess - mp_households_37 atwork_subtour_frequency : 23.628 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_37 atwork_subtour_destination : 190.767 seconds (3.2 minutes)
+mp_tasks - MainProcess - mp_households_37 atwork_subtour_scheduling : 141.279 seconds (2.4 minutes)
+mp_tasks - MainProcess - mp_households_37 atwork_subtour_mode_choice : 28.953 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_38 atwork_subtour_destination : 191.828 seconds (3.2 minutes)
+mp_tasks - MainProcess - mp_households_38 atwork_subtour_scheduling : 138.99 seconds (2.3 minutes)
+mp_tasks - MainProcess - mp_households_38 atwork_subtour_mode_choice : 29.14 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_38 stop_frequency : 167.356 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_38 trip_purpose : 21.723 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_39 atwork_subtour_destination : 188.832 seconds (3.1 minutes)
+mp_tasks - MainProcess - mp_households_39 atwork_subtour_scheduling : 144.409 seconds (2.4 minutes)
+mp_tasks - MainProcess - mp_households_39 atwork_subtour_mode_choice : 33.32 seconds (0.6 minutes)
+mp_tasks - MainProcess - mp_households_39 stop_frequency : 165.197 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_39 trip_purpose : 21.703 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_40 atwork_subtour_destination : 198.157 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_40 atwork_subtour_scheduling : 140.215 seconds (2.3 minutes)
+mp_tasks - MainProcess - mp_households_40 atwork_subtour_mode_choice : 32.024 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_40 stop_frequency : 163.582 seconds (2.7 minutes)
+mp_tasks - MainProcess - mp_households_40 trip_purpose : 23.353 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_41 atwork_subtour_scheduling : 147.27 seconds (2.5 minutes)
+mp_tasks - MainProcess - mp_households_41 atwork_subtour_mode_choice : 28.612 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_41 stop_frequency : 174.172 seconds (2.9 minutes)
+mp_tasks - MainProcess - mp_households_41 trip_purpose : 22.004 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_42 atwork_subtour_destination : 197.429 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_42 atwork_subtour_scheduling : 149.74 seconds (2.5 minutes)
+mp_tasks - MainProcess - mp_households_42 atwork_subtour_mode_choice : 25.01 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_42 stop_frequency : 163.611 seconds (2.7 minutes)
+mp_tasks - MainProcess - mp_households_42 trip_purpose : 22.88 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_43 atwork_subtour_destination : 195.963 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_43 atwork_subtour_scheduling : 140.391 seconds (2.3 minutes)
+mp_tasks - MainProcess - mp_households_43 atwork_subtour_mode_choice : 28.842 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_43 stop_frequency : 169.548 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_43 trip_purpose : 22.602 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_44 atwork_subtour_destination : 197.079 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_44 atwork_subtour_scheduling : 143.506 seconds (2.4 minutes)
+mp_tasks - MainProcess - mp_households_44 atwork_subtour_mode_choice : 33.655 seconds (0.6 minutes)
+mp_tasks - MainProcess - mp_households_44 stop_frequency : 165.852 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_44 trip_purpose : 22.692 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_0 atwork_subtour_destination : 206.395 seconds (3.4 minutes)
+mp_tasks - MainProcess - mp_households_0 atwork_subtour_scheduling : 143.759 seconds (2.4 minutes)
+mp_tasks - MainProcess - mp_households_0 atwork_subtour_mode_choice : 34.112 seconds (0.6 minutes)
+mp_tasks - MainProcess - mp_households_0 stop_frequency : 165.526 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_0 trip_purpose : 23.133 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_1 atwork_subtour_scheduling : 148.123 seconds (2.5 minutes)
+mp_tasks - MainProcess - mp_households_1 atwork_subtour_mode_choice : 29.118 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_1 stop_frequency : 165.449 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_1 trip_purpose : 27.665 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_2 atwork_subtour_destination : 207.698 seconds (3.5 minutes)
+mp_tasks - MainProcess - mp_households_2 atwork_subtour_scheduling : 138.883 seconds (2.3 minutes)
+mp_tasks - MainProcess - mp_households_2 atwork_subtour_mode_choice : 28.662 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_2 stop_frequency : 166.168 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_2 trip_purpose : 21.877 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_3 atwork_subtour_destination : 187.974 seconds (3.1 minutes)
+mp_tasks - MainProcess - mp_households_3 atwork_subtour_scheduling : 149.671 seconds (2.5 minutes)
+mp_tasks - MainProcess - mp_households_3 atwork_subtour_mode_choice : 29.081 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_3 stop_frequency : 168.751 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_3 trip_purpose : 22.626 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_4 atwork_subtour_destination : 188.089 seconds (3.1 minutes)
+mp_tasks - MainProcess - mp_households_4 atwork_subtour_scheduling : 144.944 seconds (2.4 minutes)
+mp_tasks - MainProcess - mp_households_4 atwork_subtour_mode_choice : 29.465 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_4 stop_frequency : 164.818 seconds (2.7 minutes)
+mp_tasks - MainProcess - mp_households_4 trip_purpose : 22.023 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_5 atwork_subtour_destination : 184.066 seconds (3.1 minutes)
+mp_tasks - MainProcess - mp_households_5 atwork_subtour_scheduling : 150.247 seconds (2.5 minutes)
+mp_tasks - MainProcess - mp_households_5 atwork_subtour_mode_choice : 27.913 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_5 stop_frequency : 171.716 seconds (2.9 minutes)
+mp_tasks - MainProcess - mp_households_5 trip_purpose : 22.383 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_6 stop_frequency : 164.245 seconds (2.7 minutes)
+mp_tasks - MainProcess - mp_households_6 trip_purpose : 21.145 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_7 atwork_subtour_destination : 191.209 seconds (3.2 minutes)
+mp_tasks - MainProcess - mp_households_7 atwork_subtour_scheduling : 149.999 seconds (2.5 minutes)
+mp_tasks - MainProcess - mp_households_7 atwork_subtour_mode_choice : 29.147 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_7 stop_frequency : 169.014 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_7 trip_purpose : 22.53 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_8 atwork_subtour_scheduling : 142.818 seconds (2.4 minutes)
+mp_tasks - MainProcess - mp_households_8 atwork_subtour_mode_choice : 29.818 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_8 stop_frequency : 166.292 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_8 trip_purpose : 20.961 seconds (0.3 minutes)
+mp_tasks - MainProcess - mp_households_9 atwork_subtour_scheduling : 140.967 seconds (2.3 minutes)
+mp_tasks - MainProcess - mp_households_9 atwork_subtour_mode_choice : 29.689 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_9 stop_frequency : 170.567 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_9 trip_purpose : 23.203 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_10 atwork_subtour_scheduling : 142.001 seconds (2.4 minutes)
+mp_tasks - MainProcess - mp_households_10 atwork_subtour_mode_choice : 27.381 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_10 stop_frequency : 169.528 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_10 trip_purpose : 23.033 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_11 atwork_subtour_scheduling : 146.251 seconds (2.4 minutes)
+mp_tasks - MainProcess - mp_households_11 atwork_subtour_mode_choice : 28.635 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_11 stop_frequency : 176.75 seconds (2.9 minutes)
+mp_tasks - MainProcess - mp_households_11 trip_purpose : 23.882 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_12 atwork_subtour_mode_choice : 28.162 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_12 stop_frequency : 156.371 seconds (2.6 minutes)
+mp_tasks - MainProcess - mp_households_12 trip_purpose : 28.661 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_13 atwork_subtour_scheduling : 141.213 seconds (2.4 minutes)
+mp_tasks - MainProcess - mp_households_13 atwork_subtour_mode_choice : 24.27 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_13 stop_frequency : 174.928 seconds (2.9 minutes)
+mp_tasks - MainProcess - mp_households_13 trip_purpose : 23.589 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_14 atwork_subtour_mode_choice : 30.154 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_14 stop_frequency : 159.17 seconds (2.7 minutes)
+mp_tasks - MainProcess - mp_households_14 trip_purpose : 28.786 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_15 atwork_subtour_scheduling : 139.683 seconds (2.3 minutes)
+mp_tasks - MainProcess - mp_households_15 atwork_subtour_mode_choice : 29.145 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_15 stop_frequency : 174.79 seconds (2.9 minutes)
+mp_tasks - MainProcess - mp_households_15 trip_purpose : 23.673 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_16 atwork_subtour_scheduling : 135.333 seconds (2.3 minutes)
+mp_tasks - MainProcess - mp_households_16 atwork_subtour_mode_choice : 27.769 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_16 stop_frequency : 168.928 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_16 trip_purpose : 21.501 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_17 atwork_subtour_scheduling : 142.677 seconds (2.4 minutes)
+mp_tasks - MainProcess - mp_households_17 atwork_subtour_mode_choice : 28.101 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_17 stop_frequency : 174.949 seconds (2.9 minutes)
+mp_tasks - MainProcess - mp_households_17 trip_purpose : 23.794 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_18 atwork_subtour_scheduling : 138.836 seconds (2.3 minutes)
+mp_tasks - MainProcess - mp_households_18 atwork_subtour_mode_choice : 28.589 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_18 stop_frequency : 173.034 seconds (2.9 minutes)
+mp_tasks - MainProcess - mp_households_18 trip_purpose : 21.71 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_19 atwork_subtour_scheduling : 142.148 seconds (2.4 minutes)
+mp_tasks - MainProcess - mp_households_19 atwork_subtour_mode_choice : 29.698 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_19 stop_frequency : 176.535 seconds (2.9 minutes)
+mp_tasks - MainProcess - mp_households_19 trip_purpose : 22.855 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_20 atwork_subtour_mode_choice : 29.687 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_20 stop_frequency : 162.175 seconds (2.7 minutes)
+mp_tasks - MainProcess - mp_households_20 trip_purpose : 31.389 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_21 atwork_subtour_scheduling : 138.637 seconds (2.3 minutes)
+mp_tasks - MainProcess - mp_households_21 atwork_subtour_mode_choice : 28.696 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_21 stop_frequency : 175.328 seconds (2.9 minutes)
+mp_tasks - MainProcess - mp_households_21 trip_purpose : 22.236 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_22 atwork_subtour_mode_choice : 27.366 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_22 stop_frequency : 163.958 seconds (2.7 minutes)
+mp_tasks - MainProcess - mp_households_22 trip_purpose : 27.666 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_23 atwork_subtour_scheduling : 138.843 seconds (2.3 minutes)
+mp_tasks - MainProcess - mp_households_23 atwork_subtour_mode_choice : 28.238 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_23 stop_frequency : 181.387 seconds (3.0 minutes)
+mp_tasks - MainProcess - mp_households_23 trip_purpose : 22.27 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_24 atwork_subtour_scheduling : 132.194 seconds (2.2 minutes)
+mp_tasks - MainProcess - mp_households_24 atwork_subtour_mode_choice : 27.138 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_24 stop_frequency : 169.903 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_24 trip_purpose : 23.494 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_25 stop_frequency : 159.583 seconds (2.7 minutes)
+mp_tasks - MainProcess - mp_households_25 trip_purpose : 21.804 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_26 stop_frequency : 163.494 seconds (2.7 minutes)
+mp_tasks - MainProcess - mp_households_26 trip_purpose : 22.784 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_27 atwork_subtour_scheduling : 142.094 seconds (2.4 minutes)
+mp_tasks - MainProcess - mp_households_27 atwork_subtour_mode_choice : 28.039 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_27 stop_frequency : 182.238 seconds (3.0 minutes)
+mp_tasks - MainProcess - mp_households_27 trip_purpose : 22.446 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_29 stop_frequency : 165.139 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_29 trip_purpose : 22.708 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_30 stop_frequency : 165.316 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_30 trip_purpose : 21.562 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_31 atwork_subtour_scheduling : 141.967 seconds (2.4 minutes)
+mp_tasks - MainProcess - mp_households_31 atwork_subtour_mode_choice : 28.697 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_31 stop_frequency : 177.442 seconds (3.0 minutes)
+mp_tasks - MainProcess - mp_households_31 trip_purpose : 22.266 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_32 atwork_subtour_mode_choice : 29.064 seconds (0.5 minutes)
+mp_tasks - MainProcess - mp_households_32 stop_frequency : 177.407 seconds (3.0 minutes)
+mp_tasks - MainProcess - mp_households_32 trip_purpose : 22.611 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_33 stop_frequency : 167.538 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_33 trip_purpose : 21.88 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_34 stop_frequency : 166.605 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_34 trip_purpose : 22.402 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_35 stop_frequency : 167.041 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_35 trip_purpose : 22.969 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_37 stop_frequency : 179.837 seconds (3.0 minutes)
+mp_tasks - MainProcess - mp_households_37 trip_purpose : 22.561 seconds (0.4 minutes)
+mp_tasks - MainProcess - mp_households_41 trip_destination : 5054.796 seconds (84.2 minutes)
+mp_tasks - MainProcess - mp_households_41 trip_purpose_and_destination : 8.236 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_33 trip_destination : 5046.701 seconds (84.1 minutes)
+mp_tasks - MainProcess - mp_households_33 trip_purpose_and_destination : 8.283 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_25 trip_destination : 5032.669 seconds (83.9 minutes)
+mp_tasks - MainProcess - mp_households_25 trip_purpose_and_destination : 8.672 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_9 trip_destination : 5039.505 seconds (84.0 minutes)
+mp_tasks - MainProcess - mp_households_35 trip_destination : 5027.572 seconds (83.8 minutes)
+mp_tasks - MainProcess - mp_households_35 trip_purpose_and_destination : 8.367 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_39 trip_destination : 5053.641 seconds (84.2 minutes)
+mp_tasks - MainProcess - mp_households_39 trip_purpose_and_destination : 8.388 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_13 trip_destination : 5025.265 seconds (83.8 minutes)
+mp_tasks - MainProcess - mp_households_0 trip_destination : 5046.865 seconds (84.1 minutes)
+mp_tasks - MainProcess - mp_households_13 trip_purpose_and_destination : 8.436 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_0 trip_purpose_and_destination : 8.009 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_23 trip_destination : 5025.12 seconds (83.8 minutes)
+mp_tasks - MainProcess - mp_households_29 trip_destination : 5083.642 seconds (84.7 minutes)
+mp_tasks - MainProcess - mp_households_28 trip_destination : 5249.272 seconds (87.5 minutes)
+mp_tasks - MainProcess - mp_households_29 trip_purpose_and_destination : 8.086 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_42 trip_destination : 5087.321 seconds (84.8 minutes)
+mp_tasks - MainProcess - mp_households_1 trip_destination : 5248.247 seconds (87.5 minutes)
+mp_tasks - MainProcess - mp_households_23 trip_purpose_and_destination : 8.739 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_28 trip_purpose_and_destination : 9.787 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_42 trip_purpose_and_destination : 8.253 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_12 trip_destination : 5199.571 seconds (86.7 minutes)
+mp_tasks - MainProcess - mp_households_17 trip_destination : 5096.365 seconds (84.9 minutes)
+mp_tasks - MainProcess - mp_households_17 trip_purpose_and_destination : 8.575 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_44 trip_destination : 5102.134 seconds (85.0 minutes)
+mp_tasks - MainProcess - mp_households_6 trip_destination : 5285.74 seconds (88.1 minutes)
+mp_tasks - MainProcess - mp_households_11 trip_destination : 5078.596 seconds (84.6 minutes)
+mp_tasks - MainProcess - mp_households_12 trip_purpose_and_destination : 9.784 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_15 trip_destination : 5058.676 seconds (84.3 minutes)
+mp_tasks - MainProcess - mp_households_15 trip_purpose_and_destination : 8.6 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_21 trip_destination : 5072.312 seconds (84.5 minutes)
+mp_tasks - MainProcess - mp_households_36 trip_destination : 5213.511 seconds (86.9 minutes)
+mp_tasks - MainProcess - mp_households_6 trip_purpose_and_destination : 9.565 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_8 trip_destination : 5238.827 seconds (87.3 minutes)
+mp_tasks - MainProcess - mp_households_11 trip_purpose_and_destination : 8.986 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_14 trip_destination : 5202.698 seconds (86.7 minutes)
+mp_tasks - MainProcess - mp_households_14 trip_purpose_and_destination : 9.604 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_21 trip_purpose_and_destination : 9.089 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_3 trip_destination : 5047.474 seconds (84.1 minutes)
+mp_tasks - MainProcess - mp_households_3 trip_purpose_and_destination : 9.028 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_5 trip_destination : 5042.674 seconds (84.0 minutes)
+mp_tasks - MainProcess - mp_households_5 trip_purpose_and_destination : 8.608 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_7 trip_destination : 5060.084 seconds (84.3 minutes)
+mp_tasks - MainProcess - mp_households_7 trip_purpose_and_destination : 9.043 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_19 trip_destination : 5060.753 seconds (84.3 minutes)
+mp_tasks - MainProcess - mp_households_19 trip_purpose_and_destination : 9.479 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_27 trip_destination : 5060.175 seconds (84.3 minutes)
+mp_tasks - MainProcess - mp_households_27 trip_purpose_and_destination : 8.871 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_31 trip_destination : 5051.87 seconds (84.2 minutes)
+mp_tasks - MainProcess - mp_households_31 trip_purpose_and_destination : 8.688 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_38 trip_destination : 5254.36 seconds (87.6 minutes)
+mp_tasks - MainProcess - mp_households_38 trip_purpose_and_destination : 9.626 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_37 trip_destination : 5089.389 seconds (84.8 minutes)
+mp_tasks - MainProcess - mp_households_26 trip_destination : 5252.412 seconds (87.5 minutes)
+mp_tasks - MainProcess - mp_households_37 trip_purpose_and_destination : 9.557 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_26 trip_purpose_and_destination : 9.024 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_20 trip_destination : 5265.181 seconds (87.8 minutes)
+mp_tasks - MainProcess - mp_households_40 trip_destination : 5270.11 seconds (87.8 minutes)
+mp_tasks - MainProcess - mp_households_2 trip_destination : 5285.514 seconds (88.1 minutes)
+mp_tasks - MainProcess - mp_households_22 trip_destination : 5271.953 seconds (87.9 minutes)
+mp_tasks - MainProcess - mp_households_40 trip_purpose_and_destination : 8.797 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_2 trip_purpose_and_destination : 8.538 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_22 trip_purpose_and_destination : 8.614 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_43 trip_destination : 5308.471 seconds (88.5 minutes)
+mp_tasks - MainProcess - mp_households_30 trip_destination : 5293.641 seconds (88.2 minutes)
+mp_tasks - MainProcess - mp_households_43 trip_purpose_and_destination : 8.44 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_8 trip_purpose_and_destination : 136.101 seconds (2.3 minutes)
+mp_tasks - MainProcess - mp_households_30 trip_purpose_and_destination : 8.399 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_16 trip_destination : 5316.511 seconds (88.6 minutes)
+mp_tasks - MainProcess - mp_households_34 trip_destination : 5249.318 seconds (87.5 minutes)
+mp_tasks - MainProcess - mp_households_16 trip_purpose_and_destination : 9.176 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_24 trip_destination : 5261.08 seconds (87.7 minutes)
+mp_tasks - MainProcess - mp_households_32 trip_destination : 5209.583 seconds (86.8 minutes)
+mp_tasks - MainProcess - mp_households_34 trip_purpose_and_destination : 9.595 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_10 trip_destination : 5280.985 seconds (88.0 minutes)
+mp_tasks - MainProcess - mp_households_10 trip_purpose_and_destination : 8.186 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_18 trip_destination : 5307.962 seconds (88.5 minutes)
+mp_tasks - MainProcess - mp_households_18 trip_purpose_and_destination : 8.69 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_24 trip_purpose_and_destination : 9.358 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_32 trip_purpose_and_destination : 9.68 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_households_4 trip_destination : 5256.517 seconds (87.6 minutes)
+mp_tasks - MainProcess - mp_households_4 trip_purpose_and_destination : 7.989 seconds (0.1 minutes)
+mp_tasks - MainProcess - mp_households_44 trip_purpose_and_destination : 258.63 seconds (4.3 minutes)
+mp_tasks - MainProcess - mp_households_20 trip_purpose_and_destination : 346.596 seconds (5.8 minutes)
+mp_tasks - MainProcess - mp_households_9 trip_purpose_and_destination : 637.336 seconds (10.6 minutes)
+mp_tasks - MainProcess - mp_households_36 trip_purpose_and_destination : 783.819 seconds (13.1 minutes)
+mp_tasks - MainProcess - mp_households_1 trip_purpose_and_destination : 941.684 seconds (15.7 minutes)
+mp_tasks - MainProcess - mp_households_6 trip_scheduling : 11047.452 seconds (184.1 minutes)
+mp_tasks - MainProcess - mp_households_6 trip_mode_choice : 276.252 seconds (4.6 minutes)
+mp_tasks - MainProcess - process mp_households_6 completed
+mp_tasks - MainProcess - mp_households_25 trip_scheduling : 11592.122 seconds (193.2 minutes)
+mp_tasks - MainProcess - mp_households_43 trip_scheduling : 11386.734 seconds (189.8 minutes)
+mp_tasks - MainProcess - mp_households_25 trip_mode_choice : 274.724 seconds (4.6 minutes)
+mp_tasks - MainProcess - mp_households_37 trip_scheduling : 11636.406 seconds (193.9 minutes)
+mp_tasks - MainProcess - process mp_households_25 completed
+mp_tasks - MainProcess - mp_households_10 trip_scheduling : 11563.799 seconds (192.7 minutes)
+mp_tasks - MainProcess - mp_households_24 trip_scheduling : 11588.01 seconds (193.1 minutes)
+mp_tasks - MainProcess - mp_households_7 trip_scheduling : 11744.844 seconds (195.7 minutes)
+mp_tasks - MainProcess - mp_households_43 trip_mode_choice : 264.332 seconds (4.4 minutes)
+mp_tasks - MainProcess - process mp_households_43 completed
+mp_tasks - MainProcess - mp_households_36 trip_scheduling : 11055.185 seconds (184.3 minutes)
+mp_tasks - MainProcess - mp_households_10 trip_mode_choice : 251.635 seconds (4.2 minutes)
+mp_tasks - MainProcess - mp_households_37 trip_mode_choice : 263.607 seconds (4.4 minutes)
+mp_tasks - MainProcess - process mp_households_10 completed
+mp_tasks - MainProcess - process mp_households_24 completed
+mp_tasks - MainProcess - process mp_households_37 completed
+mp_tasks - MainProcess - mp_households_7 trip_mode_choice : 258.697 seconds (4.3 minutes)
+mp_tasks - MainProcess - mp_households_24 trip_mode_choice : 248.702 seconds (4.1 minutes)
+mp_tasks - MainProcess - process mp_households_7 completed
+mp_tasks - MainProcess - mp_households_15 trip_scheduling : 12092.43 seconds (201.5 minutes)
+mp_tasks - MainProcess - mp_households_36 trip_mode_choice : 245.773 seconds (4.1 minutes)
+mp_tasks - MainProcess - process mp_households_36 completed
+mp_tasks - MainProcess - mp_households_26 trip_scheduling : 12066.421 seconds (201.1 minutes)
+mp_tasks - MainProcess - mp_households_38 trip_scheduling : 12155.552 seconds (202.6 minutes)
+mp_tasks - MainProcess - mp_households_15 trip_mode_choice : 234.546 seconds (3.9 minutes)
+mp_tasks - MainProcess - mp_households_41 trip_scheduling : 12509.72 seconds (208.5 minutes)
+mp_tasks - MainProcess - process mp_households_15 completed
+mp_tasks - MainProcess - mp_households_26 trip_mode_choice : 217.216 seconds (3.6 minutes)
+mp_tasks - MainProcess - process mp_households_26 completed
+mp_tasks - MainProcess - mp_households_38 trip_mode_choice : 222.124 seconds (3.7 minutes)
+mp_tasks - MainProcess - process mp_households_38 completed
+mp_tasks - MainProcess - mp_households_5 trip_scheduling : 12430.053 seconds (207.2 minutes)
+mp_tasks - MainProcess - mp_households_41 trip_mode_choice : 233.5 seconds (3.9 minutes)
+mp_tasks - MainProcess - process mp_households_41 completed
+mp_tasks - MainProcess - mp_households_5 trip_mode_choice : 237.273 seconds (4.0 minutes)
+mp_tasks - MainProcess - process mp_households_5 completed
+mp_tasks - MainProcess - mp_households_27 trip_scheduling : 12677.959 seconds (211.3 minutes)
+mp_tasks - MainProcess - mp_households_27 trip_mode_choice : 216.135 seconds (3.6 minutes)
+mp_tasks - MainProcess - process mp_households_27 completed
+mp_tasks - MainProcess - mp_households_13 trip_scheduling : 13111.114 seconds (218.5 minutes)
+mp_tasks - MainProcess - mp_households_44 trip_scheduling : 12986.328 seconds (216.4 minutes)
+mp_tasks - MainProcess - mp_households_13 trip_mode_choice : 205.401 seconds (3.4 minutes)
+mp_tasks - MainProcess - process mp_households_13 completed
+mp_tasks - MainProcess - mp_households_44 trip_mode_choice : 211.496 seconds (3.5 minutes)
+mp_tasks - MainProcess - process mp_households_44 completed
+mp_tasks - MainProcess - mp_households_42 trip_scheduling : 13660.325 seconds (227.7 minutes)
+mp_tasks - MainProcess - mp_households_11 trip_scheduling : 13723.617 seconds (228.7 minutes)
+mp_tasks - MainProcess - mp_households_42 trip_mode_choice : 200.324 seconds (3.3 minutes)
+mp_tasks - MainProcess - process mp_households_42 completed
+mp_tasks - MainProcess - mp_households_11 trip_mode_choice : 197.844 seconds (3.3 minutes)
+mp_tasks - MainProcess - process mp_households_11 completed
+mp_tasks - MainProcess - mp_households_1 trip_scheduling : 13113.897 seconds (218.6 minutes)
+mp_tasks - MainProcess - mp_households_33 trip_scheduling : 14196.332 seconds (236.6 minutes)
+mp_tasks - MainProcess - mp_households_28 trip_scheduling : 14103.308 seconds (235.1 minutes)
+mp_tasks - MainProcess - mp_households_14 trip_scheduling : 14048.715 seconds (234.1 minutes)
+mp_tasks - MainProcess - mp_households_12 trip_scheduling : 14095.561 seconds (234.9 minutes)
+mp_tasks - MainProcess - mp_households_8 trip_scheduling : 13940.026 seconds (232.3 minutes)
+mp_tasks - MainProcess - mp_households_39 trip_scheduling : 14183.656 seconds (236.4 minutes)
+mp_tasks - MainProcess - mp_households_2 trip_scheduling : 13997.305 seconds (233.3 minutes)
+mp_tasks - MainProcess - mp_households_22 trip_scheduling : 14021.394 seconds (233.7 minutes)
+mp_tasks - MainProcess - mp_households_16 trip_scheduling : 14005.414 seconds (233.4 minutes)
+mp_tasks - MainProcess - mp_households_1 trip_mode_choice : 183.454 seconds (3.1 minutes)
+mp_tasks - MainProcess - mp_households_4 trip_scheduling : 13987.196 seconds (233.1 minutes)
+mp_tasks - MainProcess - mp_households_18 trip_scheduling : 14007.628 seconds (233.5 minutes)
+mp_tasks - MainProcess - mp_households_40 trip_scheduling : 14072.653 seconds (234.5 minutes)
+mp_tasks - MainProcess - process mp_households_1 completed
+mp_tasks - MainProcess - mp_households_33 trip_mode_choice : 198.051 seconds (3.3 minutes)
+mp_tasks - MainProcess - mp_households_14 trip_mode_choice : 181.88 seconds (3.0 minutes)
+mp_tasks - MainProcess - mp_households_28 trip_mode_choice : 179.211 seconds (3.0 minutes)
+mp_tasks - MainProcess - process mp_households_14 completed
+mp_tasks - MainProcess - process mp_households_28 completed
+mp_tasks - MainProcess - process mp_households_33 completed
+mp_tasks - MainProcess - mp_households_8 trip_mode_choice : 175.131 seconds (2.9 minutes)
+mp_tasks - MainProcess - mp_households_12 trip_mode_choice : 179.97 seconds (3.0 minutes)
+mp_tasks - MainProcess - mp_households_32 trip_scheduling : 14081.255 seconds (234.7 minutes)
+mp_tasks - MainProcess - mp_households_34 trip_scheduling : 14110.111 seconds (235.2 minutes)
+mp_tasks - MainProcess - process mp_households_8 completed
+mp_tasks - MainProcess - process mp_households_12 completed
+mp_tasks - MainProcess - mp_households_21 trip_scheduling : 14271.593 seconds (237.9 minutes)
+mp_tasks - MainProcess - mp_households_39 trip_mode_choice : 194.7 seconds (3.2 minutes)
+mp_tasks - MainProcess - process mp_households_39 completed
+mp_tasks - MainProcess - mp_households_2 trip_mode_choice : 169.756 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_30 trip_scheduling : 14153.112 seconds (235.9 minutes)
+mp_tasks - MainProcess - process mp_households_2 completed
+mp_tasks - MainProcess - mp_households_22 trip_mode_choice : 169.696 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_0 trip_scheduling : 14396.352 seconds (239.9 minutes)
+mp_tasks - MainProcess - process mp_households_22 completed
+mp_tasks - MainProcess - mp_households_20 trip_scheduling : 13887.754 seconds (231.5 minutes)
+mp_tasks - MainProcess - mp_households_16 trip_mode_choice : 172.755 seconds (2.9 minutes)
+mp_tasks - MainProcess - process mp_households_16 completed
+mp_tasks - MainProcess - mp_households_4 trip_mode_choice : 170.577 seconds (2.8 minutes)
+mp_tasks - MainProcess - mp_households_18 trip_mode_choice : 174.632 seconds (2.9 minutes)
+mp_tasks - MainProcess - process mp_households_4 completed
+mp_tasks - MainProcess - process mp_households_18 completed
+mp_tasks - MainProcess - process mp_households_40 completed
+mp_tasks - MainProcess - mp_households_40 trip_mode_choice : 175.725 seconds (2.9 minutes)
+mp_tasks - MainProcess - mp_households_32 trip_mode_choice : 157.781 seconds (2.6 minutes)
+mp_tasks - MainProcess - process mp_households_32 completed
+mp_tasks - MainProcess - mp_households_34 trip_mode_choice : 156.426 seconds (2.6 minutes)
+mp_tasks - MainProcess - process mp_households_34 completed
+mp_tasks - MainProcess - mp_households_30 trip_mode_choice : 150.358 seconds (2.5 minutes)
+mp_tasks - MainProcess - process mp_households_30 completed
+mp_tasks - MainProcess - mp_households_21 trip_mode_choice : 187.272 seconds (3.1 minutes)
+mp_tasks - MainProcess - process mp_households_21 completed
+mp_tasks - MainProcess - mp_households_20 trip_mode_choice : 145.302 seconds (2.4 minutes)
+mp_tasks - MainProcess - process mp_households_20 completed
+mp_tasks - MainProcess - mp_households_0 trip_mode_choice : 178.246 seconds (3.0 minutes)
+mp_tasks - MainProcess - process mp_households_0 completed
+mp_tasks - MainProcess - mp_households_9 trip_scheduling : 14157.056 seconds (236.0 minutes)
+mp_tasks - MainProcess - mp_households_17 trip_scheduling : 14743.673 seconds (245.7 minutes)
+mp_tasks - MainProcess - mp_households_35 trip_scheduling : 14870.251 seconds (247.8 minutes)
+mp_tasks - MainProcess - mp_households_23 trip_scheduling : 14805.725 seconds (246.8 minutes)
+mp_tasks - MainProcess - mp_households_19 trip_scheduling : 14724.369 seconds (245.4 minutes)
+mp_tasks - MainProcess - mp_households_29 trip_scheduling : 14809.926 seconds (246.8 minutes)
+mp_tasks - MainProcess - mp_households_3 trip_scheduling : 14749.649 seconds (245.8 minutes)
+mp_tasks - MainProcess - mp_households_31 trip_scheduling : 14765.136 seconds (246.1 minutes)
+mp_tasks - MainProcess - mp_households_9 trip_mode_choice : 189.615 seconds (3.2 minutes)
+mp_tasks - MainProcess - process mp_households_9 completed
+mp_tasks - MainProcess - mp_households_17 trip_mode_choice : 193.593 seconds (3.2 minutes)
+mp_tasks - MainProcess - process mp_households_17 completed
+mp_tasks - MainProcess - mp_households_23 trip_mode_choice : 184.388 seconds (3.1 minutes)
+mp_tasks - MainProcess - mp_households_29 trip_mode_choice : 188.888 seconds (3.1 minutes)
+mp_tasks - MainProcess - mp_households_35 trip_mode_choice : 190.8 seconds (3.2 minutes)
+mp_tasks - MainProcess - process mp_households_19 completed
+mp_tasks - MainProcess - process mp_households_23 completed
+mp_tasks - MainProcess - process mp_households_29 completed
+mp_tasks - MainProcess - process mp_households_35 completed
+mp_tasks - MainProcess - mp_households_3 trip_mode_choice : 188.261 seconds (3.1 minutes)
+mp_tasks - MainProcess - mp_households_19 trip_mode_choice : 190.564 seconds (3.2 minutes)
+mp_tasks - MainProcess - process mp_households_3 completed
+mp_tasks - MainProcess - mp_households_31 trip_mode_choice : 177.323 seconds (3.0 minutes)
+mp_tasks - MainProcess - process mp_households_31 completed
+mp_tasks - MainProcess - Process mp_households_0 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_1 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_2 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_3 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_4 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_5 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_6 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_7 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_8 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_9 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_10 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_11 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_12 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_13 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_14 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_15 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_16 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_17 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_18 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_19 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_20 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_21 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_22 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_23 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_24 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_25 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_26 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_27 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_28 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_29 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_30 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_31 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_32 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_33 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_34 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_35 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_36 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_37 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_38 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_39 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_40 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_41 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_42 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_43 completed with exitcode 0
+mp_tasks - MainProcess - Process mp_households_44 completed with exitcode 0
+mp_tasks - MainProcess - #run_model running sub_process mp_households_coalesce
+mp_tasks - mp_households_coalesce - coalesce_pipelines to: pipeline.h5
+mp_tasks - mp_households_coalesce - loading table accessibility accessibility/mp_households
+mp_tasks - mp_households_coalesce - loading table land_use land_use/mp_households
+mp_tasks - mp_households_coalesce - loading table person_windows person_windows/non_mandatory_tour_scheduling
+mp_tasks - mp_households_coalesce - loading table households households/joint_tour_frequency
+mp_tasks - mp_households_coalesce - loading table persons persons/non_mandatory_tour_frequency
+mp_tasks - mp_households_coalesce - loading table school_destination_size school_destination_size/mp_households
+mp_tasks - mp_households_coalesce - loading table workplace_destination_size workplace_destination_size/mp_households
+mp_tasks - mp_households_coalesce - loading table school_modeled_size school_modeled_size/school_location
+mp_tasks - mp_households_coalesce - loading table workplace_modeled_size workplace_modeled_size/workplace_location
+mp_tasks - mp_households_coalesce - loading table tours tours/stop_frequency
+mp_tasks - mp_households_coalesce - loading table joint_tour_participants joint_tour_participants/joint_tour_participation
+mp_tasks - mp_households_coalesce - loading table trips trips/trip_mode_choice
+mp_tasks - mp_households_coalesce - ### table_name: households slice_rules: {'slice_by': 'primary'}
+mp_tasks - mp_households_coalesce - ### table_name: persons slice_rules: {'slice_by': 'column', 'column': 'household_id', 'source': 'households'}
+mp_tasks - mp_households_coalesce - ### table_name: person_windows slice_rules: {'slice_by': 'index', 'source': 'persons'}
+mp_tasks - mp_households_coalesce - ### table_name: tours slice_rules: {'slice_by': 'column', 'column': 'household_id', 'source': 'households'}
+mp_tasks - mp_households_coalesce - ### table_name: joint_tour_participants slice_rules: {'slice_by': 'column', 'column': 'household_id', 'source': 'households'}
+mp_tasks - mp_households_coalesce - ### table_name: trips slice_rules: {'slice_by': 'column', 'column': 'household_id', 'source': 'households'}
+mp_tasks - mp_households_coalesce - ### slicer_ref_cols: OrderedDict([('households', 'household_id'), ('persons', 'person_id'), ('person_windows', 'person_id'), ('tours', 'tour_id'), ('joint_tour_participants', 'participant_id'), ('trips', 'trip_id')])
+mp_tasks - mp_households_coalesce - coalesce_pipelines to: pipeline.h5
+mp_tasks - mp_households_coalesce - mirrored_table_names: ['accessibility', 'land_use', 'school_destination_size', 'workplace_destination_size', 'school_modeled_size', 'workplace_modeled_size']
+mp_tasks - mp_households_coalesce - omnibus_keys: {'person_windows': 'person_windows/non_mandatory_tour_scheduling', 'households': 'households/joint_tour_frequency', 'persons': 'persons/non_mandatory_tour_frequency', 'tours': 'tours/stop_frequency', 'joint_tour_participants': 'joint_tour_participants/joint_tour_participation', 'trips': 'trips/trip_mode_choice'}
+mp_tasks - mp_households_coalesce - adding mirrored table accessibility (4984, 10)
+mp_tasks - mp_households_coalesce - adding mirrored table land_use (4984, 28)
+mp_tasks - mp_households_coalesce - adding mirrored table school_destination_size (4984, 3)
+mp_tasks - mp_households_coalesce - adding mirrored table workplace_destination_size (4984, 4)
+mp_tasks - mp_households_coalesce - adding mirrored table school_modeled_size (4984, 3)
+mp_tasks - mp_households_coalesce - adding mirrored table workplace_modeled_size (4984, 4)
+mp_tasks - mp_households_coalesce - adding omnibus table person_windows (3265488, 21)
+mp_tasks - mp_households_coalesce - adding omnibus table households (1197126, 34)
+mp_tasks - mp_households_coalesce - adding omnibus table persons (3265488, 63)
+mp_tasks - mp_households_coalesce - adding omnibus table tours (4191027, 23)
+mp_tasks - mp_households_coalesce - adding omnibus table joint_tour_participants (220011, 4)
+mp_tasks - mp_households_coalesce - adding omnibus table trips (10555779, 14)
+mp_tasks - MainProcess - run_sub_simulations step mp_summarize models resume_after None
+mp_tasks - MainProcess - start process mp_summarize
+mp_tasks - mp_summarize - mp_run_simulation mp_summarize locutor=True 
+mp_tasks - mp_summarize - resume_after _
+mp_tasks - MainProcess - mp_summarize write_data_dictionary : 11.84 seconds (0.2 minutes)
+mp_tasks - MainProcess - mp_summarize write_trip_matrices : 457.916 seconds (7.6 minutes)
+mp_tasks - MainProcess - mp_summarize write_tables : 177.729 seconds (3.0 minutes)
+mp_tasks - MainProcess - process mp_summarize completed
+mp_tasks - MainProcess - Process mp_summarize completed with exitcode 0

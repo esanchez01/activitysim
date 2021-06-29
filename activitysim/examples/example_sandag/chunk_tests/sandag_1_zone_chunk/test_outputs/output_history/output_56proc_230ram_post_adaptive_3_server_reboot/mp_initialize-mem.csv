@@ -1,0 +1,19 @@
+process,pid,rss,full_rss,uss,event,children,time
+mp_initialize,7924,104_431_616,104_431_616,72_278_016,pipeline.run_model initialize_landuse start,0,2021/06/24 15:05:32.074208
+mp_initialize,7924,105_422_848,105_422_848,72_769_536,initialize_landuse.chunk_log.log_rss,0,2021/06/24 15:05:32.121083
+mp_initialize,7924,121_561_088,121_561_088,88_506_368,initialize_landuse.chunk_log.log_rss,0,2021/06/24 15:05:32.872276
+mp_initialize,7924,121_565_184,121_565_184,88_498_176,pipeline.run_model initialize_landuse finished,0,2021/06/24 15:05:32.872276
+mp_initialize,7924,122_277_888,122_277_888,89_686_016,pipeline.run_model initialize_households start,0,2021/06/24 15:05:32.919186
+mp_initialize,7924,122_789_888,122_789_888,89_722_880,initialize_households.chunk_log.log_rss,0,2021/06/24 15:05:32.950437
+mp_initialize,7924,322_785_280,322_785_280,291_295_232,initialize_households.chunk_log.log_rss,0,2021/06/24 15:05:37.959929
+mp_initialize,7924,662_896_640,662_896_640,632_807_424,initialize_households.chunk_log.log_rss,0,2021/06/24 15:05:42.986218
+mp_initialize,7924,1_025_810_432,1_025_810_432,994_844_672,initialize_households.chunk_log.log_rss,0,2021/06/24 15:05:48.089866
+mp_initialize,7924,1_054_105_600,1_054_105_600,1_024_131_072,initialize_households.chunk_log.log_rss,0,2021/06/24 15:05:53.147290
+mp_initialize,7924,1_162_739_712,1_162_739_712,1_133_858_816,initialize_households.chunk_log.log_rss,0,2021/06/24 15:05:58.197763
+mp_initialize,7924,1_184_133_120,1_184_133_120,1_155_248_128,initialize_households.chunk_log.log_rss,0,2021/06/24 15:06:03.387762
+mp_initialize,7924,1_202_851_840,1_202_851_840,1_173_966_848,initialize_households.chunk_log.log_rss,0,2021/06/24 15:06:08.533312
+mp_initialize,7924,924_028_928,924_028_928,894_042_112,initialize_households.chunk_log.log_rss,0,2021/06/24 15:06:13.694248
+mp_initialize,7924,3_015_254_016,3_015_254_016,2_991_128_576,initialize_households.chunk_log.log_rss,0,2021/06/24 15:06:19.122427
+mp_initialize,7924,2_283_257_856,2_283_257_856,2_258_534_400,initialize_households.chunk_log.log_rss,0,2021/06/24 15:06:24.273539
+mp_initialize,7924,998_281_216,998_281_216,967_266_304,initialize_households.chunk_log.log_rss,0,2021/06/24 15:06:26.896969
+mp_initialize,7924,929_677_312,929_677_312,898_662_400,pipeline.run_model initialize_households finished,0,2021/06/24 15:06:26.928218

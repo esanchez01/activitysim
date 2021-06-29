@@ -1,0 +1,7 @@
+process,pid,rss,full_rss,uss,event,children,time
+mp_summarize,21980,4_300_517_376,4_300_517_376,4_285_173_760,pipeline.run_model write_data_dictionary start,0,2021/06/19 21:00:10.433990
+mp_summarize,21980,3_720_769_536,3_720_769_536,3_696_541_696,pipeline.run_model write_data_dictionary finished,0,2021/06/19 21:00:21.025288
+mp_summarize,21980,3_721_924_608,3_721_924_608,3_697_631_232,pipeline.run_model write_trip_matrices start,0,2021/06/19 21:00:22.181876
+mp_summarize,21980,4_005_146_624,4_005_146_624,3_883_134_976,pipeline.run_model write_trip_matrices finished,0,2021/06/19 21:08:14.003435
+mp_summarize,21980,4_002_930_688,4_002_930_688,3_881_496_576,pipeline.run_model write_tables start,0,2021/06/19 21:08:15.222190
+mp_summarize,21980,4_012_478_464,4_012_478_464,3_890_040_832,pipeline.run_model write_tables finished,0,2021/06/19 21:11:38.252794
