@@ -1,0 +1,213 @@
+19/06/2021 20:58:32 - INFO - activitysim - Read logging configuration from: configs_mp\logging.yaml
+19/06/2021 20:58:32 - DEBUG - activitysim.core.mp_tasks - mp_run_simulation mp_summarize locutor=True 
+19/06/2021 20:58:32 - INFO - activitysim.core.mp_tasks - adjust_chunk_size_for_shared_memory adjusted_chunk_size 147_531_748_288 shared_memory_in_child_rss False chunk_size 230_000_000_000 shared_memory_size 82_468_251_712 num_processes 1 fair_share_of_shared_memory 82_468_251_712 
+19/06/2021 20:58:32 - INFO - activitysim.core.mp_tasks - resume_after _
+19/06/2021 20:58:32 - DEBUG - activitysim.core.random - Set random seed base to 0
+19/06/2021 20:58:32 - DEBUG - activitysim.core.pipeline - open_pipeline - open existing pipeline
+19/06/2021 20:58:32 - DEBUG - activitysim.core.pipeline - opened pipeline_store output\pipeline.h5
+19/06/2021 20:58:32 - INFO - activitysim.core.pipeline - load_checkpoint _
+19/06/2021 20:58:32 - INFO - activitysim.core.pipeline - loading checkpoint 'mp_households'
+19/06/2021 20:58:32 - INFO - activitysim.core.pipeline - load_checkpoint mp_households timestamp 2021-06-19 20:57:48.563543
+19/06/2021 20:58:32 - INFO - activitysim.core.pipeline - load_checkpoint table accessibility (4984, 10)
+19/06/2021 20:58:32 - DEBUG - activitysim.core.pipeline - rewrap table accessibility inplace=False
+19/06/2021 20:58:32 - INFO - activitysim.core.pipeline - load_checkpoint table land_use (4984, 28)
+19/06/2021 20:58:32 - DEBUG - activitysim.core.pipeline - rewrap table land_use inplace=False
+19/06/2021 20:58:32 - INFO - activitysim.core.pipeline - load_checkpoint table person_windows (3265488, 21)
+19/06/2021 20:58:32 - DEBUG - activitysim.core.pipeline - rewrap table person_windows inplace=False
+19/06/2021 20:58:34 - INFO - activitysim.core.pipeline - load_checkpoint table households (1197126, 34)
+19/06/2021 20:58:34 - DEBUG - activitysim.core.pipeline - rewrap table households inplace=False
+19/06/2021 20:58:42 - INFO - activitysim.core.pipeline - load_checkpoint table persons (3265488, 63)
+19/06/2021 20:58:42 - DEBUG - activitysim.core.pipeline - rewrap table persons inplace=False
+19/06/2021 20:58:42 - INFO - activitysim.core.pipeline - load_checkpoint table school_destination_size (4984, 3)
+19/06/2021 20:58:42 - DEBUG - activitysim.core.pipeline - rewrap table school_destination_size inplace=False
+19/06/2021 20:58:42 - INFO - activitysim.core.pipeline - load_checkpoint table workplace_destination_size (4984, 4)
+19/06/2021 20:58:42 - DEBUG - activitysim.core.pipeline - rewrap table workplace_destination_size inplace=False
+19/06/2021 20:58:42 - INFO - activitysim.core.pipeline - load_checkpoint table school_modeled_size (4984, 3)
+19/06/2021 20:58:42 - DEBUG - activitysim.core.pipeline - rewrap table school_modeled_size inplace=False
+19/06/2021 20:58:42 - INFO - activitysim.core.pipeline - load_checkpoint table workplace_modeled_size (4984, 4)
+19/06/2021 20:58:42 - DEBUG - activitysim.core.pipeline - rewrap table workplace_modeled_size inplace=False
+19/06/2021 20:59:18 - INFO - activitysim.core.pipeline - load_checkpoint table tours (4191027, 23)
+19/06/2021 20:59:18 - DEBUG - activitysim.core.pipeline - rewrap table tours inplace=False
+19/06/2021 20:59:18 - INFO - activitysim.core.pipeline - load_checkpoint table joint_tour_participants (220011, 4)
+19/06/2021 20:59:18 - DEBUG - activitysim.core.pipeline - rewrap table joint_tour_participants inplace=False
+19/06/2021 21:00:05 - INFO - activitysim.core.pipeline - load_checkpoint table trips (10555778, 14)
+19/06/2021 21:00:05 - DEBUG - activitysim.core.pipeline - rewrap table trips inplace=False
+19/06/2021 21:00:05 - DEBUG - activitysim.core.tracing - register_traceable_table households
+19/06/2021 21:00:05 - DEBUG - activitysim.core.tracing - adding table households.household_id to traceable_table_indexes
+19/06/2021 21:00:05 - DEBUG - activitysim.core.tracing - register_traceable_table persons
+19/06/2021 21:00:05 - DEBUG - activitysim.core.tracing - adding table persons.person_id to traceable_table_indexes
+19/06/2021 21:00:05 - DEBUG - activitysim.core.tracing - register_traceable_table tours
+19/06/2021 21:00:05 - DEBUG - activitysim.core.tracing - adding table tours.tour_id to traceable_table_indexes
+19/06/2021 21:00:05 - DEBUG - activitysim.core.tracing - register_traceable_table joint_tour_participants
+19/06/2021 21:00:05 - DEBUG - activitysim.core.tracing - adding table joint_tour_participants.participant_id to traceable_table_indexes
+19/06/2021 21:00:05 - DEBUG - activitysim.core.tracing - register_traceable_table trips
+19/06/2021 21:00:05 - DEBUG - activitysim.core.tracing - adding table trips.trip_id to traceable_table_indexes
+19/06/2021 21:00:05 - DEBUG - activitysim.core.pipeline - loading random channels ['households', 'persons', 'tours', 'joint_tour_participants', 'trips']
+19/06/2021 21:00:05 - DEBUG - activitysim.core.pipeline - adding channel households
+19/06/2021 21:00:05 - DEBUG - activitysim.core.random - Adding channel 'households' 1197126 ids
+19/06/2021 21:00:05 - DEBUG - activitysim.core.pipeline - adding channel persons
+19/06/2021 21:00:05 - DEBUG - activitysim.core.random - Adding channel 'persons' 3265488 ids
+19/06/2021 21:00:06 - DEBUG - activitysim.core.pipeline - adding channel tours
+19/06/2021 21:00:06 - DEBUG - activitysim.core.random - Adding channel 'tours' 4191027 ids
+19/06/2021 21:00:06 - DEBUG - activitysim.core.pipeline - adding channel joint_tour_participants
+19/06/2021 21:00:06 - DEBUG - activitysim.core.random - Adding channel 'joint_tour_participants' 220011 ids
+19/06/2021 21:00:06 - DEBUG - activitysim.core.pipeline - adding channel trips
+19/06/2021 21:00:06 - DEBUG - activitysim.core.random - Adding channel 'trips' 10555778 ids
+19/06/2021 21:00:08 - DEBUG - activitysim.core.pipeline - open_pipeline complete
+19/06/2021 21:00:08 - INFO - activitysim.abm.models.initialize - preload_injectables
+19/06/2021 21:00:10 - INFO - activitysim.core.pipeline - #run_model running step write_data_dictionary
+19/06/2021 21:00:20 - DEBUG - activitysim.core.tracing - Time to execute #run_model completed step 'write_data_dictionary' : 10.529 seconds (0.2 minutes)
+19/06/2021 21:00:21 - DEBUG - activitysim.core.pipeline - add_checkpoint write_data_dictionary timestamp 2021-06-19 21:00:21.275623
+19/06/2021 21:00:22 - INFO - activitysim.core.pipeline - #run_model running step write_trip_matrices
+19/06/2021 21:00:22 - DEBUG - activitysim.abm.tables.skims - loading network_los_without_data_loaded injectable
+19/06/2021 21:00:22 - INFO - activitysim.core.los - Network_LOS using skim_dict_factory: NumpyArraySkimFactory
+19/06/2021 21:00:22 - DEBUG - activitysim.core.skim_dict_factory - load_skim_info taz reading data_sandag\skims.omx
+19/06/2021 21:00:29 - DEBUG - activitysim.abm.tables.skims - loading network_los injectable
+19/06/2021 21:00:29 - INFO - activitysim.core.skim_dict_factory - get_skim_data taz using existing shared skim_buffers for skims
+19/06/2021 21:00:29 - INFO - activitysim.core.skim_dict_factory - get_skim_data taz SkimData shape (826, 4996, 4996)
+19/06/2021 21:00:29 - INFO - activitysim.core.skim_dictionary - SkimDict init taz
+19/06/2021 21:00:29 - INFO - activitysim.core.skim_dictionary - SkimDict.build_3d_skim_block_offset_table registered 167 3d keys
+19/06/2021 21:00:29 - DEBUG - activitysim.core.los - create_skim_dict taz omx_shape (4996, 4996)
+19/06/2021 21:00:31 - DEBUG - activitysim.core.expressions - trip_matrices.write_trip_matrices_annotate_trips_preprocessor compute_columns using expression spec file write_trip_matrices_annotate_trips_preprocessor.csv
+19/06/2021 21:02:20 - INFO - activitysim.abm.models.trip_matrices - adding 'sample_rate' from households to trips table
+19/06/2021 21:02:21 - INFO - activitysim.abm.models.trip_matrices - aggregating trips one zone...
+19/06/2021 21:03:52 - INFO - activitysim.abm.models.trip_matrices - opening output\trips_ea.omx
+19/06/2021 21:03:57 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVEALONEFREE_EA sum 82210.00
+19/06/2021 21:04:01 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVEALONEPAY_EA sum 95.00
+19/06/2021 21:04:02 - DEBUG - activitysim.abm.models.trip_matrices - writing SHARED2FREE_EA sum 8057.00
+19/06/2021 21:04:03 - DEBUG - activitysim.abm.models.trip_matrices - writing SHARED2PAY_EA sum 11.00
+19/06/2021 21:04:05 - DEBUG - activitysim.abm.models.trip_matrices - writing SHARED3FREE_EA sum 2829.43
+19/06/2021 21:04:07 - DEBUG - activitysim.abm.models.trip_matrices - writing SHARED3PAY_EA sum 6.31
+19/06/2021 21:04:12 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_EA sum 13996.00
+19/06/2021 21:04:16 - DEBUG - activitysim.abm.models.trip_matrices - writing BIKE_EA sum 2290.00
+19/06/2021 21:04:18 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_LOC_WALK_EA sum 7839.00
+19/06/2021 21:04:20 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_LRF_WALK_EA sum 7702.00
+19/06/2021 21:04:28 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_EXP_WALK_EA sum 991.00
+19/06/2021 21:04:31 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_HVY_WALK_EA sum 161.00
+19/06/2021 21:04:34 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_COM_WALK_EA sum 83.00
+19/06/2021 21:04:36 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_LOC_WALK_EA sum 1011.00
+19/06/2021 21:04:39 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_LRF_WALK_EA sum 792.00
+19/06/2021 21:04:47 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_EXP_WALK_EA sum 78.00
+19/06/2021 21:04:50 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_HVY_WALK_EA sum 25.00
+19/06/2021 21:04:52 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_COM_WALK_EA sum 15.00
+19/06/2021 21:04:55 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_LOC_DRIVE_EA sum 23.00
+19/06/2021 21:04:58 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_LRF_DRIVE_EA sum 23.00
+19/06/2021 21:05:00 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_EXP_DRIVE_EA sum 5.00
+19/06/2021 21:05:10 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_DRIVE_HVY_EA sum 0.00
+19/06/2021 21:05:12 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_COM_DRIVE_EA sum 0.00
+19/06/2021 21:05:12 - INFO - activitysim.abm.models.trip_matrices - adding zone_id mapping for 4984 zones to trips_ea.omx
+19/06/2021 21:05:12 - INFO - activitysim.abm.models.trip_matrices - closing output\trips_ea.omx
+19/06/2021 21:05:12 - INFO - activitysim.abm.models.trip_matrices - opening output\trips_am.omx
+19/06/2021 21:05:14 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVEALONEFREE_AM sum 960270.00
+19/06/2021 21:05:16 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVEALONEPAY_AM sum 5708.00
+19/06/2021 21:05:17 - DEBUG - activitysim.abm.models.trip_matrices - writing SHARED2FREE_AM sum 170519.00
+19/06/2021 21:05:18 - DEBUG - activitysim.abm.models.trip_matrices - writing SHARED2PAY_AM sum 267.00
+19/06/2021 21:05:19 - DEBUG - activitysim.abm.models.trip_matrices - writing SHARED3FREE_AM sum 84361.86
+19/06/2021 21:05:20 - DEBUG - activitysim.abm.models.trip_matrices - writing SHARED3PAY_AM sum 165.47
+19/06/2021 21:05:22 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_AM sum 428297.00
+19/06/2021 21:05:25 - DEBUG - activitysim.abm.models.trip_matrices - writing BIKE_AM sum 36161.00
+19/06/2021 21:05:27 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_LOC_WALK_AM sum 129253.00
+19/06/2021 21:05:28 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_LRF_WALK_AM sum 183059.00
+19/06/2021 21:05:36 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_EXP_WALK_AM sum 19151.00
+19/06/2021 21:05:39 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_HVY_WALK_AM sum 3731.00
+19/06/2021 21:05:42 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_COM_WALK_AM sum 2082.00
+19/06/2021 21:05:45 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_LOC_WALK_AM sum 10793.00
+19/06/2021 21:05:47 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_LRF_WALK_AM sum 9082.00
+19/06/2021 21:05:49 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_EXP_WALK_AM sum 855.00
+19/06/2021 21:05:50 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_HVY_WALK_AM sum 579.00
+19/06/2021 21:05:52 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_COM_WALK_AM sum 277.00
+19/06/2021 21:05:58 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_LOC_DRIVE_AM sum 266.00
+19/06/2021 21:06:00 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_LRF_DRIVE_AM sum 264.00
+19/06/2021 21:06:02 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_EXP_DRIVE_AM sum 85.00
+19/06/2021 21:06:03 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_DRIVE_HVY_AM sum 4.00
+19/06/2021 21:06:05 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_COM_DRIVE_AM sum 4.00
+19/06/2021 21:06:06 - INFO - activitysim.abm.models.trip_matrices - adding zone_id mapping for 4984 zones to trips_am.omx
+19/06/2021 21:06:06 - INFO - activitysim.abm.models.trip_matrices - closing output\trips_am.omx
+19/06/2021 21:06:06 - INFO - activitysim.abm.models.trip_matrices - opening output\trips_md.omx
+19/06/2021 21:06:08 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVEALONEFREE_MD sum 1064637.00
+19/06/2021 21:06:11 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVEALONEPAY_MD sum 1291.00
+19/06/2021 21:06:13 - DEBUG - activitysim.abm.models.trip_matrices - writing SHARED2FREE_MD sum 232798.50
+19/06/2021 21:06:14 - DEBUG - activitysim.abm.models.trip_matrices - writing SHARED2PAY_MD sum 258.50
+19/06/2021 21:06:14 - DEBUG - activitysim.abm.models.trip_matrices - writing SHARED3FREE_MD sum 104036.94
+19/06/2021 21:06:15 - DEBUG - activitysim.abm.models.trip_matrices - writing SHARED3PAY_MD sum 183.48
+19/06/2021 21:06:18 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_MD sum 568054.00
+19/06/2021 21:06:22 - DEBUG - activitysim.abm.models.trip_matrices - writing BIKE_MD sum 35509.00
+19/06/2021 21:06:24 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_LOC_WALK_MD sum 111382.00
+19/06/2021 21:06:27 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_LRF_WALK_MD sum 135008.00
+19/06/2021 21:06:29 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_EXP_WALK_MD sum 25579.00
+19/06/2021 21:06:31 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_HVY_WALK_MD sum 1311.00
+19/06/2021 21:06:32 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_COM_WALK_MD sum 729.00
+19/06/2021 21:06:34 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_LOC_WALK_MD sum 2629.00
+19/06/2021 21:06:36 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_LRF_WALK_MD sum 2572.00
+19/06/2021 21:06:37 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_EXP_WALK_MD sum 751.00
+19/06/2021 21:06:43 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_HVY_WALK_MD sum 68.00
+19/06/2021 21:06:45 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_COM_WALK_MD sum 22.00
+19/06/2021 21:06:46 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_LOC_DRIVE_MD sum 2243.00
+19/06/2021 21:06:48 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_LRF_DRIVE_MD sum 2640.00
+19/06/2021 21:06:50 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_EXP_DRIVE_MD sum 660.00
+19/06/2021 21:06:51 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_DRIVE_HVY_MD sum 21.00
+19/06/2021 21:06:53 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_COM_DRIVE_MD sum 12.00
+19/06/2021 21:06:53 - INFO - activitysim.abm.models.trip_matrices - adding zone_id mapping for 4984 zones to trips_md.omx
+19/06/2021 21:06:53 - INFO - activitysim.abm.models.trip_matrices - closing output\trips_md.omx
+19/06/2021 21:06:54 - INFO - activitysim.abm.models.trip_matrices - opening output\trips_pm.omx
+19/06/2021 21:06:55 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVEALONEFREE_PM sum 1240571.00
+19/06/2021 21:06:56 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVEALONEPAY_PM sum 5747.00
+19/06/2021 21:06:57 - DEBUG - activitysim.abm.models.trip_matrices - writing SHARED2FREE_PM sum 230167.00
+19/06/2021 21:06:58 - DEBUG - activitysim.abm.models.trip_matrices - writing SHARED2PAY_PM sum 390.00
+19/06/2021 21:07:00 - DEBUG - activitysim.abm.models.trip_matrices - writing SHARED3FREE_PM sum 111907.51
+19/06/2021 21:07:01 - DEBUG - activitysim.abm.models.trip_matrices - writing SHARED3PAY_PM sum 258.86
+19/06/2021 21:07:03 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_PM sum 492848.00
+19/06/2021 21:07:05 - DEBUG - activitysim.abm.models.trip_matrices - writing BIKE_PM sum 43591.00
+19/06/2021 21:07:07 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_LOC_WALK_PM sum 164425.00
+19/06/2021 21:07:09 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_LRF_WALK_PM sum 198283.00
+19/06/2021 21:07:11 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_EXP_WALK_PM sum 27200.00
+19/06/2021 21:07:12 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_HVY_WALK_PM sum 4565.00
+19/06/2021 21:07:14 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_COM_WALK_PM sum 2526.00
+19/06/2021 21:07:15 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_LOC_WALK_PM sum 1936.00
+19/06/2021 21:07:16 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_LRF_WALK_PM sum 2179.00
+19/06/2021 21:07:19 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_EXP_WALK_PM sum 657.00
+19/06/2021 21:07:21 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_HVY_WALK_PM sum 88.00
+19/06/2021 21:07:22 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_COM_WALK_PM sum 34.00
+19/06/2021 21:07:24 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_LOC_DRIVE_PM sum 9260.00
+19/06/2021 21:07:25 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_LRF_DRIVE_PM sum 8147.00
+19/06/2021 21:07:26 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_EXP_DRIVE_PM sum 1032.00
+19/06/2021 21:07:28 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_DRIVE_HVY_PM sum 588.00
+19/06/2021 21:07:29 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_COM_DRIVE_PM sum 282.00
+19/06/2021 21:07:29 - INFO - activitysim.abm.models.trip_matrices - adding zone_id mapping for 4984 zones to trips_pm.omx
+19/06/2021 21:07:29 - INFO - activitysim.abm.models.trip_matrices - closing output\trips_pm.omx
+19/06/2021 21:07:30 - INFO - activitysim.abm.models.trip_matrices - opening output\trips_ev.omx
+19/06/2021 21:07:30 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVEALONEFREE_EV sum 531532.00
+19/06/2021 21:07:32 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVEALONEPAY_EV sum 453.00
+19/06/2021 21:07:33 - DEBUG - activitysim.abm.models.trip_matrices - writing SHARED2FREE_EV sum 95097.00
+19/06/2021 21:07:35 - DEBUG - activitysim.abm.models.trip_matrices - writing SHARED2PAY_EV sum 112.00
+19/06/2021 21:07:36 - DEBUG - activitysim.abm.models.trip_matrices - writing SHARED3FREE_EV sum 47521.92
+19/06/2021 21:07:38 - DEBUG - activitysim.abm.models.trip_matrices - writing SHARED3PAY_EV sum 86.49
+19/06/2021 21:07:40 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_EV sum 168916.00
+19/06/2021 21:07:42 - DEBUG - activitysim.abm.models.trip_matrices - writing BIKE_EV sum 18583.00
+19/06/2021 21:07:44 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_LOC_WALK_EV sum 65971.00
+19/06/2021 21:07:46 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_LRF_WALK_EV sum 70481.00
+19/06/2021 21:07:48 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_EXP_WALK_EV sum 12693.00
+19/06/2021 21:07:50 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_HVY_WALK_EV sum 218.00
+19/06/2021 21:07:52 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_COM_WALK_EV sum 114.00
+19/06/2021 21:07:54 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_LOC_WALK_EV sum 440.00
+19/06/2021 21:07:56 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_LRF_WALK_EV sum 448.00
+19/06/2021 21:07:58 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_EXP_WALK_EV sum 167.00
+19/06/2021 21:07:59 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_HVY_WALK_EV sum 3.00
+19/06/2021 21:08:01 - DEBUG - activitysim.abm.models.trip_matrices - writing DRIVE_COM_WALK_EV sum 0.00
+19/06/2021 21:08:03 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_LOC_DRIVE_EV sum 4795.00
+19/06/2021 21:08:05 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_LRF_DRIVE_EV sum 4231.00
+19/06/2021 21:08:07 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_EXP_DRIVE_EV sum 857.00
+19/06/2021 21:08:08 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_DRIVE_HVY_EV sum 29.00
+19/06/2021 21:08:10 - DEBUG - activitysim.abm.models.trip_matrices - writing WALK_COM_DRIVE_EV sum 5.00
+19/06/2021 21:08:11 - INFO - activitysim.abm.models.trip_matrices - adding zone_id mapping for 4984 zones to trips_ev.omx
+19/06/2021 21:08:11 - INFO - activitysim.abm.models.trip_matrices - closing output\trips_ev.omx
+19/06/2021 21:08:13 - DEBUG - activitysim.core.tracing - Time to execute #run_model completed step 'write_trip_matrices' : 471.728 seconds (7.9 minutes)
+19/06/2021 21:08:14 - DEBUG - activitysim.core.pipeline - add_checkpoint write_trip_matrices timestamp 2021-06-19 21:08:14.269065
+19/06/2021 21:08:15 - INFO - activitysim.core.pipeline - #run_model running step write_tables
+19/06/2021 21:11:38 - DEBUG - activitysim.core.tracing - Time to execute #run_model completed step 'write_tables' : 202.951 seconds (3.4 minutes)
+19/06/2021 21:11:38 - DEBUG - activitysim.core.pipeline - add_checkpoint write_tables timestamp 2021-06-19 21:11:38.497593
+19/06/2021 21:11:38 - INFO - activitysim.core.tracing - Time to execute run (3 models) : 689.908 seconds (11.5 minutes)
+19/06/2021 21:11:38 - DEBUG - activitysim.core.pipeline - add_checkpoint mp_summarize timestamp 2021-06-19 21:11:38.513210
+19/06/2021 21:11:38 - DEBUG - activitysim.core.pipeline - close_pipeline
+19/06/2021 21:11:38 - INFO - activitysim.core.mem - mp_summarize high water mark rss: 4_300_517_376 (4.3 GB) timestamp: 19/06/2021 21:00:10 label:pipeline.run_model write_data_dictionary start
+19/06/2021 21:11:38 - INFO - activitysim.core.mem - mp_summarize high water mark uss: 4_285_173_760 (4.3 GB) timestamp: 19/06/2021 21:00:10 label:pipeline.run_model write_data_dictionary start
