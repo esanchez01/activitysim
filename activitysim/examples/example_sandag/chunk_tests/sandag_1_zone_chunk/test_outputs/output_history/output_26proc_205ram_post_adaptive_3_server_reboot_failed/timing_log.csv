@@ -1,0 +1,4 @@
+process_name,model_name,seconds,minutes
+mp_initialize,initialize_landuse,1.6,0.0
+mp_initialize,initialize_households,81.7,1.4
+mp_accessibility,compute_accessibility,61.4,1.0

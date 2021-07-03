@@ -1,0 +1,215 @@
+mp_tasks - MainProcess - Setting num_processes = 0 for step mp_households
+mp_tasks - MainProcess - run_multiprocess fail_fast: True
+mp_tasks - MainProcess - allocate_shared_skim_buffer
+mp_tasks - MainProcess - allocate_shared_shadow_pricing_buffers
+mp_tasks - MainProcess - #run_model running sub_process mp_setup_skims
+mp_tasks - mp_setup_skims - mp_setup_skims
+mp_tasks - MainProcess - run_sub_simulations step mp_initialize models resume_after None
+mp_tasks - MainProcess - start process mp_initialize
+mp_tasks - mp_initialize - mp_run_simulation mp_initialize locutor=True 
+mp_tasks - MainProcess - mp_initialize initialize_landuse : 1.641 seconds (0.0 minutes)
+mp_tasks - MainProcess - mp_initialize initialize_households : 81.737 seconds (1.4 minutes)
+mp_tasks - MainProcess - process mp_initialize completed
+mp_tasks - MainProcess - Process mp_initialize completed with exitcode 0
+mp_tasks - MainProcess - run_sub_simulations step mp_accessibility models resume_after None
+mp_tasks - MainProcess - start process mp_accessibility
+mp_tasks - mp_accessibility - mp_run_simulation mp_accessibility locutor=True 
+mp_tasks - mp_accessibility - resume_after _
+mp_tasks - MainProcess - mp_accessibility compute_accessibility : 61.439 seconds (1.0 minutes)
+mp_tasks - MainProcess - process mp_accessibility completed
+mp_tasks - MainProcess - Process mp_accessibility completed with exitcode 0
+mp_tasks - MainProcess - #run_model running sub_process mp_households_apportion
+mp_tasks - mp_households_apportion - loaded table accessibility (4984, 10)
+mp_tasks - mp_households_apportion - loaded table land_use (4984, 28)
+mp_tasks - mp_households_apportion - loaded table person_windows (3265488, 21)
+mp_tasks - mp_households_apportion - loaded table households (1197126, 24)
+mp_tasks - mp_households_apportion - loaded table persons (3265488, 30)
+mp_tasks - mp_households_apportion - loaded table school_destination_size (4984, 3)
+mp_tasks - mp_households_apportion - loaded table workplace_destination_size (4984, 4)
+mp_tasks - mp_households_apportion - ### table_name: households slice_rules: {'slice_by': 'primary'}
+mp_tasks - mp_households_apportion - ### table_name: persons slice_rules: {'slice_by': 'column', 'column': 'household_id', 'source': 'households'}
+mp_tasks - mp_households_apportion - ### table_name: person_windows slice_rules: {'slice_by': 'index', 'source': 'persons'}
+mp_tasks - mp_households_apportion - ### slicer_ref_cols: OrderedDict([('households', 'household_id'), ('persons', 'person_id'), ('person_windows', 'person_id')])
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_0-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_1-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_2-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_3-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_4-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_5-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_6-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_7-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_8-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_9-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_10-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_11-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_12-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_13-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_14-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_15-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_16-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_17-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_18-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_19-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_20-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_21-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_22-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_23-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_24-pipeline.h5
+mp_tasks - mp_households_apportion - writing checkpoints ((1, 9)) to checkpoints in output\mp_households_25-pipeline.h5
+mp_tasks - MainProcess - run_sub_simulations step mp_households models resume_after None
+mp_tasks - MainProcess - start process mp_households_0
+mp_tasks - MainProcess - start process mp_households_1
+mp_tasks - MainProcess - start process mp_households_2
+mp_tasks - mp_households_0 - mp_run_simulation mp_households locutor=True 
+mp_tasks - mp_households_0 - resume_after _
+mp_tasks - MainProcess - start process mp_households_3
+mp_tasks - MainProcess - start process mp_households_4
+mp_tasks - mp_households_1 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_1 - resume_after _
+mp_tasks - MainProcess - start process mp_households_5
+mp_tasks - mp_households_2 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_2 - resume_after _
+mp_tasks - MainProcess - start process mp_households_6
+mp_tasks - mp_households_3 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_3 - resume_after _
+mp_tasks - MainProcess - start process mp_households_7
+mp_tasks - mp_households_4 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_4 - resume_after _
+mp_tasks - MainProcess - start process mp_households_8
+mp_tasks - mp_households_5 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_5 - resume_after _
+mp_tasks - mp_households_6 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_6 - resume_after _
+mp_tasks - MainProcess - start process mp_households_9
+mp_tasks - mp_households_7 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_7 - resume_after _
+mp_tasks - MainProcess - start process mp_households_10
+mp_tasks - mp_households_8 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_8 - resume_after _
+mp_tasks - mp_households_9 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_9 - resume_after _
+mp_tasks - MainProcess - start process mp_households_11
+mp_tasks - mp_households_10 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_10 - resume_after _
+mp_tasks - MainProcess - start process mp_households_12
+mp_tasks - mp_households_11 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_11 - resume_after _
+mp_tasks - MainProcess - start process mp_households_13
+mp_tasks - mp_households_12 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_12 - resume_after _
+mp_tasks - MainProcess - start process mp_households_14
+mp_tasks - mp_households_13 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_13 - resume_after _
+mp_tasks - MainProcess - start process mp_households_15
+mp_tasks - mp_households_14 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_14 - resume_after _
+mp_tasks - MainProcess - start process mp_households_16
+mp_tasks - mp_households_15 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_15 - resume_after _
+mp_tasks - MainProcess - start process mp_households_17
+mp_tasks - MainProcess - start process mp_households_18
+mp_tasks - mp_households_16 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_16 - resume_after _
+mp_tasks - mp_households_17 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_17 - resume_after _
+mp_tasks - MainProcess - start process mp_households_19
+mp_tasks - mp_households_18 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_18 - resume_after _
+mp_tasks - MainProcess - start process mp_households_20
+mp_tasks - MainProcess - start process mp_households_21
+mp_tasks - mp_households_19 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_19 - resume_after _
+mp_tasks - MainProcess - start process mp_households_22
+mp_tasks - mp_households_20 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_20 - resume_after _
+mp_tasks - mp_households_21 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_21 - resume_after _
+mp_tasks - MainProcess - start process mp_households_23
+mp_tasks - mp_households_22 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_22 - resume_after _
+mp_tasks - MainProcess - start process mp_households_24
+mp_tasks - mp_households_23 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_23 - resume_after _
+mp_tasks - MainProcess - start process mp_households_25
+mp_tasks - mp_households_24 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_24 - resume_after _
+mp_tasks - mp_households_25 - mp_run_simulation mp_households locutor=False 
+mp_tasks - mp_households_25 - resume_after _
+mp_tasks - mp_households_0 - OSError exception running school_location model: [WinError 1450] Insufficient system resources exist to complete the requested service: '(originated from NtQueryVirtualMemory(MemoryWorkingSetInformation))'
+---
+mp_tasks - mp_households_0 - OSError exception caught in mp_run_simulation: [WinError 1450] Insufficient system resources exist to complete the requested service: '(originated from NtQueryVirtualMemory(MemoryWorkingSetInformation))'
+Traceback (most recent call last):
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\mp_tasks.py", line 877, in mp_run_simulation
+    run_simulation(queue, step_info, resume_after, shared_data_buffer)
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\mp_tasks.py", line 831, in run_simulation
+    raise e
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\mp_tasks.py", line 828, in run_simulation
+    pipeline.run_model(model)
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\pipeline.py", line 483, in run_model
+    orca.run([step_name])
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\orca.py", line 1853, in run
+    step()
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\orca.py", line 772, in __call__
+    return self._func(**kwargs)
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\abm\models\location_choice.py", line 920, in school_location
+    iterate_location_choice(
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\abm\models\location_choice.py", line 774, in iterate_location_choice
+    choices_df, save_sample_df = run_location_choice(
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\abm\models\location_choice.py", line 606, in run_location_choice
+    run_location_sample(
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\abm\models\location_choice.py", line 379, in run_location_sample
+    choices = location_sample(
+OSError: [WinError 1450] Insufficient system resources exist to complete the requested service: '(originated from NtQueryVirtualMemory(MemoryWorkingSetInformation))'
+---
+mp_tasks - mp_households_10 - NameError exception running school_location model: name 'bug' is not defined
+---
+mp_tasks - mp_households_10 - NameError exception caught in mp_run_simulation: name 'bug' is not defined
+Traceback (most recent call last):
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\mp_tasks.py", line 877, in mp_run_simulation
+    run_simulation(queue, step_info, resume_after, shared_data_buffer)
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\mp_tasks.py", line 831, in run_simulation
+    raise e
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\mp_tasks.py", line 828, in run_simulation
+    pipeline.run_model(model)
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\pipeline.py", line 483, in run_model
+    orca.run([step_name])
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\orca.py", line 1853, in run
+    step()
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\orca.py", line 772, in __call__
+    return self._func(**kwargs)
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\abm\models\location_choice.py", line 920, in school_location
+    iterate_location_choice(
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\abm\models\location_choice.py", line 774, in iterate_location_choice
+    choices_df, save_sample_df = run_location_choice(
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\abm\models\location_choice.py", line 606, in run_location_choice
+    run_location_sample(
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\abm\models\location_choice.py", line 379, in run_location_sample
+    choices = location_sample(
+NameError: name 'bug' is not defined
+---
+mp_tasks - mp_households_3 - NameError exception running school_location model: name 'bug' is not defined
+---
+mp_tasks - mp_households_3 - NameError exception caught in mp_run_simulation: name 'bug' is not defined
+Traceback (most recent call last):
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\mp_tasks.py", line 877, in mp_run_simulation
+    run_simulation(queue, step_info, resume_after, shared_data_buffer)
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\mp_tasks.py", line 831, in run_simulation
+    raise e
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\mp_tasks.py", line 828, in run_simulation
+    pipeline.run_model(model)
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\pipeline.py", line 483, in run_model
+    orca.run([step_name])
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\orca.py", line 1853, in run
+    step()
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\orca.py", line 772, in __call__
+    return self._func(**kwargs)
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\abm\models\location_choice.py", line 920, in school_location
+    iterate_location_choice(
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\abm\models\location_choice.py", line 774, in iterate_location_choice
+    choices_df, save_sample_df = run_location_choice(
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\abm\models\location_choice.py", line 606, in run_location_choice
+    run_location_sample(
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\abm\models\location_choice.py", line 379, in run_location_sample
+    choices = location_sample(
+NameError: name 'bug' is not defined
+---

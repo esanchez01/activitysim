@@ -1,0 +1,16 @@
+process,pid,rss,full_rss,uss,event,children,time
+mp_accessibility,17168,739_606_528,739_606_528,709_591_040,pipeline.run_model compute_accessibility start,0,2021/07/01 10:44:31.508361
+mp_accessibility,17168,757_633_024,757_633_024,726_999_040,compute_accessibility.log_rss,0,2021/07/01 10:44:32.193087
+mp_accessibility,17168,2_720_452_608,2_720_452_608,2_695_921_664,compute_accessibility.log_rss,0,2021/07/01 10:44:37.236049
+mp_accessibility,17168,3_565_015_040,3_565_015_040,3_540_484_096,compute_accessibility.log_rss,0,2021/07/01 10:44:43.364149
+mp_accessibility,17168,2_992_631_808,2_992_631_808,2_720_788_480,compute_accessibility.log_rss,0,2021/07/01 10:44:48.625547
+mp_accessibility,17168,4_461_674_496,4_461_674_496,3_670_556_672,compute_accessibility.log_rss,0,2021/07/01 10:44:53.758227
+mp_accessibility,17168,5_038_870_528,5_038_870_528,3_848_130_560,compute_accessibility.log_rss,0,2021/07/01 10:44:58.866870
+mp_accessibility,17168,5_197_295_616,5_197_295_616,3_724_910_592,compute_accessibility.log_rss,0,2021/07/01 10:45:04.048217
+mp_accessibility,17168,6_056_259_584,6_056_259_584,4_257_230_848,compute_accessibility.log_rss,0,2021/07/01 10:45:09.189602
+mp_accessibility,17168,6_864_175_104,6_864_175_104,4_759_117_824,compute_accessibility.log_rss,0,2021/07/01 10:45:14.357691
+mp_accessibility,17168,6_553_718_784,6_553_718_784,4_445_614_080,compute_accessibility.log_rss,0,2021/07/01 10:45:19.517200
+mp_accessibility,17168,7_138_615_296,7_138_615_296,5_036_146_688,compute_accessibility.log_rss,0,2021/07/01 10:45:24.676944
+mp_accessibility,17168,8_439_496_704,8_439_496_704,6_234_144_768,compute_accessibility.log_rss,0,2021/07/01 10:45:29.860911
+mp_accessibility,17168,2_952_265_728,2_952_265_728,736_149_504,compute_accessibility.log_rss,0,2021/07/01 10:45:32.093758
+mp_accessibility,17168,2_952_626_176,2_952_626_176,736_497_664,pipeline.run_model compute_accessibility finished,0,2021/07/01 10:45:32.140602

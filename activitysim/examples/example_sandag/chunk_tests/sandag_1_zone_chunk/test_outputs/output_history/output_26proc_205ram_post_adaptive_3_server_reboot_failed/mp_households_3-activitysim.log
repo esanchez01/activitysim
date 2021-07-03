@@ -1,0 +1,222 @@
+30/06/2021 12:17:13 - INFO - activitysim - Read logging configuration from: configs_mp\logging.yaml
+30/06/2021 12:17:13 - DEBUG - activitysim.core.mp_tasks - mp_run_simulation mp_households locutor=False 
+30/06/2021 12:17:13 - DEBUG - activitysim.core.mp_tasks - injecting pipeline_file_prefix 'mp_households_3'
+30/06/2021 12:17:13 - INFO - activitysim.core.mp_tasks - adjust_chunk_size_for_shared_memory adjusted_chunk_size 4_712_759_550 shared_memory_in_child_rss False chunk_size 7_884_615_385 shared_memory_size 82_468_251_712 num_processes 26 fair_share_of_shared_memory 3_171_855_835 
+30/06/2021 12:17:13 - INFO - activitysim.core.mp_tasks - resume_after _
+30/06/2021 12:17:13 - DEBUG - activitysim.core.random - Set random seed base to 0
+30/06/2021 12:17:13 - DEBUG - activitysim.core.pipeline - open_pipeline - open existing pipeline
+30/06/2021 12:17:13 - DEBUG - activitysim.core.pipeline - opened pipeline_store output\mp_households_3-pipeline.h5
+30/06/2021 12:17:13 - INFO - activitysim.core.pipeline - load_checkpoint _
+30/06/2021 12:17:13 - INFO - activitysim.core.pipeline - loading checkpoint 'mp_accessibility'
+30/06/2021 12:17:13 - INFO - activitysim.core.pipeline - load_checkpoint mp_accessibility timestamp 2021-06-30 12:16:36.515328
+30/06/2021 12:17:13 - INFO - activitysim.core.pipeline - load_checkpoint table accessibility (4984, 10)
+30/06/2021 12:17:13 - DEBUG - activitysim.core.pipeline - rewrap table accessibility inplace=False
+30/06/2021 12:17:13 - INFO - activitysim.core.pipeline - load_checkpoint table land_use (4984, 28)
+30/06/2021 12:17:13 - DEBUG - activitysim.core.pipeline - rewrap table land_use inplace=False
+30/06/2021 12:17:14 - INFO - activitysim.core.pipeline - load_checkpoint table person_windows (125615, 21)
+30/06/2021 12:17:14 - DEBUG - activitysim.core.pipeline - rewrap table person_windows inplace=False
+30/06/2021 12:17:14 - INFO - activitysim.core.pipeline - load_checkpoint table households (46044, 24)
+30/06/2021 12:17:14 - DEBUG - activitysim.core.pipeline - rewrap table households inplace=False
+30/06/2021 12:17:14 - INFO - activitysim.core.pipeline - load_checkpoint table persons (125615, 30)
+30/06/2021 12:17:14 - DEBUG - activitysim.core.pipeline - rewrap table persons inplace=False
+30/06/2021 12:17:14 - INFO - activitysim.core.pipeline - load_checkpoint table school_destination_size (4984, 3)
+30/06/2021 12:17:14 - DEBUG - activitysim.core.pipeline - rewrap table school_destination_size inplace=False
+30/06/2021 12:17:14 - INFO - activitysim.core.pipeline - load_checkpoint table workplace_destination_size (4984, 4)
+30/06/2021 12:17:14 - DEBUG - activitysim.core.pipeline - rewrap table workplace_destination_size inplace=False
+30/06/2021 12:17:14 - DEBUG - activitysim.core.tracing - register_traceable_table households
+30/06/2021 12:17:14 - DEBUG - activitysim.core.tracing - adding table households.household_id to traceable_table_indexes
+30/06/2021 12:17:14 - DEBUG - activitysim.core.tracing - register_traceable_table persons
+30/06/2021 12:17:14 - DEBUG - activitysim.core.tracing - adding table persons.person_id to traceable_table_indexes
+30/06/2021 12:17:14 - DEBUG - activitysim.core.pipeline - loading random channels ['households', 'persons', 'tours', 'joint_tour_participants', 'trips']
+30/06/2021 12:17:14 - DEBUG - activitysim.core.pipeline - adding channel households
+30/06/2021 12:17:14 - DEBUG - activitysim.core.random - Adding channel 'households' 46044 ids
+30/06/2021 12:17:14 - DEBUG - activitysim.core.pipeline - adding channel persons
+30/06/2021 12:17:14 - DEBUG - activitysim.core.random - Adding channel 'persons' 125615 ids
+30/06/2021 12:17:14 - DEBUG - activitysim.core.pipeline - open_pipeline complete
+30/06/2021 12:17:14 - INFO - activitysim.abm.models.initialize - preload_injectables
+30/06/2021 12:17:14 - INFO - activitysim.core.pipeline - #run_model running step school_location
+30/06/2021 12:17:14 - DEBUG - activitysim.abm.tables.skims - loading network_los_without_data_loaded injectable
+30/06/2021 12:17:14 - INFO - activitysim.core.los - Network_LOS using skim_dict_factory: NumpyArraySkimFactory
+30/06/2021 12:17:14 - DEBUG - activitysim.core.skim_dict_factory - load_skim_info taz reading data_sandag\skims.omx
+30/06/2021 12:17:15 - DEBUG - activitysim.abm.tables.skims - loading network_los injectable
+30/06/2021 12:17:15 - INFO - activitysim.core.skim_dict_factory - get_skim_data taz using existing shared skim_buffers for skims
+30/06/2021 12:17:15 - INFO - activitysim.core.skim_dict_factory - get_skim_data taz SkimData shape (826, 4996, 4996)
+30/06/2021 12:17:15 - INFO - activitysim.core.skim_dictionary - SkimDict init taz
+30/06/2021 12:17:15 - INFO - activitysim.core.skim_dictionary - SkimDict.build_3d_skim_block_offset_table registered 167 3d keys
+30/06/2021 12:17:15 - DEBUG - activitysim.core.los - create_skim_dict taz omx_shape (4996, 4996)
+30/06/2021 12:17:15 - INFO - activitysim.abm.tables.shadow_pricing - Using existing data_buffers for shadow_price
+30/06/2021 12:17:15 - DEBUG - activitysim.abm.tables.shadow_pricing - loading shadow_pricing_info injectable
+30/06/2021 12:17:15 - DEBUG - activitysim.abm.tables.shadow_pricing - shadow_pricing_info dtype: <class 'numpy.int64'>
+30/06/2021 12:17:15 - DEBUG - activitysim.abm.tables.shadow_pricing - shadow_pricing_info block_shapes: OrderedDict([('school', (4984, 4)), ('workplace', (4984, 5))])
+30/06/2021 12:17:15 - DEBUG - activitysim.abm.models.location_choice - school_location max_iterations: 1
+30/06/2021 12:17:15 - DEBUG - activitysim.abm.models.location_choice - dropping 4925 of 4984 rows where size_term is zero
+30/06/2021 12:17:15 - INFO - activitysim.abm.models.location_choice - Running school_location.i1.sample.university with 7069 persons
+30/06/2021 12:17:15 - DEBUG - activitysim.core.simulate - read_model_coefficients file_name school_location_coefficients.csv
+30/06/2021 12:17:15 - INFO - activitysim.core.chunk - school_location.i1.sample.university.interaction_sample Running adaptive_chunked_choosers with 7069 choosers
+30/06/2021 12:17:15 - DEBUG - activitysim.core.chunk - ChunkHistorian load_cached_history chunk_cache_path output\cache\chunk_cache.csv
+30/06/2021 12:17:15 - DEBUG - activitysim.core.chunk - ChunkHistorian load_cached_history reading cached chunk history from chunk_cache.csv
+30/06/2021 12:17:15 - DEBUG - activitysim.core.chunk - school_location.i1.sample.university.interaction_sample.ChunkSizer - cached history cum_rows: 2430197391648.0 cum_overhead: {'rss': 5.132210324621476e+17, 'uss': 5.1216001430471066e+17, 'bytes': 5.738765995139728e+17} 
+30/06/2021 12:17:15 - DEBUG - activitysim.core.chunk - school_location.i1.sample.university.interaction_sample.initial_rows_per_chunk - initial_row_size: 236145
+30/06/2021 12:17:15 - DEBUG - activitysim.core.chunk - school_location.i1.sample.university.interaction_sample.initial_rows_per_chunk - rows_per_chunk: 7069 headroom: 4512010494 initial_row_size: 236145 
+30/06/2021 12:17:15 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 7069 of 7069 choosers
+30/06/2021 12:17:15 - DEBUG - activitysim.core.logit - interaction_dataset pre-merge choosers (7069, 3) alternatives (59, 4) alts_sample (417071, 4)
+30/06/2021 12:17:15 - DEBUG - activitysim.core.logit - interaction_dataset merged alts_sample (417071, 7)
+30/06/2021 12:17:15 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 417071 rows
+30/06/2021 12:17:15 - DEBUG - activitysim.core.chunk - school_location.i1.sample.university.interaction_sample.eval_interaction_utils.chunk_log.initial_rows_per_chunk - rows_per_chunk: 0 headroom: 4486902014 initial_row_size: 0 
+30/06/2021 12:17:16 - DEBUG - activitysim.core.chunk - ChunkLedger.close trace_label: school_location.i1.sample.university.interaction_sample.eval_interaction_utils.chunk_log
+30/06/2021 12:17:16 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_bytes: 0 school_location.i1.sample.university.interaction_sample.eval_interaction_utils.chunk_log.init
+30/06/2021 12:17:16 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_rss 259461120 school_location.i1.sample.university.interaction_sample.eval_interaction_utils.chunk_log.init
+30/06/2021 12:17:16 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_uss 225857536 school_location.i1.sample.university.interaction_sample.eval_interaction_utils.chunk_log.init
+30/06/2021 12:17:16 - DEBUG - activitysim.core.chunk - school_location.i1.sample.university.interaction_sample waiting for mem_monitor thread to terminate
+30/06/2021 12:17:16 - DEBUG - activitysim.core.chunk - ChunkLedger.close trace_label: school_location.i1.sample.university.interaction_sample
+30/06/2021 12:17:16 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_bytes: 0 school_location.i1.sample.university.interaction_sample.init
+30/06/2021 12:17:16 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_rss 234467328 school_location.i1.sample.university.interaction_sample.init
+30/06/2021 12:17:16 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_uss 200749056 school_location.i1.sample.university.interaction_sample.init
+30/06/2021 12:17:16 - DEBUG - activitysim.abm.models.util.logsums - logsum.filter_chooser_columns missing_columns ['tour_type', 'number_of_participants', 'tour_category', 'free_parking_at_work']
+30/06/2021 12:17:16 - INFO - activitysim.abm.models.location_choice - Running school_location.i1.logsums.university with 39190 rows
+30/06/2021 12:17:16 - DEBUG - activitysim.abm.models.util.logsums - Running compute_logsums with 39190 choosers
+30/06/2021 12:17:16 - DEBUG - activitysim.core.simulate - read_model_coefficients file_name tour_mode_choice_coefficients.csv
+30/06/2021 12:17:16 - DEBUG - activitysim.core.simulate - dropping 14 all-zero rows from SPEC
+30/06/2021 12:17:16 - DEBUG - activitysim.core.expressions - school_location.i1.logsums.university.compute_logsums.tour_mode_choice_annotate_choosers_preprocessor compute_columns using expression spec file tour_mode_choice_annotate_choosers_preprocessor.csv
+30/06/2021 12:17:18 - INFO - activitysim.core.chunk - school_location.i1.logsums.university.compute_logsums Running adaptive_chunked_choosers with 39190 choosers
+30/06/2021 12:17:18 - DEBUG - activitysim.core.chunk - school_location.i1.logsums.university.compute_logsums.ChunkSizer - cached history cum_rows: 52293397644800.0 cum_overhead: {'rss': 1.5560828077930414e+18, 'uss': 1.4035759161857638e+17, 'bytes': 1.3512613951416326e+17} 
+30/06/2021 12:17:18 - DEBUG - activitysim.core.chunk - school_location.i1.logsums.university.compute_logsums.initial_rows_per_chunk - initial_row_size: 2685
+30/06/2021 12:17:18 - DEBUG - activitysim.core.chunk - school_location.i1.logsums.university.compute_logsums.initial_rows_per_chunk - rows_per_chunk: 39190 headroom: 4481757438 initial_row_size: 2685 
+30/06/2021 12:17:18 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 39190 of 39190 choosers
+30/06/2021 12:17:23 - DEBUG - activitysim.core.chunk - school_location.i1.logsums.university.compute_logsums waiting for mem_monitor thread to terminate
+30/06/2021 12:17:23 - DEBUG - activitysim.core.chunk - ChunkLedger.close trace_label: school_location.i1.logsums.university.compute_logsums
+30/06/2021 12:17:23 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_bytes: 0 school_location.i1.logsums.university.compute_logsums.init
+30/06/2021 12:17:23 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_rss 1859280896 school_location.i1.logsums.university.compute_logsums.init
+30/06/2021 12:17:23 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_uss 231002112 school_location.i1.logsums.university.compute_logsums.init
+30/06/2021 12:17:23 - INFO - activitysim.abm.models.location_choice - Running school_location.i1.simulate.university with 7069 persons
+30/06/2021 12:17:23 - DEBUG - activitysim.core.simulate - read_model_coefficients file_name school_location_coefficients.csv
+30/06/2021 12:17:23 - INFO - activitysim.core.chunk - school_location.i1.simulate.university.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 7069 choosers and 39190 alternatives
+30/06/2021 12:17:23 - DEBUG - activitysim.core.chunk - school_location.i1.simulate.university.interaction_sample_simulate.ChunkSizer - cached history cum_rows: 2430197391648.0 cum_overhead: {'rss': 7050479892439040.0, 'uss': 6929753644478464.0, 'bytes': 5072459571545600.0} 
+30/06/2021 12:17:23 - DEBUG - activitysim.core.chunk - school_location.i1.simulate.university.interaction_sample_simulate.initial_rows_per_chunk - initial_row_size: 2852
+30/06/2021 12:17:23 - DEBUG - activitysim.core.chunk - school_location.i1.simulate.university.interaction_sample_simulate.initial_rows_per_chunk - rows_per_chunk: 7069 headroom: 4482343166 initial_row_size: 2852 
+30/06/2021 12:17:23 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 7069 of 7069 choosers
+30/06/2021 12:17:23 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 39190 rows
+30/06/2021 12:17:23 - DEBUG - activitysim.core.chunk - school_location.i1.simulate.university.interaction_sample_simulate.eval_interaction_utils.chunk_log.initial_rows_per_chunk - rows_per_chunk: 0 headroom: 4479131902 initial_row_size: 0 
+30/06/2021 12:17:24 - DEBUG - activitysim.core.chunk - ChunkLedger.close trace_label: school_location.i1.simulate.university.interaction_sample_simulate.eval_interaction_utils.chunk_log
+30/06/2021 12:17:24 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_bytes: 0 school_location.i1.simulate.university.interaction_sample_simulate.eval_interaction_utils.chunk_log.init
+30/06/2021 12:17:24 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_rss 6457712640 school_location.i1.simulate.university.interaction_sample_simulate.eval_interaction_utils.chunk_log.init
+30/06/2021 12:17:24 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_uss 233627648 school_location.i1.simulate.university.interaction_sample_simulate.eval_interaction_utils.chunk_log.init
+30/06/2021 12:17:24 - DEBUG - activitysim.core.chunk - school_location.i1.simulate.university.interaction_sample_simulate waiting for mem_monitor thread to terminate
+30/06/2021 12:17:24 - DEBUG - activitysim.core.chunk - ChunkLedger.close trace_label: school_location.i1.simulate.university.interaction_sample_simulate
+30/06/2021 12:17:24 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_bytes: 0 school_location.i1.simulate.university.interaction_sample_simulate.init
+30/06/2021 12:17:24 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_rss 6455025664 school_location.i1.simulate.university.interaction_sample_simulate.init
+30/06/2021 12:17:24 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_uss 230416384 school_location.i1.simulate.university.interaction_sample_simulate.init
+30/06/2021 12:17:24 - DEBUG - activitysim.abm.models.location_choice - dropping 4740 of 4984 rows where size_term is zero
+30/06/2021 12:17:24 - INFO - activitysim.abm.models.location_choice - Running school_location.i1.sample.highschool with 5177 persons
+30/06/2021 12:17:24 - DEBUG - activitysim.core.simulate - read_model_coefficients file_name school_location_coefficients.csv
+30/06/2021 12:17:24 - INFO - activitysim.core.chunk - school_location.i1.sample.highschool.interaction_sample Running adaptive_chunked_choosers with 5177 choosers
+30/06/2021 12:17:24 - DEBUG - activitysim.core.chunk - school_location.i1.sample.highschool.interaction_sample.ChunkSizer - cached history cum_rows: 2430197391648.0 cum_overhead: {'rss': 5.132210324621476e+17, 'uss': 5.1216001430471066e+17, 'bytes': 5.738765995139728e+17} 
+30/06/2021 12:17:24 - DEBUG - activitysim.core.chunk - school_location.i1.sample.highschool.interaction_sample.initial_rows_per_chunk - initial_row_size: 236145
+30/06/2021 12:17:24 - DEBUG - activitysim.core.chunk - school_location.i1.sample.highschool.interaction_sample.initial_rows_per_chunk - rows_per_chunk: 5177 headroom: 4488605950 initial_row_size: 236145 
+30/06/2021 12:17:24 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 5177 of 5177 choosers
+30/06/2021 12:17:25 - DEBUG - activitysim.core.logit - interaction_dataset pre-merge choosers (5177, 3) alternatives (244, 4) alts_sample (1263188, 4)
+30/06/2021 12:17:25 - DEBUG - activitysim.core.logit - interaction_dataset merged alts_sample (1263188, 7)
+30/06/2021 12:17:25 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 1263188 rows
+30/06/2021 12:17:25 - DEBUG - activitysim.core.chunk - school_location.i1.sample.highschool.interaction_sample.eval_interaction_utils.chunk_log.initial_rows_per_chunk - rows_per_chunk: 0 headroom: 4416495870 initial_row_size: 0 
+30/06/2021 12:17:26 - DEBUG - activitysim.core.chunk - ChunkLedger.close trace_label: school_location.i1.sample.highschool.interaction_sample.eval_interaction_utils.chunk_log
+30/06/2021 12:17:26 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_bytes: 0 school_location.i1.sample.highschool.interaction_sample.eval_interaction_utils.chunk_log.init
+30/06/2021 12:17:26 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_rss 6520877056 school_location.i1.sample.highschool.interaction_sample.eval_interaction_utils.chunk_log.init
+30/06/2021 12:17:26 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_uss 296263680 school_location.i1.sample.highschool.interaction_sample.eval_interaction_utils.chunk_log.init
+30/06/2021 12:17:27 - DEBUG - activitysim.core.chunk - school_location.i1.sample.highschool.interaction_sample waiting for mem_monitor thread to terminate
+30/06/2021 12:17:27 - DEBUG - activitysim.core.chunk - ChunkLedger.close trace_label: school_location.i1.sample.highschool.interaction_sample
+30/06/2021 12:17:27 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_bytes: 0 school_location.i1.sample.highschool.interaction_sample.init
+30/06/2021 12:17:27 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_rss 6448025600 school_location.i1.sample.highschool.interaction_sample.init
+30/06/2021 12:17:27 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_uss 224153600 school_location.i1.sample.highschool.interaction_sample.init
+30/06/2021 12:17:27 - DEBUG - activitysim.abm.models.util.logsums - logsum.filter_chooser_columns missing_columns ['tour_type', 'number_of_participants', 'tour_category', 'free_parking_at_work']
+30/06/2021 12:17:27 - INFO - activitysim.abm.models.location_choice - Running school_location.i1.logsums.highschool with 78853 rows
+30/06/2021 12:17:27 - DEBUG - activitysim.abm.models.util.logsums - Running compute_logsums with 78853 choosers
+30/06/2021 12:17:27 - DEBUG - activitysim.core.simulate - read_model_coefficients file_name tour_mode_choice_coefficients.csv
+30/06/2021 12:17:27 - DEBUG - activitysim.core.simulate - dropping 14 all-zero rows from SPEC
+30/06/2021 12:17:27 - DEBUG - activitysim.core.expressions - school_location.i1.logsums.highschool.compute_logsums.tour_mode_choice_annotate_choosers_preprocessor compute_columns using expression spec file tour_mode_choice_annotate_choosers_preprocessor.csv
+30/06/2021 12:17:30 - INFO - activitysim.core.chunk - school_location.i1.logsums.highschool.compute_logsums Running adaptive_chunked_choosers with 78853 choosers
+30/06/2021 12:17:31 - DEBUG - activitysim.core.chunk - school_location.i1.logsums.highschool.compute_logsums.ChunkSizer - cached history cum_rows: 52293397644800.0 cum_overhead: {'rss': 1.5560828077930414e+18, 'uss': 1.4035759161857638e+17, 'bytes': 1.3512613951416326e+17} 
+30/06/2021 12:17:31 - DEBUG - activitysim.core.chunk - school_location.i1.logsums.highschool.compute_logsums.initial_rows_per_chunk - initial_row_size: 2685
+30/06/2021 12:17:31 - DEBUG - activitysim.core.chunk - school_location.i1.logsums.highschool.compute_logsums.initial_rows_per_chunk - rows_per_chunk: 78853 headroom: 4449464574 initial_row_size: 2685 
+30/06/2021 12:17:31 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 78853 of 78853 choosers
+30/06/2021 12:17:41 - DEBUG - activitysim.core.chunk - school_location.i1.logsums.highschool.compute_logsums waiting for mem_monitor thread to terminate
+30/06/2021 12:17:41 - DEBUG - activitysim.core.chunk - ChunkLedger.close trace_label: school_location.i1.logsums.highschool.compute_logsums
+30/06/2021 12:17:41 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_bytes: 0 school_location.i1.logsums.highschool.compute_logsums.init
+30/06/2021 12:17:41 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_rss 7009603584 school_location.i1.logsums.highschool.compute_logsums.init
+30/06/2021 12:17:41 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_uss 263294976 school_location.i1.logsums.highschool.compute_logsums.init
+30/06/2021 12:17:41 - INFO - activitysim.abm.models.location_choice - Running school_location.i1.simulate.highschool with 5177 persons
+30/06/2021 12:17:42 - DEBUG - activitysim.core.simulate - read_model_coefficients file_name school_location_coefficients.csv
+30/06/2021 12:17:42 - INFO - activitysim.core.chunk - school_location.i1.simulate.highschool.interaction_sample_simulate Running adaptive_chunked_choosers_and_alts with 5177 choosers and 78853 alternatives
+30/06/2021 12:17:42 - DEBUG - activitysim.core.chunk - school_location.i1.simulate.highschool.interaction_sample_simulate.ChunkSizer - cached history cum_rows: 2430197391648.0 cum_overhead: {'rss': 7050479892439040.0, 'uss': 6929753644478464.0, 'bytes': 5072459571545600.0} 
+30/06/2021 12:17:42 - DEBUG - activitysim.core.chunk - school_location.i1.simulate.highschool.interaction_sample_simulate.initial_rows_per_chunk - initial_row_size: 2852
+30/06/2021 12:17:42 - DEBUG - activitysim.core.chunk - school_location.i1.simulate.highschool.interaction_sample_simulate.initial_rows_per_chunk - rows_per_chunk: 5177 headroom: 4478435582 initial_row_size: 2852 
+30/06/2021 12:17:42 - INFO - activitysim.core.chunk - Running chunk 1 of 1 with 5177 of 5177 choosers
+30/06/2021 12:17:42 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 78853 rows
+30/06/2021 12:17:42 - DEBUG - activitysim.core.chunk - school_location.i1.simulate.highschool.interaction_sample_simulate.eval_interaction_utils.chunk_log.initial_rows_per_chunk - rows_per_chunk: 0 headroom: 4471529726 initial_row_size: 0 
+30/06/2021 12:17:43 - DEBUG - activitysim.core.chunk - ChunkLedger.close trace_label: school_location.i1.simulate.highschool.interaction_sample_simulate.eval_interaction_utils.chunk_log
+30/06/2021 12:17:43 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_bytes: 0 school_location.i1.simulate.highschool.interaction_sample_simulate.eval_interaction_utils.chunk_log.init
+30/06/2021 12:17:43 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_rss 8523882496 school_location.i1.simulate.highschool.interaction_sample_simulate.eval_interaction_utils.chunk_log.init
+30/06/2021 12:17:43 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_uss 241229824 school_location.i1.simulate.highschool.interaction_sample_simulate.eval_interaction_utils.chunk_log.init
+30/06/2021 12:17:44 - DEBUG - activitysim.core.chunk - school_location.i1.simulate.highschool.interaction_sample_simulate waiting for mem_monitor thread to terminate
+30/06/2021 12:17:44 - DEBUG - activitysim.core.chunk - ChunkLedger.close trace_label: school_location.i1.simulate.highschool.interaction_sample_simulate
+30/06/2021 12:17:44 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_bytes: 0 school_location.i1.simulate.highschool.interaction_sample_simulate.init
+30/06/2021 12:17:44 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_rss 8516816896 school_location.i1.simulate.highschool.interaction_sample_simulate.init
+30/06/2021 12:17:44 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_uss 234323968 school_location.i1.simulate.highschool.interaction_sample_simulate.init
+30/06/2021 12:17:44 - DEBUG - activitysim.abm.models.location_choice - dropping 927 of 4984 rows where size_term is zero
+30/06/2021 12:17:44 - INFO - activitysim.abm.models.location_choice - Running school_location.i1.sample.gradeschool with 25469 persons
+30/06/2021 12:17:44 - DEBUG - activitysim.core.simulate - read_model_coefficients file_name school_location_coefficients.csv
+30/06/2021 12:17:44 - INFO - activitysim.core.chunk - school_location.i1.sample.gradeschool.interaction_sample Running adaptive_chunked_choosers with 25469 choosers
+30/06/2021 12:17:44 - DEBUG - activitysim.core.chunk - school_location.i1.sample.gradeschool.interaction_sample.ChunkSizer - cached history cum_rows: 2430197391648.0 cum_overhead: {'rss': 5.132210324621476e+17, 'uss': 5.1216001430471066e+17, 'bytes': 5.738765995139728e+17} 
+30/06/2021 12:17:44 - DEBUG - activitysim.core.chunk - school_location.i1.sample.gradeschool.interaction_sample.initial_rows_per_chunk - initial_row_size: 236145
+30/06/2021 12:17:44 - DEBUG - activitysim.core.chunk - school_location.i1.sample.gradeschool.interaction_sample.initial_rows_per_chunk - rows_per_chunk: 18953 headroom: 4475691262 initial_row_size: 236145 
+30/06/2021 12:17:44 - INFO - activitysim.core.chunk - Running chunk 1 of 2 with 18953 of 25469 choosers
+30/06/2021 12:17:52 - DEBUG - activitysim.core.logit - interaction_dataset pre-merge choosers (18953, 3) alternatives (4057, 4) alts_sample (76892321, 4)
+30/06/2021 12:17:56 - DEBUG - activitysim.core.logit - interaction_dataset merged alts_sample (76892321, 7)
+30/06/2021 12:17:56 - INFO - activitysim.core.interaction_simulate - Running eval_interaction_utilities on 76892321 rows
+30/06/2021 12:17:56 - DEBUG - activitysim.core.chunk - school_location.i1.sample.gradeschool.interaction_sample.eval_interaction_utils.chunk_log.initial_rows_per_chunk - rows_per_chunk: 0 headroom: 75190526 initial_row_size: 0 
+30/06/2021 12:22:14 - WARNING - activitysim.core.chunk - Not enough memory for minimum chunk_size without exceeding specified chunk_size. available_headroom: -1_431_592_706 min_chunk_size: 0 base_chunk_size: 4_712_759_550
+30/06/2021 12:22:14 - DEBUG - activitysim.core.chunk - ChunkLedger.close trace_label: school_location.i1.sample.gradeschool.interaction_sample.eval_interaction_utils.chunk_log
+30/06/2021 12:22:14 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_bytes: 0 school_location.i1.sample.gradeschool.interaction_sample.eval_interaction_utils.chunk_log.init
+30/06/2021 12:22:14 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_rss 12903968768 school_location.i1.sample.gradeschool.interaction_sample.eval_interaction_utils.chunk_log.init
+30/06/2021 12:22:14 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_uss 4637569024 school_location.i1.sample.gradeschool.interaction_sample.eval_interaction_utils.chunk_log.init
+30/06/2021 12:22:38 - WARNING - activitysim.core.chunk - Not enough memory for minimum chunk_size without exceeding specified chunk_size. available_headroom: 88_768_766 min_chunk_size: 235_637_977 base_chunk_size: 4_712_759_550
+30/06/2021 12:22:38 - ERROR - activitysim.core.chunk - mem_monitor for school_location.i1.sample.gradeschool.interaction_sample died!
+30/06/2021 12:22:38 - WARNING - activitysim.core.mp_tasks - NameError exception running school_location model: name 'bug' is not defined
+30/06/2021 12:22:38 - ERROR - activitysim.core.mp_tasks - mp_tasks - mp_households_3 - NameError exception caught in mp_run_simulation: name 'bug' is not defined
+30/06/2021 12:22:38 - ERROR - activitysim.core.mp_tasks - 
+---
+Traceback (most recent call last):
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\mp_tasks.py", line 877, in mp_run_simulation
+    run_simulation(queue, step_info, resume_after, shared_data_buffer)
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\mp_tasks.py", line 831, in run_simulation
+    raise e
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\mp_tasks.py", line 828, in run_simulation
+    pipeline.run_model(model)
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\pipeline.py", line 483, in run_model
+    orca.run([step_name])
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\orca.py", line 1853, in run
+    step()
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\orca.py", line 772, in __call__
+    return self._func(**kwargs)
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\abm\models\location_choice.py", line 920, in school_location
+    iterate_location_choice(
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\abm\models\location_choice.py", line 774, in iterate_location_choice
+    choices_df, save_sample_df = run_location_choice(
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\abm\models\location_choice.py", line 606, in run_location_choice
+    run_location_sample(
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\abm\models\location_choice.py", line 379, in run_location_sample
+    choices = location_sample(
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\abm\models\location_choice.py", line 192, in location_sample
+    choices = _location_sample(
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\abm\models\location_choice.py", line 153, in _location_sample
+    choices = interaction_sample(
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\interaction_sample.py", line 466, in interaction_sample
+    for i, chooser_chunk, chunk_trace_label \
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\chunk.py", line 943, in adaptive_chunked_choosers
+    rows_per_chunk, estimated_number_of_chunks = chunk_sizer.adaptive_rows_per_chunk(i)
+  File "c:\users\esanc\.conda\envs\asim_master\lib\contextlib.py", line 120, in __exit__
+    next(self.gen)
+  File "c:\users\esanc\.conda\envs\asim_master\lib\site-packages\activitysim\core\chunk.py", line 870, in ledger
+    bug  # bug
+NameError: name 'bug' is not defined
+---
+

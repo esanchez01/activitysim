@@ -1,0 +1,101 @@
+01/07/2021 10:42:53 - INFO - activitysim - Read logging configuration from: configs_mp\logging.yaml
+01/07/2021 10:42:53 - DEBUG - activitysim.core.mp_tasks - mp_run_simulation mp_initialize locutor=True 
+01/07/2021 10:42:53 - INFO - activitysim.core.mp_tasks - adjust_chunk_size_for_shared_memory adjusted_chunk_size 107_531_748_288 shared_memory_in_child_rss False chunk_size 190_000_000_000 shared_memory_size 82_468_251_712 num_processes 1 fair_share_of_shared_memory 82_468_251_712 
+01/07/2021 10:42:53 - DEBUG - activitysim.core.random - Set random seed base to 0
+01/07/2021 10:42:53 - DEBUG - activitysim.core.pipeline - open_pipeline - new, empty pipeline
+01/07/2021 10:42:53 - DEBUG - activitysim.core.pipeline - opened pipeline_store output\pipeline.h5
+01/07/2021 10:42:53 - DEBUG - activitysim.core.pipeline - add_checkpoint init timestamp 2021-07-01 10:42:53.720399
+01/07/2021 10:42:53 - DEBUG - activitysim.core.pipeline - open_pipeline complete
+01/07/2021 10:42:53 - INFO - activitysim.abm.models.initialize - preload_injectables
+01/07/2021 10:42:53 - INFO - activitysim.core.pipeline - #run_model running step initialize_landuse
+01/07/2021 10:42:53 - DEBUG - activitysim.core.chunk - ChunkHistorian load_cached_history chunk_cache_path output\cache\chunk_cache.csv
+01/07/2021 10:42:53 - DEBUG - activitysim.core.chunk - ChunkHistorian load_cached_history reading cached chunk history from chunk_cache.csv
+01/07/2021 10:42:53 - DEBUG - activitysim.core.chunk - initialize_landuse.chunk_log.initial_rows_per_chunk - rows_per_chunk: 0 headroom: 0.0 initial_row_size: 0 
+01/07/2021 10:42:53 - INFO - activitysim.core.input - Reading CSV file data_sandag\land_use.csv
+01/07/2021 10:42:53 - DEBUG - activitysim.core.input - raw land_use table size: (4984, 25) 996.9 KB
+01/07/2021 10:42:53 - DEBUG - activitysim.core.input - renaming columns: {'TAZ': 'zone_id', 'COUNTY': 'county_id'}
+01/07/2021 10:42:53 - DEBUG - activitysim.core.input - keeping columns: ['DISTRICT', 'SD', 'county_id', 'TOTHH', 'TOTPOP', 'TOTACRE', 'RESACRE', 'CIACRE', 'TOTEMP', 'AGE0519', 'RETEMPN', 'FPSEMPN', 'HEREMPN', 'OTHEMPN', 'AGREMPN', 'MWTEMPN', 'PRKCST', 'OPRKCST', 'area_type', 'HSENROLL', 'COLLFTE', 'COLLPTE', 'TOPOLOGY', 'TERMINAL']
+01/07/2021 10:42:53 - DEBUG - activitysim.core.input - land_use table columns: ['DISTRICT' 'SD' 'county_id' 'TOTHH' 'TOTPOP' 'TOTACRE' 'RESACRE' 'CIACRE'
+ 'TOTEMP' 'AGE0519' 'RETEMPN' 'FPSEMPN' 'HEREMPN' 'OTHEMPN' 'AGREMPN'
+ 'MWTEMPN' 'PRKCST' 'OPRKCST' 'area_type' 'HSENROLL' 'COLLFTE' 'COLLPTE'
+ 'TOPOLOGY' 'TERMINAL']
+01/07/2021 10:42:53 - DEBUG - activitysim.core.input - land_use table size: (4984, 24) 996.8 KB
+01/07/2021 10:42:53 - DEBUG - activitysim.core.input - land_use index name: zone_id
+01/07/2021 10:42:53 - INFO - activitysim.abm.tables.landuse - loaded land_use (4984, 24)
+01/07/2021 10:42:53 - INFO - activitysim.abm.models.initialize - initialize_landuse.annotate_tables - annotating land_use SPEC annotate_landuse
+01/07/2021 10:42:53 - DEBUG - activitysim.core.expressions - initialize_landuse.annotate_tables.annotate_landuse compute_columns using expression spec file annotate_landuse.csv
+01/07/2021 10:42:53 - DEBUG - activitysim.abm.tables.skims - loading network_los_without_data_loaded injectable
+01/07/2021 10:42:53 - INFO - activitysim.core.los - Network_LOS using skim_dict_factory: NumpyArraySkimFactory
+01/07/2021 10:42:53 - DEBUG - activitysim.core.skim_dict_factory - load_skim_info taz reading data_sandag\skims.omx
+01/07/2021 10:42:54 - DEBUG - activitysim.abm.tables.skims - loading network_los injectable
+01/07/2021 10:42:54 - INFO - activitysim.core.skim_dict_factory - get_skim_data taz using existing shared skim_buffers for skims
+01/07/2021 10:42:54 - INFO - activitysim.core.skim_dict_factory - get_skim_data taz SkimData shape (826, 4996, 4996)
+01/07/2021 10:42:54 - INFO - activitysim.core.skim_dictionary - SkimDict init taz
+01/07/2021 10:42:54 - INFO - activitysim.core.skim_dictionary - SkimDict.build_3d_skim_block_offset_table registered 167 3d keys
+01/07/2021 10:42:54 - DEBUG - activitysim.core.los - create_skim_dict taz omx_shape (4996, 4996)
+01/07/2021 10:42:54 - DEBUG - activitysim.core.pipeline - rewrap table land_use inplace=False
+01/07/2021 10:42:54 - DEBUG - activitysim.abm.tables.accessibility - created placeholder accessibility table (4984, 0)
+01/07/2021 10:42:54 - DEBUG - activitysim.core.chunk - initialize_landuse.chunk_log waiting for mem_monitor thread to terminate
+01/07/2021 10:42:54 - DEBUG - activitysim.core.chunk - ChunkLedger.close trace_label: initialize_landuse.chunk_log
+01/07/2021 10:42:54 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_bytes: 0 initialize_landuse.chunk_log.init
+01/07/2021 10:42:54 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_rss 104644608 initialize_landuse.chunk_log.init
+01/07/2021 10:42:54 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_uss 72282112 initialize_landuse.chunk_log.init
+01/07/2021 10:42:54 - DEBUG - activitysim.core.tracing - Time to execute #run_model completed step 'initialize_landuse' : 0.796 seconds (0.0 minutes)
+01/07/2021 10:42:54 - DEBUG - activitysim.core.pipeline - add_checkpoint initialize_landuse timestamp 2021-07-01 10:42:54.563181
+01/07/2021 10:42:54 - DEBUG - activitysim.core.pipeline - add_checkpoint 'initialize_landuse' table 'accessibility' (4984, 0) 0 B
+01/07/2021 10:42:54 - DEBUG - activitysim.core.pipeline - add_checkpoint 'initialize_landuse' table 'land_use' (4984, 28) 1.1 MB
+01/07/2021 10:42:54 - INFO - activitysim.core.pipeline - #run_model running step initialize_households
+01/07/2021 10:42:54 - DEBUG - activitysim.core.chunk - initialize_households.chunk_log.initial_rows_per_chunk - rows_per_chunk: 0 headroom: 0.0 initial_row_size: 0 
+01/07/2021 10:42:54 - INFO - activitysim.core.input - Reading CSV file data_sandag\households.csv
+01/07/2021 10:42:57 - DEBUG - activitysim.core.input - raw households table size: (1197126, 9) 86.2 MB
+01/07/2021 10:42:57 - DEBUG - activitysim.core.input - renaming columns: {'HHID': 'household_id', 'PERSONS': 'hhsize', 'workers': 'num_workers', 'VEHICL': 'auto_ownership', 'TAZ': 'home_zone_id'}
+01/07/2021 10:42:57 - DEBUG - activitysim.core.input - keeping columns: ['home_zone_id', 'income', 'hhsize', 'HHT', 'auto_ownership', 'num_workers']
+01/07/2021 10:42:57 - DEBUG - activitysim.core.input - households table columns: ['home_zone_id' 'income' 'hhsize' 'HHT' 'auto_ownership' 'num_workers']
+01/07/2021 10:42:57 - DEBUG - activitysim.core.input - households table size: (1197126, 6) 67.0 MB
+01/07/2021 10:42:57 - DEBUG - activitysim.core.input - households index name: household_id
+01/07/2021 10:42:57 - INFO - activitysim.abm.tables.households - full household list contains 1197126 households
+01/07/2021 10:42:57 - INFO - activitysim.abm.tables.households - loaded households (1197126, 7)
+01/07/2021 10:42:57 - DEBUG - activitysim.core.random - Adding channel 'households' 1197126 ids
+01/07/2021 10:42:57 - DEBUG - activitysim.core.tracing - register_traceable_table households
+01/07/2021 10:42:57 - DEBUG - activitysim.core.tracing - adding table households.household_id to traceable_table_indexes
+01/07/2021 10:42:57 - INFO - activitysim.core.input - Reading CSV file data_sandag\persons.csv
+01/07/2021 10:43:04 - DEBUG - activitysim.core.input - raw persons table size: (3265488, 9) 235.1 MB
+01/07/2021 10:43:04 - DEBUG - activitysim.core.input - renaming columns: {'PERID': 'person_id'}
+01/07/2021 10:43:05 - DEBUG - activitysim.core.input - keeping columns: ['household_id', 'age', 'PNUM', 'sex', 'pemploy', 'pstudent', 'ptype']
+01/07/2021 10:43:05 - DEBUG - activitysim.core.input - persons table columns: ['household_id' 'age' 'PNUM' 'sex' 'pemploy' 'pstudent' 'ptype']
+01/07/2021 10:43:05 - DEBUG - activitysim.core.input - persons table size: (3265488, 7) 209.0 MB
+01/07/2021 10:43:05 - DEBUG - activitysim.core.input - persons index name: person_id
+01/07/2021 10:43:05 - INFO - activitysim.abm.tables.persons - loaded persons (3265488, 7)
+01/07/2021 10:43:05 - DEBUG - activitysim.core.random - Adding channel 'persons' 3265488 ids
+01/07/2021 10:43:06 - DEBUG - activitysim.core.tracing - register_traceable_table persons
+01/07/2021 10:43:06 - DEBUG - activitysim.core.tracing - adding table persons.person_id to traceable_table_indexes
+01/07/2021 10:43:06 - DEBUG - activitysim.abm.tables.persons - 1197126 unique household_ids in persons
+01/07/2021 10:43:06 - DEBUG - activitysim.abm.tables.persons - 1197126 unique household_ids in households
+01/07/2021 10:43:07 - INFO - activitysim.abm.models.initialize - initialize_households.annotate_tables - annotating persons SPEC annotate_persons
+01/07/2021 10:43:07 - DEBUG - activitysim.core.expressions - initialize_households.annotate_tables.annotate_persons compute_columns using expression spec file annotate_persons.csv
+01/07/2021 10:43:24 - DEBUG - activitysim.core.pipeline - rewrap table persons inplace=False
+01/07/2021 10:43:24 - INFO - activitysim.abm.models.initialize - initialize_households.annotate_tables - annotating households SPEC annotate_households
+01/07/2021 10:43:24 - DEBUG - activitysim.core.expressions - initialize_households.annotate_tables.annotate_households compute_columns using expression spec file annotate_households.csv
+01/07/2021 10:43:38 - DEBUG - activitysim.core.pipeline - rewrap table households inplace=False
+01/07/2021 10:43:38 - INFO - activitysim.abm.models.initialize - initialize_households.annotate_tables - annotating persons SPEC annotate_persons_after_hh
+01/07/2021 10:43:38 - DEBUG - activitysim.core.expressions - initialize_households.annotate_tables.annotate_persons_after_hh compute_columns using expression spec file annotate_persons_after_hh.csv
+01/07/2021 10:43:39 - DEBUG - activitysim.core.pipeline - rewrap table persons inplace=False
+01/07/2021 10:43:40 - DEBUG - activitysim.abm.tables.shadow_pricing - add_size_table school_destination_size ((4984, 3)) for school
+01/07/2021 10:43:53 - DEBUG - activitysim.abm.tables.shadow_pricing - add_size_table workplace_destination_size ((4984, 4)) for workplace
+01/07/2021 10:43:53 - DEBUG - activitysim.core.chunk - initialize_households.chunk_log waiting for mem_monitor thread to terminate
+01/07/2021 10:43:53 - DEBUG - activitysim.core.chunk - ChunkLedger.close trace_label: initialize_households.chunk_log
+01/07/2021 10:43:53 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_bytes: 0 initialize_households.chunk_log.init
+01/07/2021 10:43:53 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_rss 122699776 initialize_households.chunk_log.init
+01/07/2021 10:43:53 - DEBUG - activitysim.core.chunk - ChunkLedger.close hwm_uss 89698304 initialize_households.chunk_log.init
+01/07/2021 10:43:53 - DEBUG - activitysim.core.tracing - Time to execute #run_model completed step 'initialize_households' : 58.857 seconds (1.0 minutes)
+01/07/2021 10:43:53 - DEBUG - activitysim.core.pipeline - add_checkpoint initialize_households timestamp 2021-07-01 10:43:53.560372
+01/07/2021 10:43:53 - DEBUG - activitysim.core.pipeline - add_checkpoint 'initialize_households' table 'person_windows' (3265488, 21) 230.0 MB
+01/07/2021 10:43:58 - DEBUG - activitysim.core.pipeline - add_checkpoint 'initialize_households' table 'households' (1197126, 24) 167.9 MB
+01/07/2021 10:44:04 - DEBUG - activitysim.core.pipeline - add_checkpoint 'initialize_households' table 'persons' (3265488, 30) 465.1 MB
+01/07/2021 10:44:21 - DEBUG - activitysim.core.pipeline - add_checkpoint 'initialize_households' table 'school_destination_size' (4984, 3) 159.5 KB
+01/07/2021 10:44:21 - DEBUG - activitysim.core.pipeline - add_checkpoint 'initialize_households' table 'workplace_destination_size' (4984, 4) 199.4 KB
+01/07/2021 10:44:21 - INFO - activitysim.core.tracing - Time to execute run (2 models) : 87.687 seconds (1.5 minutes)
+01/07/2021 10:44:21 - DEBUG - activitysim.core.pipeline - add_checkpoint mp_initialize timestamp 2021-07-01 10:44:21.422696
+01/07/2021 10:44:21 - DEBUG - activitysim.core.pipeline - close_pipeline
+01/07/2021 10:44:21 - INFO - activitysim.core.mem - mp_initialize high water mark rss: 3_328_507_904 (3.3 GB) timestamp: 01/07/2021 10:43:45 label:initialize_households.chunk_log.log_rss
+01/07/2021 10:44:21 - INFO - activitysim.core.mem - mp_initialize high water mark uss: 3_304_448_000 (3.3 GB) timestamp: 01/07/2021 10:43:45 label:initialize_households.chunk_log.log_rss

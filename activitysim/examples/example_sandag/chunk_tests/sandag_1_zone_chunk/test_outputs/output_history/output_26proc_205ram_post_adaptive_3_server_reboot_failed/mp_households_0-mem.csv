@@ -1,0 +1,37 @@
+process,pid,rss,full_rss,uss,event,children,time
+mp_households_0,17084,134_455_296,134_455_296,101_847_040,pipeline.run_model school_location start,0,2021/06/30 12:17:06.320581
+mp_households_0,17084,234_401_792,234_401_792,201_572_352,school_location.i1.sample.university.interaction_sample.log_rss,0,2021/06/30 12:17:08.048421
+mp_households_0,17084,259_186_688,259_186_688,226_238_464,school_location.i1.sample.university.interaction_sample.eval_interaction_utils.chunk_log.log_rss,0,2021/06/30 12:17:08.126549
+mp_households_0,17084,331_399_168,331_399_168,236_527_616,school_location.i1.sample.university.interaction_sample.eval_interaction_utils.chunk_log.log_rss,0,2021/06/30 12:17:08.314056
+mp_households_0,17084,326_242_304,326_242_304,231_362_560,school_location.i1.sample.university.interaction_sample.log_rss,0,2021/06/30 12:17:08.581894
+mp_households_0,17084,1_857_085_440,1_857_085_440,232_071_168,school_location.i1.logsums.university.compute_logsums.log_rss,0,2021/06/30 12:17:10.853553
+mp_households_0,17084,6_457_184_256,6_457_184_256,248_131_584,school_location.i1.logsums.university.compute_logsums.log_rss,0,2021/06/30 12:17:15.216030
+mp_households_0,17084,6_440_026_112,6_440_026_112,230_965_248,school_location.i1.simulate.university.interaction_sample_simulate.log_rss,0,2021/06/30 12:17:15.588715
+mp_households_0,17084,6_443_319_296,6_443_319_296,234_258_432,school_location.i1.simulate.university.interaction_sample_simulate.eval_interaction_utils.chunk_log.log_rss,0,2021/06/30 12:17:15.871120
+mp_households_0,17084,6_445_043_712,6_445_043_712,235_982_848,school_location.i1.simulate.university.interaction_sample_simulate.eval_interaction_utils.chunk_log.log_rss,0,2021/06/30 12:17:16.165449
+mp_households_0,17084,6_441_492_480,6_441_492_480,232_431_616,school_location.i1.simulate.university.interaction_sample_simulate.log_rss,0,2021/06/30 12:17:16.635427
+mp_households_0,17084,6_433_116_160,6_433_116_160,224_055_296,school_location.i1.sample.highschool.interaction_sample.log_rss,0,2021/06/30 12:17:17.060723
+mp_households_0,17084,6_504_800_256,6_504_800_256,295_428_096,school_location.i1.sample.highschool.interaction_sample.eval_interaction_utils.chunk_log.log_rss,0,2021/06/30 12:17:17.557225
+mp_households_0,17084,6_540_251_136,6_540_251_136,320_630_784,school_location.i1.sample.highschool.interaction_sample.eval_interaction_utils.chunk_log.log_rss,0,2021/06/30 12:17:18.338480
+mp_households_0,17084,6_522_720_256,6_522_720_256,303_095_808,school_location.i1.sample.highschool.interaction_sample.log_rss,0,2021/06/30 12:17:18.913101
+mp_households_0,17084,6_971_469_824,6_971_469_824,263_274_496,school_location.i1.logsums.highschool.compute_logsums.log_rss,0,2021/06/30 12:17:21.361703
+mp_households_0,17084,8_207_822_848,8_207_822_848,379_748_352,school_location.i1.logsums.highschool.compute_logsums.log_rss,0,2021/06/30 12:17:26.441259
+mp_households_0,17084,8_454_553_600,8_454_553_600,268_029_952,school_location.i1.logsums.highschool.compute_logsums.log_rss,0,2021/06/30 12:17:30.816947
+mp_households_0,17084,8_421_994_496,8_421_994_496,235_470_848,school_location.i1.simulate.highschool.interaction_sample_simulate.log_rss,0,2021/06/30 12:17:31.408229
+mp_households_0,17084,8_427_335_680,8_427_335_680,240_812_032,school_location.i1.simulate.highschool.interaction_sample_simulate.eval_interaction_utils.chunk_log.log_rss,0,2021/06/30 12:17:31.921979
+mp_households_0,17084,8_431_140_864,8_431_140_864,244_617_216,school_location.i1.simulate.highschool.interaction_sample_simulate.eval_interaction_utils.chunk_log.log_rss,0,2021/06/30 12:17:32.440811
+mp_households_0,17084,8_432_730_112,8_432_730_112,246_206_464,school_location.i1.simulate.highschool.interaction_sample_simulate.log_rss,0,2021/06/30 12:17:33.065813
+mp_households_0,17084,8_425_336_832,8_425_336_832,238_813_184,school_location.i1.sample.gradeschool.interaction_sample.log_rss,0,2021/06/30 12:17:33.786691
+mp_households_0,17084,13_824_741_376,13_824_741_376,5_675_511_808,school_location.i1.sample.gradeschool.interaction_sample.log_rss,0,2021/06/30 12:17:38.716099
+mp_households_0,17084,12_807_188_480,12_807_188_480,4_637_442_048,school_location.i1.sample.gradeschool.interaction_sample.eval_interaction_utils.chunk_log.log_rss,0,2021/06/30 12:17:42.283366
+mp_households_0,17084,15_168_225_280,15_168_225_280,7_096_967_168,school_location.i1.sample.gradeschool.interaction_sample.log_rss,0,2021/06/30 12:17:49.121178
+mp_households_0,17084,14_353_002_496,14_353_002_496,6_174_646_272,school_location.i1.sample.gradeschool.interaction_sample.log_rss,0,2021/06/30 12:17:54.474119
+mp_households_0,17084,14_692_331_520,14_692_331_520,6_521_978_880,school_location.i1.sample.gradeschool.interaction_sample.log_rss,0,2021/06/30 12:17:59.889595
+mp_households_0,17084,14_353_002_496,14_353_002_496,6_174_646_272,school_location.i1.sample.gradeschool.interaction_sample.log_rss,0,2021/06/30 12:18:05.577718
+mp_households_0,17084,15_326_171_136,15_326_171_136,7_225_978_880,school_location.i1.sample.gradeschool.interaction_sample.log_rss,0,2021/06/30 12:18:12.244721
+mp_households_0,17084,15_539_175_424,15_539_175_424,7_401_390_080,school_location.i1.sample.gradeschool.interaction_sample.log_rss,0,2021/06/30 12:18:18.094038
+mp_households_0,17084,15_227_604_992,15_227_604_992,7_050_493_952,school_location.i1.sample.gradeschool.interaction_sample.log_rss,0,2021/06/30 12:18:23.699143
+mp_households_0,17084,15_669_288_960,15_669_288_960,7_507_820_544,school_location.i1.sample.gradeschool.interaction_sample.log_rss,0,2021/06/30 12:18:29.651517
+mp_households_0,17084,15_469_445_120,15_469_445_120,7_398_612_992,school_location.i1.sample.gradeschool.interaction_sample.log_rss,0,2021/06/30 12:18:35.918106
+mp_households_0,17084,14_899_429_376,14_899_429_376,6_775_472_128,school_location.i1.sample.gradeschool.interaction_sample.log_rss,0,2021/06/30 12:18:41.935074
+mp_households_0,17084,14_794_248_192,14_794_248_192,6_716_579_840,school_location.i1.sample.gradeschool.interaction_sample.log_rss,0,2021/06/30 12:18:48.418507
