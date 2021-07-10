@@ -1,0 +1,5 @@
+process,pid,rss,full_rss,uss,event,children,time
+mp_initialize,16672,103_600_128,103_600_128,72_650_752,pipeline.run_model initialize_landuse start,0,2021/07/09 12:17:17.968008
+mp_initialize,16672,120_942_592,120_942_592,89_149_440,pipeline.run_model initialize_landuse finished,0,2021/07/09 12:17:19.046132
+mp_initialize,16672,125_714_432,125_714_432,93_945_856,pipeline.run_model initialize_households start,0,2021/07/09 12:17:19.093015
+mp_initialize,16672,192_737_280,192_737_280,160_878_592,pipeline.run_model initialize_households finished,0,2021/07/09 12:17:29.830606
