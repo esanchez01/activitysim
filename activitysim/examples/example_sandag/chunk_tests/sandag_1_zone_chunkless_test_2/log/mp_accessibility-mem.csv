@@ -1,0 +1,3 @@
+process,pid,rss,full_rss,uss,event,children,time
+mp_accessibility,4260,163_536_896,163_536_896,131_973_120,pipeline.run_model compute_accessibility start,0,2021/07/22 13:11:06.072374
+mp_accessibility,4260,2_372_644_864,2_372_644_864,157_696_000,pipeline.run_model compute_accessibility finished,0,2021/07/22 13:12:10.789712
